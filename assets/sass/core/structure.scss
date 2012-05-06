@@ -1,0 +1,21 @@
+/*=== Structure styles
+@desc   Common styles regarding the macro-structure of the site
+@author	Daniel Viedma
+@email	daniel.viedma@rokkan.com
+==================================================*/
+
+body {
+    padding-top: $header-height;
+    .container {
+        @include container;
+        max-width: columns-width();
+        @include susy-grid-background;
+    }
+}
+.first {
+    @include alpha();
+}
+.last {
+    @include omega();
+}
+

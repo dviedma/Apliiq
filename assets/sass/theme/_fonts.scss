@@ -1,0 +1,30 @@
+/*=== Typography Styles
+@desc   These @font-face declarations render the typefaces for the Caesars Palace LV site
+@author	Daniel Viedma
+@email	daniel.viedma@rokkan.com
+==================================================*/
+
+@font-face {
+	font-family: 'Neutraface2Text Demi';
+    src: url("/assets/fonts/Neutra2Text-Demi.otf");
+	/*src: url("/assets/fonts/fordantenna-black-webfont.eot");
+	src: url("/assets/fonts/fordantenna-black-webfont.eot?#iefix") format("embedded-opentype"),
+		url("/assets/fonts/fordantenna-black-webfont.woff") format("woff"),
+		url("/assets/fonts/fordantenna-black-webfont.ttf") format("truetype"),
+		url("/assets/fonts/fordantenna-black-webfont.svg#FordAntennaBlack") format("svg");*/
+	font-weight: normal;
+	font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+h1 {
+
+}
+h2 {
+    font-size: 48px;
+}
+h6 {
+    font-size: 18px;
+}

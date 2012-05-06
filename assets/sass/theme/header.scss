@@ -1,0 +1,56 @@
+/*=== Header Styles
+@desc   Apliiq header styles
+@author	Daniel Viedma
+@email	daniel.viedma@rokkan.com
+==================================================*/
+
+$sprite-common-sprite-dimensions: true;
+@import "sprite-common/*.png";
+
+
+
+header {
+    @include navbar-fixed();
+    height: $header-height;
+    background: white;
+    .logo {
+        position: absolute;
+        a{
+            @include sprite-common-sprite('logo-bluezebra');
+            display: block;
+            span {
+                position: absolute;
+                top: -100px;
+                visibility: hidden;
+            }
+        }
+    }
+}
+
+nav {
+    float: left;
+    margin-left: 200px;
+    ul {
+        @include inline-list();
+        li {
+            a {
+
+
+            }
+        }
+    }
+}
+
+menu {
+    float: right;
+    @include omega();
+    ul {
+        @include inline-list();
+        li {
+            a {
+
+
+            }
+        }
+    }
+}

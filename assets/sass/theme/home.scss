@@ -1,0 +1,127 @@
+/*=== Footer Styles
+@desc   Apliiq homepage styles
+@author	Daniel Viedma
+@email	daniel.viedma@rokkan.com
+==================================================*/
+
+$sprite-home-sprite-dimensions: true;
+@import "sprite-home/*.png";
+
+.slider {
+    height: 700px;
+    background: #f5deb3;
+}
+
+.fabrics {
+    height: 880px;
+    position: relative;
+    .fabric-box {
+        @include columns(4);
+        height: 300px;
+        background: red;
+        margin-bottom: 20px;
+        cursor: pointer;
+        &.fabric1 {
+            background: url(../../imgs/fresh-fabrics/fabric1.jpg) no-repeat;
+        }
+        &.fabric2 {
+            background: url(../../imgs/fresh-fabrics/fabric2.jpg) no-repeat;
+        }
+        &.fabric3 {
+            background: url(../../imgs/fresh-fabrics/fabric3.jpg) no-repeat;
+        }
+        &.fabric4 {
+            background: url(../../imgs/fresh-fabrics/fabric4.jpg) no-repeat;
+        }
+        &.fabric5 {
+            background: url(../../imgs/fresh-fabrics/fabric5.jpg) no-repeat;
+        }
+        &.fabric6 {
+            background: url(../../imgs/fresh-fabrics/fabric6.jpg) no-repeat;
+        }
+    }
+    #fabric-detail {
+        height: 880px;
+        width: 100%;
+        top: 0px;
+        position: absolute;
+        display: none;
+        background-repeat: repeat-x;
+        &.fabric1 {
+            background: url(../../imgs/fresh-fabrics/fabric1-det.jpg);
+        }
+        &.fabric2 {
+            background: url(../../imgs/fresh-fabrics/fabric2-det.jpg);
+        }
+        &.fabric3 {
+            background: url(../../imgs/fresh-fabrics/fabric3-det.jpg);
+        }
+        &.fabric4 {
+            background: url(../../imgs/fresh-fabrics/fabric4-det.jpg);
+        }
+        &.fabric5 {
+            background: url(../../imgs/fresh-fabrics/fabric5-det.jpg);
+        }
+        &.fabric6 {
+            background: url(../../imgs/fresh-fabrics/fabric6-det.jpg);
+        }
+    }
+    #f-catalogue {
+        width: 300px;
+        height: 300px;
+        cursor: pointer;
+        position: absolute;
+        background: #ffffff;
+        top: 0;
+        display: none;
+    }
+}
+
+.customizer {
+    height: 715px;
+    background: url(../../imgs/customizer/top-shadow.png),
+                url(../../imgs/customizer/bottom-shadow.png),
+                url(../../imgs/customizer/customizer-bg.jpg);
+    background-repeat: repeat-x, repeat-x, repeat;
+    background-position: top, bottom, center;
+    text-align: center;
+    #c-catalogue {
+        margin-top: 20px;
+        border-bottom: 1px dashed white;
+        width: 915px;
+        margin: 20px auto 0;
+        padding-top: 6px;
+        background: url(../../imgs/customizer/nav-shadow.png) no-repeat;
+        .c-catalogue-inner {
+            width: 100%;
+            border-bottom: 1px dashed #b6b6b6;
+            ul {
+                width: 500px;
+                margin: 0 auto;
+                li {
+                    float: left;
+                    cursor: pointer;
+                    width: 120px;
+                }
+            }
+            #tab-active {
+                @include sprite-home-sprite('customizer-navact');
+                position: absolute;
+                #label {
+                    color: white;
+                }
+            }
+        }
+
+    }
+}
+
+.social {
+    height: 440px;
+    .social-box {
+        @include columns (3);
+        height: 222px;
+        background: red;
+    }
+}
+

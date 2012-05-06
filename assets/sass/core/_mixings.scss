@@ -1,0 +1,18 @@
+//From Twitter Bootstrap for SASS
+
+// FIXED NAVBAR
+// ------------
+
+// Shared (top/bottom) styles
+@mixin navbar-fixed($zindexFixedNavbar: 10, $type: top) {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: $zindexFixedNavbar;
+    margin-bottom: 0; // remove 18px margin for static navbar
+    @if $type == top {
+        top: 0;
+    } @else {
+        bottom: 0;
+    }
+}

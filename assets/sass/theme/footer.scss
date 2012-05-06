@@ -1,0 +1,44 @@
+/*=== Footer Styles
+@desc   Apliiq footer styles
+@author	Daniel Viedma
+@email	daniel.viedma@rokkan.com
+==================================================*/
+
+footer {
+    .first {
+        @include columns(6);
+        * {
+            background: blue;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+    }
+    .last {
+        @include columns(6);
+        * {
+            background: blue;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.experience {
+    width: 100%;
+}
+.contact {
+    @include columns(2, 6);
+}
+.besocial{
+    @include columns(2, 6);
+}
+.belegal {
+    @include columns(2, 6);
+    margin-right: 0!important;
+}
+.showlove {
+    width: 100%;
+}
+.newsletter {
+    width: 100%;
+}
