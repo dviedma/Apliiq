@@ -37,7 +37,7 @@ jQuery(document).ready(function() {
                             .css('top', $(this)[0].offsetTop);
                         $catalogue.show();
 
-                        $fabricdetail.addClass( $(this).attr('data-fabric')).delay(400).fadeIn('fast', function(){
+                        $fabricdetail.addClass( $(this).attr('data-fabric')).fadeIn('fast', function(){
 
                             $catalogue.bind('mouseleave', function(){
                                 $fabricdetail.attr('class','').hide();

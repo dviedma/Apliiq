@@ -5,17 +5,35 @@
 ==================================================*/
 
 @font-face {
-	font-family: 'Neutraface2Text Demi';
-    src: url("/assets/fonts/Neutra2Text-Demi.otf");
-	/*src: url("/assets/fonts/fordantenna-black-webfont.eot");
-	src: url("/assets/fonts/fordantenna-black-webfont.eot?#iefix") format("embedded-opentype"),
-		url("/assets/fonts/fordantenna-black-webfont.woff") format("woff"),
-		url("/assets/fonts/fordantenna-black-webfont.ttf") format("truetype"),
-		url("/assets/fonts/fordantenna-black-webfont.svg#FordAntennaBlack") format("svg");*/
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'ITCAvantGardeStdMdRegular';
+    src: url('../../fonts/itcavantgardestd-md-webfont.eot');
+    src: url('../../fonts/itcavantgardestd-md-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/itcavantgardestd-md-webfont.woff') format('woff'),
+         url('../../fonts/itcavantgardestd-md-webfont.ttf') format('truetype'),
+         url('../../fonts/itcavantgardestd-md-webfont.svg#ITCAvantGardeStdMdRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
+@font-face {
+    font-family: 'ITCAvantGardeStdMdBold';
+    src: url('../../fonts/itcavantgardestd-bold-webfont.eot');
+    src: url('../../fonts/itcavantgardestd-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/itcavantgardestd-bold-webfont.woff') format('woff'),
+         url('../../fonts/itcavantgardestd-bold-webfont.ttf') format('truetype'),
+         url('../../fonts/itcavantgardestd-bold-webfont.svg#ITCAvantGardeStdMdBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    color: $grey;
+    a, a:hover, a:visited {
+        color: $black;
+    }
+}
 h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
@@ -23,8 +41,15 @@ h1 {
 
 }
 h2 {
+    font-family: 'ITCAvantGardeStdMdBold';
     font-size: 48px;
+    line-height: 50px;
+    color: $black;
 }
 h6 {
+    font-family: 'ITCAvantGardeStdMdRegular';
     font-size: 18px;
+    line-height: 20px;
+    color: $grey;
 }
+

@@ -29,12 +29,15 @@ header {
 
 nav {
     float: left;
-    margin-left: 200px;
+    margin: 20px 0 0 230px;
     ul {
         @include inline-list();
         li {
+            margin-right: 40px;
             a {
-
+                font-family: 'ITCAvantGardeStdMdRegular';
+                color: $black2;
+                font-size: 16px;
 
             }
         }
@@ -44,12 +47,31 @@ nav {
 menu {
     float: right;
     @include omega();
+    margin-top: 20px;
     ul {
-        @include inline-list();
+        //@include inline-list();
         li {
-            a {
-
-
+            float: left;
+            margin-left: 27px;
+            &.login {
+                a {
+                    color: $grey;
+                    font-size: 12px;
+                }
+            }
+            &.cart {
+                margin-left: 20px;
+                padding-left: 20px;
+                border-left: 1px dotted $grey;
+                a {
+                    @include sprite-common-sprite('cart');
+                    width: 38px;
+                    display: block;
+                    span {
+                        padding-left: 25px;
+                        color: $red;
+                    }
+                }
             }
         }
     }

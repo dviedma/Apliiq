@@ -7,6 +7,10 @@
 $sprite-home-sprite-dimensions: true;
 @import "sprite-home/*.png";
 
+section {
+    padding-top: 42px;
+}
+
 .slider {
     height: 700px;
     background: #f5deb3;
@@ -96,19 +100,26 @@ $sprite-home-sprite-dimensions: true;
             width: 100%;
             border-bottom: 1px dashed #b6b6b6;
             ul {
-                width: 500px;
+                width: 420px;
                 margin: 0 auto;
                 li {
                     float: left;
                     cursor: pointer;
                     width: 120px;
+                    font-size: 18px;
+                    padding-top: 15px;
+                    color: $grey2;
+                    width: 105px;
                 }
             }
             #tab-active {
                 @include sprite-home-sprite('customizer-navact');
                 position: absolute;
+                padding-top: 21px;
+                top: 191px;
                 #label {
                     color: white;
+                    font-size: 18px;
                 }
             }
         }

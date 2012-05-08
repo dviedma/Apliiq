@@ -69,7 +69,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 @email	daniel.viedma@rokkan.com
 ==================================================*/
 /* line 8, ../../sass/core/reset.scss */
-a, a:hover {
+a, a:hover, a:visited {
   text-decoration: none;
 }
 
@@ -80,7 +80,7 @@ a, a:hover {
 ==================================================*/
 /* line 7, ../../sass/core/structure.scss */
 body {
-  padding-top: 50px;
+  padding-top: 60px;
 }
 /* line 9, ../../sass/core/structure.scss */
 body .container {
@@ -116,30 +116,51 @@ body .container:after {
 @email	daniel.viedma@rokkan.com
 ==================================================*/
 @font-face {
-  font-family: 'Neutraface2Text Demi';
-  src: url("/assets/fonts/Neutra2Text-Demi.otf");
-  /*src: url("/assets/fonts/fordantenna-black-webfont.eot");
-  src: url("/assets/fonts/fordantenna-black-webfont.eot?#iefix") format("embedded-opentype"),
-  	url("/assets/fonts/fordantenna-black-webfont.woff") format("woff"),
-  	url("/assets/fonts/fordantenna-black-webfont.ttf") format("truetype"),
-  	url("/assets/fonts/fordantenna-black-webfont.svg#FordAntennaBlack") format("svg");*/
+  font-family: 'ITCAvantGardeStdMdRegular';
+  src: url("../../fonts/itcavantgardestd-md-webfont.eot");
+  src: url("../../fonts/itcavantgardestd-md-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/itcavantgardestd-md-webfont.woff") format("woff"), url("../../fonts/itcavantgardestd-md-webfont.ttf") format("truetype"), url("../../fonts/itcavantgardestd-md-webfont.svg#ITCAvantGardeStdMdRegular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
-/* line 19, ../../sass/theme/_fonts.scss */
+@font-face {
+  font-family: 'ITCAvantGardeStdMdBold';
+  src: url("../../fonts/itcavantgardestd-bold-webfont.eot");
+  src: url("../../fonts/itcavantgardestd-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/itcavantgardestd-bold-webfont.woff") format("woff"), url("../../fonts/itcavantgardestd-bold-webfont.ttf") format("truetype"), url("../../fonts/itcavantgardestd-bold-webfont.svg#ITCAvantGardeStdMdBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 29, ../../sass/theme/_fonts.scss */
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  color: #777777;
+}
+/* line 33, ../../sass/theme/_fonts.scss */
+body a, body a:hover, body a:visited {
+  color: #010101;
+}
+
+/* line 37, ../../sass/theme/_fonts.scss */
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-/* line 25, ../../sass/theme/_fonts.scss */
+/* line 43, ../../sass/theme/_fonts.scss */
 h2 {
+  font-family: 'ITCAvantGardeStdMdBold';
   font-size: 48px;
+  line-height: 50px;
+  color: #010101;
 }
 
-/* line 28, ../../sass/theme/_fonts.scss */
+/* line 49, ../../sass/theme/_fonts.scss */
 h6 {
+  font-family: 'ITCAvantGardeStdMdRegular';
   font-size: 18px;
+  line-height: 20px;
+  color: #777777;
 }
 
 /*=== Footer Styles
@@ -219,9 +240,9 @@ footer .last * {
 @author	Daniel Viedma
 @email	daniel.viedma@rokkan.com
 ==================================================*/
-/* line 42, sprite-common/*.png */
-.sprite-common-sprite, header .logo a {
-  background: url('../../imgs/sprite-common-s1e905b224c.png') no-repeat;
+/* line 50, sprite-common/*.png */
+.sprite-common-sprite, header .logo a, menu ul li.cart a {
+  background: url('../../imgs/sprite-common-s9f7b1192cd.png') no-repeat;
 }
 
 /* line 12, ../../sass/theme/header.scss */
@@ -232,7 +253,7 @@ header {
   z-index: 10;
   margin-bottom: 0;
   top: 0;
-  height: 50px;
+  height: 60px;
   background: white;
 }
 /* line 16, ../../sass/theme/header.scss */
@@ -256,7 +277,7 @@ header .logo a span {
 /* line 30, ../../sass/theme/header.scss */
 nav {
   float: left;
-  margin-left: 200px;
+  margin: 20px 0 0 230px;
 }
 /* line 33, ../../sass/theme/header.scss */
 nav ul {
@@ -268,24 +289,54 @@ nav ul, nav ul li {
   padding: 0px;
   display: inline;
 }
+/* line 35, ../../sass/theme/header.scss */
+nav ul li {
+  margin-right: 40px;
+}
+/* line 37, ../../sass/theme/header.scss */
+nav ul li a {
+  font-family: 'ITCAvantGardeStdMdRegular';
+  color: #333333;
+  font-size: 16px;
+}
 
-/* line 44, ../../sass/theme/header.scss */
+/* line 47, ../../sass/theme/header.scss */
 menu {
   float: right;
   display: inline;
   float: right;
   margin-right: 2.041%;
   #margin-left: -20px;
+  margin-top: 20px;
 }
-/* line 47, ../../sass/theme/header.scss */
-menu ul {
-  list-style-type: none;
+/* line 53, ../../sass/theme/header.scss */
+menu ul li {
+  float: left;
+  margin-left: 27px;
 }
-/* line 5, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/lists/_inline-list.scss */
-menu ul, menu ul li {
-  margin: 0px;
-  padding: 0px;
-  display: inline;
+/* line 57, ../../sass/theme/header.scss */
+menu ul li.login a {
+  color: #777777;
+  font-size: 12px;
+}
+/* line 62, ../../sass/theme/header.scss */
+menu ul li.cart {
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 1px dotted #777777;
+}
+/* line 66, ../../sass/theme/header.scss */
+menu ul li.cart a {
+  background-position: 0 -142px;
+  height: 17px;
+  width: 18px;
+  width: 38px;
+  display: block;
+}
+/* line 70, ../../sass/theme/header.scss */
+menu ul li.cart a span {
+  padding-left: 25px;
+  color: #f70a00;
 }
 
 /*=== Footer Styles
@@ -299,17 +350,22 @@ menu ul, menu ul li {
 }
 
 /* line 10, ../../sass/theme/home.scss */
+section {
+  padding-top: 42px;
+}
+
+/* line 14, ../../sass/theme/home.scss */
 .slider {
   height: 700px;
   background: #f5deb3;
 }
 
-/* line 15, ../../sass/theme/home.scss */
+/* line 19, ../../sass/theme/home.scss */
 .fabrics {
   height: 880px;
   position: relative;
 }
-/* line 18, ../../sass/theme/home.scss */
+/* line 22, ../../sass/theme/home.scss */
 .fabrics .fabric-box {
   display: inline;
   float: left;
@@ -320,31 +376,31 @@ menu ul, menu ul li {
   margin-bottom: 20px;
   cursor: pointer;
 }
-/* line 24, ../../sass/theme/home.scss */
+/* line 28, ../../sass/theme/home.scss */
 .fabrics .fabric-box.fabric1 {
   background: url(../../imgs/fresh-fabrics/fabric1.jpg) no-repeat;
 }
-/* line 27, ../../sass/theme/home.scss */
+/* line 31, ../../sass/theme/home.scss */
 .fabrics .fabric-box.fabric2 {
   background: url(../../imgs/fresh-fabrics/fabric2.jpg) no-repeat;
 }
-/* line 30, ../../sass/theme/home.scss */
+/* line 34, ../../sass/theme/home.scss */
 .fabrics .fabric-box.fabric3 {
   background: url(../../imgs/fresh-fabrics/fabric3.jpg) no-repeat;
 }
-/* line 33, ../../sass/theme/home.scss */
+/* line 37, ../../sass/theme/home.scss */
 .fabrics .fabric-box.fabric4 {
   background: url(../../imgs/fresh-fabrics/fabric4.jpg) no-repeat;
 }
-/* line 36, ../../sass/theme/home.scss */
+/* line 40, ../../sass/theme/home.scss */
 .fabrics .fabric-box.fabric5 {
   background: url(../../imgs/fresh-fabrics/fabric5.jpg) no-repeat;
 }
-/* line 39, ../../sass/theme/home.scss */
+/* line 43, ../../sass/theme/home.scss */
 .fabrics .fabric-box.fabric6 {
   background: url(../../imgs/fresh-fabrics/fabric6.jpg) no-repeat;
 }
-/* line 43, ../../sass/theme/home.scss */
+/* line 47, ../../sass/theme/home.scss */
 .fabrics #fabric-detail {
   height: 880px;
   width: 100%;
@@ -353,31 +409,31 @@ menu ul, menu ul li {
   display: none;
   background-repeat: repeat-x;
 }
-/* line 50, ../../sass/theme/home.scss */
+/* line 54, ../../sass/theme/home.scss */
 .fabrics #fabric-detail.fabric1 {
   background: url(../../imgs/fresh-fabrics/fabric1-det.jpg);
 }
-/* line 53, ../../sass/theme/home.scss */
+/* line 57, ../../sass/theme/home.scss */
 .fabrics #fabric-detail.fabric2 {
   background: url(../../imgs/fresh-fabrics/fabric2-det.jpg);
 }
-/* line 56, ../../sass/theme/home.scss */
+/* line 60, ../../sass/theme/home.scss */
 .fabrics #fabric-detail.fabric3 {
   background: url(../../imgs/fresh-fabrics/fabric3-det.jpg);
 }
-/* line 59, ../../sass/theme/home.scss */
+/* line 63, ../../sass/theme/home.scss */
 .fabrics #fabric-detail.fabric4 {
   background: url(../../imgs/fresh-fabrics/fabric4-det.jpg);
 }
-/* line 62, ../../sass/theme/home.scss */
+/* line 66, ../../sass/theme/home.scss */
 .fabrics #fabric-detail.fabric5 {
   background: url(../../imgs/fresh-fabrics/fabric5-det.jpg);
 }
-/* line 65, ../../sass/theme/home.scss */
+/* line 69, ../../sass/theme/home.scss */
 .fabrics #fabric-detail.fabric6 {
   background: url(../../imgs/fresh-fabrics/fabric6-det.jpg);
 }
-/* line 69, ../../sass/theme/home.scss */
+/* line 73, ../../sass/theme/home.scss */
 .fabrics #f-catalogue {
   width: 300px;
   height: 300px;
@@ -388,7 +444,7 @@ menu ul, menu ul li {
   display: none;
 }
 
-/* line 80, ../../sass/theme/home.scss */
+/* line 84, ../../sass/theme/home.scss */
 .customizer {
   height: 715px;
   background: url(../../imgs/customizer/top-shadow.png), url(../../imgs/customizer/bottom-shadow.png), url(../../imgs/customizer/customizer-bg.jpg);
@@ -396,7 +452,7 @@ menu ul, menu ul li {
   background-position: top, bottom, center;
   text-align: center;
 }
-/* line 88, ../../sass/theme/home.scss */
+/* line 92, ../../sass/theme/home.scss */
 .customizer #c-catalogue {
   margin-top: 20px;
   border-bottom: 1px dashed white;
@@ -405,39 +461,46 @@ menu ul, menu ul li {
   padding-top: 6px;
   background: url(../../imgs/customizer/nav-shadow.png) no-repeat;
 }
-/* line 95, ../../sass/theme/home.scss */
+/* line 99, ../../sass/theme/home.scss */
 .customizer #c-catalogue .c-catalogue-inner {
   width: 100%;
   border-bottom: 1px dashed #b6b6b6;
 }
-/* line 98, ../../sass/theme/home.scss */
+/* line 102, ../../sass/theme/home.scss */
 .customizer #c-catalogue .c-catalogue-inner ul {
-  width: 500px;
+  width: 420px;
   margin: 0 auto;
 }
-/* line 101, ../../sass/theme/home.scss */
+/* line 105, ../../sass/theme/home.scss */
 .customizer #c-catalogue .c-catalogue-inner ul li {
   float: left;
   cursor: pointer;
   width: 120px;
+  font-size: 18px;
+  padding-top: 15px;
+  color: #999999;
+  width: 105px;
 }
-/* line 107, ../../sass/theme/home.scss */
+/* line 115, ../../sass/theme/home.scss */
 .customizer #c-catalogue .c-catalogue-inner #tab-active {
   background-position: 0 0;
   height: 67px;
   width: 117px;
   position: absolute;
+  padding-top: 21px;
+  top: 191px;
 }
-/* line 110, ../../sass/theme/home.scss */
+/* line 120, ../../sass/theme/home.scss */
 .customizer #c-catalogue .c-catalogue-inner #tab-active #label {
   color: white;
+  font-size: 18px;
 }
 
-/* line 119, ../../sass/theme/home.scss */
+/* line 130, ../../sass/theme/home.scss */
 .social {
   height: 440px;
 }
-/* line 121, ../../sass/theme/home.scss */
+/* line 132, ../../sass/theme/home.scss */
 .social .social-box {
   display: inline;
   float: left;

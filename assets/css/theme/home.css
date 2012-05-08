@@ -1,11 +1,11 @@
 /*
 Syntax error: Undefined mixin 'columns'.
-        on line 19 of /Users/daniel/WebstormProjects/Apliiq/assets/sass/theme/home.scss, in `columns'
-        from line 19 of /Users/daniel/WebstormProjects/Apliiq/assets/sass/theme/home.scss
+        on line 23 of /Users/daniel/WebstormProjects/Apliiq/assets/sass/theme/home.scss, in `columns'
+        from line 23 of /Users/daniel/WebstormProjects/Apliiq/assets/sass/theme/home.scss
 
 Backtrace:
-/Users/daniel/WebstormProjects/Apliiq/assets/sass/theme/home.scss:19:in `columns'
-/Users/daniel/WebstormProjects/Apliiq/assets/sass/theme/home.scss:19
+/Users/daniel/WebstormProjects/Apliiq/assets/sass/theme/home.scss:23:in `columns'
+/Users/daniel/WebstormProjects/Apliiq/assets/sass/theme/home.scss:23
 /Library/Ruby/Gems/1.8/gems/sass-3.1.16/lib/sass/../sass/tree/visitors/perform.rb:170:in `visit_mixin'
 /Library/Ruby/Gems/1.8/gems/sass-3.1.16/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
 /Library/Ruby/Gems/1.8/gems/sass-3.1.16/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
@@ -90,4 +90,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'columns'.\A         on line 19 of /Users/daniel/WebstormProjects/Apliiq/assets/sass/theme/home.scss, in `columns'\A         from line 19 of /Users/daniel/WebstormProjects/Apliiq/assets/sass/theme/home.scss"; }
+  content: "Syntax error: Undefined mixin 'columns'.\A         on line 23 of /Users/daniel/WebstormProjects/Apliiq/assets/sass/theme/home.scss, in `columns'\A         from line 23 of /Users/daniel/WebstormProjects/Apliiq/assets/sass/theme/home.scss"; }

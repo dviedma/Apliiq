@@ -4,6 +4,6 @@
 @email	daniel.viedma@rokkan.com
 ==================================================*/
 /* line 8, ../../sass/core/reset.scss */
-a, a:hover {
+a, a:hover, a:visited {
   text-decoration: none;
 }
