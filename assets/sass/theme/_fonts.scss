@@ -46,6 +46,18 @@ h2 {
     line-height: 50px;
     color: $black;
 }
+h3 {
+    font-family: 'ITCAvantGardeStdMdBold';
+    font-size: 48px;
+    line-height: 50px;
+    color: white;
+}
+h4 {
+    font-family: 'ITCAvantGardeStdMdBold';
+    font-size: 18px;
+    line-height: 20px;
+    color: white;
+}
 h6 {
     font-family: 'ITCAvantGardeStdMdRegular';
     font-size: 18px;
@@ -53,3 +65,12 @@ h6 {
     color: $grey;
 }
 
+p {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 12px;
+    //color: #ffffff;
+    //@include opacity(0.6);
+}

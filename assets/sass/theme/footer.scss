@@ -5,40 +5,97 @@
 ==================================================*/
 
 footer {
+    background: black;
+    padding-bottom: 50px;
     .first {
         @include columns(6);
-        * {
-            background: blue;
-            height: 100px;
-            margin-bottom: 10px;
-        }
     }
     .last {
         @include columns(6);
-        * {
-            background: blue;
-            height: 100px;
-            margin-bottom: 10px;
+    }
+    .moto {
+        padding: 50px 0 70px;
+    }
+    .title {
+        position: relative;
+        background: black;
+        margin: 0 auto;
+    }
+    .list, .copy, .buttons {
+        border-top: 1px dashed $grey;
+        margin-top: -8px;
+        padding-top: 20px;
+        li {
+            text-align: center;
+        }
+        a {
+            color: $grey;
+            font-size: 14px;
+            line-height: 18px;
         }
     }
 }
 
 .experience {
     width: 100%;
+    margin-bottom: 40px;
+    .title {
+        width: 290px;
+    }
 }
 .contact {
     @include columns(2, 6);
+    .title {
+        width: 97px;
+    }
 }
 .besocial{
     @include columns(2, 6);
+    .title {
+        width: 97px;
+    }
 }
 .belegal {
     @include columns(2, 6);
     margin-right: 0!important;
+    .title {
+        width: 97px;
+    }
 }
 .showlove {
     width: 100%;
+    margin-bottom: 70px;
+    .inner {
+        background: wheat;
+        padding: 20px;
+        .title {
+            width: 190px;
+        }
+        .buttons {
+            padding-top: 40px;
+            .fb-like {
+                float: left;
+                width: 100px;
+                margin-left: 130px;
+            }
+            .twitter-follow-button {
+                display: block;
+                float: left;
+            }
+        }
+    }
 }
 .newsletter {
     width: 100%;
+    .inner {
+        background: wheat;
+        padding: 20px;
+        .title {
+            width: 170px;
+        }
+    }
+}
+.logo {
+    width: 100%;
+    float: left;
 }

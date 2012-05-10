@@ -156,6 +156,22 @@ h2 {
 }
 
 /* line 49, ../../sass/theme/_fonts.scss */
+h3 {
+  font-family: 'ITCAvantGardeStdMdBold';
+  font-size: 48px;
+  line-height: 50px;
+  color: white;
+}
+
+/* line 55, ../../sass/theme/_fonts.scss */
+h4 {
+  font-family: 'ITCAvantGardeStdMdBold';
+  font-size: 18px;
+  line-height: 20px;
+  color: white;
+}
+
+/* line 61, ../../sass/theme/_fonts.scss */
 h6 {
   font-family: 'ITCAvantGardeStdMdRegular';
   font-size: 18px;
@@ -163,60 +179,101 @@ h6 {
   color: #777777;
 }
 
+/* line 68, ../../sass/theme/_fonts.scss */
+p {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
 /*=== Footer Styles
 @desc   Apliiq footer styles
 @author	Daniel Viedma
 @email	daniel.viedma@rokkan.com
 ==================================================*/
-/* line 8, ../../sass/theme/footer.scss */
+/* line 7, ../../sass/theme/footer.scss */
+footer {
+  background: black;
+  padding-bottom: 50px;
+}
+/* line 10, ../../sass/theme/footer.scss */
 footer .first {
   display: inline;
   float: left;
   width: 46.939%;
   margin-right: 2.041%;
 }
-/* line 10, ../../sass/theme/footer.scss */
-footer .first * {
-  background: blue;
-  height: 100px;
-  margin-bottom: 10px;
-}
-/* line 16, ../../sass/theme/footer.scss */
+/* line 13, ../../sass/theme/footer.scss */
 footer .last {
   display: inline;
   float: left;
   width: 46.939%;
   margin-right: 2.041%;
 }
-/* line 18, ../../sass/theme/footer.scss */
-footer .last * {
-  background: blue;
-  height: 100px;
-  margin-bottom: 10px;
+/* line 16, ../../sass/theme/footer.scss */
+footer .moto {
+  padding: 50px 0 70px;
+}
+/* line 19, ../../sass/theme/footer.scss */
+footer .title {
+  position: relative;
+  background: black;
+  margin: 0 auto;
+}
+/* line 24, ../../sass/theme/footer.scss */
+footer .list, footer .copy, footer .buttons {
+  border-top: 1px dashed #777777;
+  margin-top: -8px;
+  padding-top: 20px;
+}
+/* line 28, ../../sass/theme/footer.scss */
+footer .list li, footer .copy li, footer .buttons li {
+  text-align: center;
+}
+/* line 31, ../../sass/theme/footer.scss */
+footer .list a, footer .copy a, footer .buttons a {
+  color: #777777;
+  font-size: 14px;
+  line-height: 18px;
 }
 
-/* line 26, ../../sass/theme/footer.scss */
+/* line 39, ../../sass/theme/footer.scss */
 .experience {
   width: 100%;
+  margin-bottom: 40px;
+}
+/* line 42, ../../sass/theme/footer.scss */
+.experience .title {
+  width: 290px;
 }
 
-/* line 29, ../../sass/theme/footer.scss */
+/* line 46, ../../sass/theme/footer.scss */
 .contact {
   display: inline;
   float: left;
   width: 30.435%;
   margin-right: 4.348%;
 }
+/* line 48, ../../sass/theme/footer.scss */
+.contact .title {
+  width: 97px;
+}
 
-/* line 32, ../../sass/theme/footer.scss */
+/* line 52, ../../sass/theme/footer.scss */
 .besocial {
   display: inline;
   float: left;
   width: 30.435%;
   margin-right: 4.348%;
 }
+/* line 54, ../../sass/theme/footer.scss */
+.besocial .title {
+  width: 97px;
+}
 
-/* line 35, ../../sass/theme/footer.scss */
+/* line 58, ../../sass/theme/footer.scss */
 .belegal {
   display: inline;
   float: left;
@@ -224,15 +281,59 @@ footer .last * {
   margin-right: 4.348%;
   margin-right: 0!important;
 }
-
-/* line 39, ../../sass/theme/footer.scss */
-.showlove {
-  width: 100%;
+/* line 61, ../../sass/theme/footer.scss */
+.belegal .title {
+  width: 97px;
 }
 
-/* line 42, ../../sass/theme/footer.scss */
+/* line 65, ../../sass/theme/footer.scss */
+.showlove {
+  width: 100%;
+  margin-bottom: 70px;
+}
+/* line 68, ../../sass/theme/footer.scss */
+.showlove .inner {
+  background: wheat;
+  padding: 20px;
+}
+/* line 71, ../../sass/theme/footer.scss */
+.showlove .inner .title {
+  width: 190px;
+}
+/* line 74, ../../sass/theme/footer.scss */
+.showlove .inner .buttons {
+  padding-top: 40px;
+}
+/* line 76, ../../sass/theme/footer.scss */
+.showlove .inner .buttons .fb-like {
+  float: left;
+  width: 100px;
+  margin-left: 130px;
+}
+/* line 81, ../../sass/theme/footer.scss */
+.showlove .inner .buttons .twitter-follow-button {
+  display: block;
+  float: left;
+}
+
+/* line 88, ../../sass/theme/footer.scss */
 .newsletter {
   width: 100%;
+}
+/* line 90, ../../sass/theme/footer.scss */
+.newsletter .inner {
+  background: wheat;
+  padding: 20px;
+}
+/* line 93, ../../sass/theme/footer.scss */
+.newsletter .inner .title {
+  width: 170px;
+}
+
+/* line 98, ../../sass/theme/footer.scss */
+.logo {
+  width: 100%;
+  float: left;
 }
 
 /*=== Header Styles
