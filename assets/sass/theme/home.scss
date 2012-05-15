@@ -19,6 +19,9 @@ section {
 .fabrics {
     height: 880px;
     position: relative;
+    .sec-subtitle {
+        margin-bottom: 50px;
+    }
     .fabric-box {
         @include columns(4);
         height: 300px;
@@ -78,6 +81,37 @@ section {
         background: #ffffff;
         top: 0;
         display: none;
+        .mod-title {
+            border-top: 1px dashed #b2b2b2;
+            margin: 40px 20px 0;
+            padding: 0 10px;
+            span {
+                display: block;
+                width: 100px;
+                margin: -9px auto 0;
+                background: white;
+                text-align: center;
+                color: #333333;
+                font-size: 18px;
+                font-family: 'itcavantgardestdmdregular';
+            }
+        }
+        .sections {
+            margin-top: 40px;
+            text-align: center;
+            li {
+                margin-bottom: 10px;
+                a {
+                    font-size: 24px;
+                    color: #999999;
+                    font-weight: bold;
+
+                }
+                &.active a {
+                    color: #ff0000;
+                }
+            }
+        }
     }
 }
 
@@ -133,6 +167,9 @@ section {
         @include columns (3);
         height: 222px;
         background: red;
+    }
+    .sec-title {
+        margin-bottom: 50px;
     }
 }
 

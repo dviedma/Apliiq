@@ -6,19 +6,20 @@
 
 footer {
     background: black;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     .first {
         @include columns(6);
     }
     .last {
         @include columns(6);
+        margin-top: -20px;
     }
     .moto {
         padding: 50px 0 70px;
     }
     .title {
         position: relative;
-        background: black;
+        background: #111111;
         margin: 0 auto;
     }
     .list, .copy, .buttons {
@@ -64,10 +65,10 @@ footer {
 }
 .showlove {
     width: 100%;
-    margin-bottom: 70px;
+    margin-bottom: 20px;
     .inner {
-        background: wheat;
-        padding: 20px;
+        background: #111111;
+        padding: 20px 20px 40px;
         .title {
             width: 190px;
         }
@@ -76,7 +77,7 @@ footer {
             .fb-like {
                 float: left;
                 width: 100px;
-                margin-left: 130px;
+                margin-left: 112px;
             }
             .twitter-follow-button {
                 display: block;
@@ -88,14 +89,62 @@ footer {
 .newsletter {
     width: 100%;
     .inner {
-        background: wheat;
+        background: #111111;
         padding: 20px;
         .title {
             width: 170px;
         }
+        .copy {
+            margin-bottom: 25px;
+        }
+        input[type="text"] {
+            background: white;
+            color: grey;
+            font-size: 14px;
+            border: none;
+            padding: 9px;
+            width: 257px;
+            @include border-radius(3px);
+            @include box-shadow(rgba(0, 0, 0, 0.3) 2px 4px 4px 0 inset);
+            margin-left: 16px;
+        }
+        input[type="submit"] {
+            font-family: 'itcavantgardestdmdbold';
+            color: white;
+            font-size: 18px;
+            background: red;
+            border: none;
+            cursor: pointer;
+            @include border-radius(20px);
+            padding: 4px;
+            width: 90px;
+            margin-left: 20px;
+            @include box-shadow(rgba(0, 0, 0, 0.3) 0px -10px 4px 0 inset);
+        }
+    }
+    .arrow-down {
+    	width: 0;
+    	height: 0;
+    	border-left: 230px solid transparent;
+    	border-right: 230px solid transparent;
+
+    	border-top: 40px solid #111111;
     }
 }
-.logo {
-    width: 100%;
-    float: left;
+.branding {
+    border-top: 1px dashed $grey;
+    margin-top: 100px;
+    .logo-container {
+        margin: -52px auto 0;
+        width: 120px;
+        padding: 20px;
+        background: black;
+        .logo {
+            display: block;
+            @include sprite-common-sprite('logo-footer');
+            text-indent: -9999px;
+
+        }
+    }
+
 }

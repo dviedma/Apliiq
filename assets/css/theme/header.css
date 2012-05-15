@@ -1,11 +1,11 @@
 /*
 Syntax error: Undefined mixin 'navbar-fixed'.
-        on line 13 of /Users/daniel/WebstormProjects/Apliiq/assets/sass/theme/header.scss, in `navbar-fixed'
-        from line 13 of /Users/daniel/WebstormProjects/Apliiq/assets/sass/theme/header.scss
+        on line 8 of /Users/daniel/WebstormProjects/Apliiq/assets/sass/theme/header.scss, in `navbar-fixed'
+        from line 8 of /Users/daniel/WebstormProjects/Apliiq/assets/sass/theme/header.scss
 
 Backtrace:
-/Users/daniel/WebstormProjects/Apliiq/assets/sass/theme/header.scss:13:in `navbar-fixed'
-/Users/daniel/WebstormProjects/Apliiq/assets/sass/theme/header.scss:13
+/Users/daniel/WebstormProjects/Apliiq/assets/sass/theme/header.scss:8:in `navbar-fixed'
+/Users/daniel/WebstormProjects/Apliiq/assets/sass/theme/header.scss:8
 /Library/Ruby/Gems/1.8/gems/sass-3.1.16/lib/sass/../sass/tree/visitors/perform.rb:170:in `visit_mixin'
 /Library/Ruby/Gems/1.8/gems/sass-3.1.16/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
 /Library/Ruby/Gems/1.8/gems/sass-3.1.16/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
@@ -79,4 +79,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'navbar-fixed'.\A         on line 13 of /Users/daniel/WebstormProjects/Apliiq/assets/sass/theme/header.scss, in `navbar-fixed'\A         from line 13 of /Users/daniel/WebstormProjects/Apliiq/assets/sass/theme/header.scss"; }
+  content: "Syntax error: Undefined mixin 'navbar-fixed'.\A         on line 8 of /Users/daniel/WebstormProjects/Apliiq/assets/sass/theme/header.scss, in `navbar-fixed'\A         from line 8 of /Users/daniel/WebstormProjects/Apliiq/assets/sass/theme/header.scss"; }

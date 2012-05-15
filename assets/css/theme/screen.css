@@ -110,6 +110,11 @@ body .container:after {
   #margin-left: -20px;
 }
 
+/* line 58, sprite-common/*.png */
+.sprite-common-sprite, .branding .logo-container .logo, header .logo a, menu ul li.cart a {
+  background: url('../../imgs/sprite-common-s399cf7c895.png') no-repeat;
+}
+
 /*=== Typography Styles
 @desc   These @font-face declarations render the typefaces for the Caesars Palace LV site
 @author	Daniel Viedma
@@ -196,7 +201,7 @@ p {
 /* line 7, ../../sass/theme/footer.scss */
 footer {
   background: black;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 /* line 10, ../../sass/theme/footer.scss */
 footer .first {
@@ -211,69 +216,70 @@ footer .last {
   float: left;
   width: 46.939%;
   margin-right: 2.041%;
+  margin-top: -20px;
 }
-/* line 16, ../../sass/theme/footer.scss */
+/* line 17, ../../sass/theme/footer.scss */
 footer .moto {
   padding: 50px 0 70px;
 }
-/* line 19, ../../sass/theme/footer.scss */
+/* line 20, ../../sass/theme/footer.scss */
 footer .title {
   position: relative;
-  background: black;
+  background: #111111;
   margin: 0 auto;
 }
-/* line 24, ../../sass/theme/footer.scss */
+/* line 25, ../../sass/theme/footer.scss */
 footer .list, footer .copy, footer .buttons {
   border-top: 1px dashed #777777;
   margin-top: -8px;
   padding-top: 20px;
 }
-/* line 28, ../../sass/theme/footer.scss */
+/* line 29, ../../sass/theme/footer.scss */
 footer .list li, footer .copy li, footer .buttons li {
   text-align: center;
 }
-/* line 31, ../../sass/theme/footer.scss */
+/* line 32, ../../sass/theme/footer.scss */
 footer .list a, footer .copy a, footer .buttons a {
   color: #777777;
   font-size: 14px;
   line-height: 18px;
 }
 
-/* line 39, ../../sass/theme/footer.scss */
+/* line 40, ../../sass/theme/footer.scss */
 .experience {
   width: 100%;
   margin-bottom: 40px;
 }
-/* line 42, ../../sass/theme/footer.scss */
+/* line 43, ../../sass/theme/footer.scss */
 .experience .title {
   width: 290px;
 }
 
-/* line 46, ../../sass/theme/footer.scss */
+/* line 47, ../../sass/theme/footer.scss */
 .contact {
   display: inline;
   float: left;
   width: 30.435%;
   margin-right: 4.348%;
 }
-/* line 48, ../../sass/theme/footer.scss */
+/* line 49, ../../sass/theme/footer.scss */
 .contact .title {
   width: 97px;
 }
 
-/* line 52, ../../sass/theme/footer.scss */
+/* line 53, ../../sass/theme/footer.scss */
 .besocial {
   display: inline;
   float: left;
   width: 30.435%;
   margin-right: 4.348%;
 }
-/* line 54, ../../sass/theme/footer.scss */
+/* line 55, ../../sass/theme/footer.scss */
 .besocial .title {
   width: 97px;
 }
 
-/* line 58, ../../sass/theme/footer.scss */
+/* line 59, ../../sass/theme/footer.scss */
 .belegal {
   display: inline;
   float: left;
@@ -281,59 +287,124 @@ footer .list a, footer .copy a, footer .buttons a {
   margin-right: 4.348%;
   margin-right: 0!important;
 }
-/* line 61, ../../sass/theme/footer.scss */
+/* line 62, ../../sass/theme/footer.scss */
 .belegal .title {
   width: 97px;
 }
 
-/* line 65, ../../sass/theme/footer.scss */
+/* line 66, ../../sass/theme/footer.scss */
 .showlove {
   width: 100%;
-  margin-bottom: 70px;
+  margin-bottom: 20px;
 }
-/* line 68, ../../sass/theme/footer.scss */
+/* line 69, ../../sass/theme/footer.scss */
 .showlove .inner {
-  background: wheat;
-  padding: 20px;
+  background: #111111;
+  padding: 20px 20px 40px;
 }
-/* line 71, ../../sass/theme/footer.scss */
+/* line 72, ../../sass/theme/footer.scss */
 .showlove .inner .title {
   width: 190px;
 }
-/* line 74, ../../sass/theme/footer.scss */
+/* line 75, ../../sass/theme/footer.scss */
 .showlove .inner .buttons {
   padding-top: 40px;
 }
-/* line 76, ../../sass/theme/footer.scss */
+/* line 77, ../../sass/theme/footer.scss */
 .showlove .inner .buttons .fb-like {
   float: left;
   width: 100px;
-  margin-left: 130px;
+  margin-left: 112px;
 }
-/* line 81, ../../sass/theme/footer.scss */
+/* line 82, ../../sass/theme/footer.scss */
 .showlove .inner .buttons .twitter-follow-button {
   display: block;
   float: left;
 }
 
-/* line 88, ../../sass/theme/footer.scss */
+/* line 89, ../../sass/theme/footer.scss */
 .newsletter {
   width: 100%;
 }
-/* line 90, ../../sass/theme/footer.scss */
+/* line 91, ../../sass/theme/footer.scss */
 .newsletter .inner {
-  background: wheat;
+  background: #111111;
   padding: 20px;
 }
-/* line 93, ../../sass/theme/footer.scss */
+/* line 94, ../../sass/theme/footer.scss */
 .newsletter .inner .title {
   width: 170px;
 }
+/* line 97, ../../sass/theme/footer.scss */
+.newsletter .inner .copy {
+  margin-bottom: 25px;
+}
+/* line 100, ../../sass/theme/footer.scss */
+.newsletter .inner input[type="text"] {
+  background: white;
+  color: grey;
+  font-size: 14px;
+  border: none;
+  padding: 9px;
+  width: 257px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 2px 4px 4px 0 inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 2px 4px 4px 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 4px 4px 0 inset;
+  margin-left: 16px;
+}
+/* line 111, ../../sass/theme/footer.scss */
+.newsletter .inner input[type="submit"] {
+  font-family: 'itcavantgardestdmdbold';
+  color: white;
+  font-size: 18px;
+  background: red;
+  border: none;
+  cursor: pointer;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  padding: 4px;
+  width: 90px;
+  margin-left: 20px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px -10px 4px 0 inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px -10px 4px 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px -10px 4px 0 inset;
+}
+/* line 125, ../../sass/theme/footer.scss */
+.newsletter .arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 230px solid transparent;
+  border-right: 230px solid transparent;
+  border-top: 40px solid #111111;
+}
 
-/* line 98, ../../sass/theme/footer.scss */
-.logo {
-  width: 100%;
-  float: left;
+/* line 134, ../../sass/theme/footer.scss */
+.branding {
+  border-top: 1px dashed #777777;
+  margin-top: 100px;
+}
+/* line 137, ../../sass/theme/footer.scss */
+.branding .logo-container {
+  margin: -52px auto 0;
+  width: 120px;
+  padding: 20px;
+  background: black;
+}
+/* line 142, ../../sass/theme/footer.scss */
+.branding .logo-container .logo {
+  display: block;
+  background-position: -18px 0;
+  height: 72px;
+  width: 116px;
+  text-indent: -9999px;
 }
 
 /*=== Header Styles
@@ -341,12 +412,7 @@ footer .list a, footer .copy a, footer .buttons a {
 @author	Daniel Viedma
 @email	daniel.viedma@rokkan.com
 ==================================================*/
-/* line 50, sprite-common/*.png */
-.sprite-common-sprite, header .logo a, menu ul li.cart a {
-  background: url('../../imgs/sprite-common-s9f7b1192cd.png') no-repeat;
-}
-
-/* line 12, ../../sass/theme/header.scss */
+/* line 7, ../../sass/theme/header.scss */
 header {
   position: fixed;
   right: 0;
@@ -357,30 +423,30 @@ header {
   height: 60px;
   background: white;
 }
-/* line 16, ../../sass/theme/header.scss */
+/* line 11, ../../sass/theme/header.scss */
 header .logo {
   position: absolute;
 }
-/* line 18, ../../sass/theme/header.scss */
+/* line 13, ../../sass/theme/header.scss */
 header .logo a {
-  background-position: 0 0;
+  background-position: 0 -72px;
   height: 142px;
   width: 189px;
   display: block;
 }
-/* line 21, ../../sass/theme/header.scss */
+/* line 16, ../../sass/theme/header.scss */
 header .logo a span {
   position: absolute;
   top: -100px;
   visibility: hidden;
 }
 
-/* line 30, ../../sass/theme/header.scss */
+/* line 25, ../../sass/theme/header.scss */
 nav {
   float: left;
   margin: 20px 0 0 230px;
 }
-/* line 33, ../../sass/theme/header.scss */
+/* line 28, ../../sass/theme/header.scss */
 nav ul {
   list-style-type: none;
 }
@@ -390,18 +456,18 @@ nav ul, nav ul li {
   padding: 0px;
   display: inline;
 }
-/* line 35, ../../sass/theme/header.scss */
+/* line 30, ../../sass/theme/header.scss */
 nav ul li {
   margin-right: 40px;
 }
-/* line 37, ../../sass/theme/header.scss */
+/* line 32, ../../sass/theme/header.scss */
 nav ul li a {
   font-family: 'ITCAvantGardeStdMdRegular';
   color: #333333;
   font-size: 16px;
 }
 
-/* line 47, ../../sass/theme/header.scss */
+/* line 42, ../../sass/theme/header.scss */
 menu {
   float: right;
   display: inline;
@@ -410,31 +476,30 @@ menu {
   #margin-left: -20px;
   margin-top: 20px;
 }
-/* line 53, ../../sass/theme/header.scss */
+/* line 48, ../../sass/theme/header.scss */
 menu ul li {
   float: left;
   margin-left: 27px;
 }
-/* line 57, ../../sass/theme/header.scss */
+/* line 52, ../../sass/theme/header.scss */
 menu ul li.login a {
   color: #777777;
   font-size: 12px;
 }
-/* line 62, ../../sass/theme/header.scss */
+/* line 57, ../../sass/theme/header.scss */
 menu ul li.cart {
   margin-left: 20px;
   padding-left: 20px;
   border-left: 1px dotted #777777;
 }
-/* line 66, ../../sass/theme/header.scss */
+/* line 61, ../../sass/theme/header.scss */
 menu ul li.cart a {
-  background-position: 0 -142px;
+  background-position: 0 0;
   height: 17px;
   width: 18px;
-  width: 38px;
   display: block;
 }
-/* line 70, ../../sass/theme/header.scss */
+/* line 64, ../../sass/theme/header.scss */
 menu ul li.cart a span {
   padding-left: 25px;
   color: #f70a00;
@@ -467,6 +532,10 @@ section {
   position: relative;
 }
 /* line 22, ../../sass/theme/home.scss */
+.fabrics .sec-subtitle {
+  margin-bottom: 50px;
+}
+/* line 25, ../../sass/theme/home.scss */
 .fabrics .fabric-box {
   display: inline;
   float: left;
@@ -477,31 +546,31 @@ section {
   margin-bottom: 20px;
   cursor: pointer;
 }
-/* line 28, ../../sass/theme/home.scss */
+/* line 31, ../../sass/theme/home.scss */
 .fabrics .fabric-box.fabric1 {
   background: url(../../imgs/fresh-fabrics/fabric1.jpg) no-repeat;
 }
-/* line 31, ../../sass/theme/home.scss */
+/* line 34, ../../sass/theme/home.scss */
 .fabrics .fabric-box.fabric2 {
   background: url(../../imgs/fresh-fabrics/fabric2.jpg) no-repeat;
 }
-/* line 34, ../../sass/theme/home.scss */
+/* line 37, ../../sass/theme/home.scss */
 .fabrics .fabric-box.fabric3 {
   background: url(../../imgs/fresh-fabrics/fabric3.jpg) no-repeat;
 }
-/* line 37, ../../sass/theme/home.scss */
+/* line 40, ../../sass/theme/home.scss */
 .fabrics .fabric-box.fabric4 {
   background: url(../../imgs/fresh-fabrics/fabric4.jpg) no-repeat;
 }
-/* line 40, ../../sass/theme/home.scss */
+/* line 43, ../../sass/theme/home.scss */
 .fabrics .fabric-box.fabric5 {
   background: url(../../imgs/fresh-fabrics/fabric5.jpg) no-repeat;
 }
-/* line 43, ../../sass/theme/home.scss */
+/* line 46, ../../sass/theme/home.scss */
 .fabrics .fabric-box.fabric6 {
   background: url(../../imgs/fresh-fabrics/fabric6.jpg) no-repeat;
 }
-/* line 47, ../../sass/theme/home.scss */
+/* line 50, ../../sass/theme/home.scss */
 .fabrics #fabric-detail {
   height: 880px;
   width: 100%;
@@ -510,31 +579,31 @@ section {
   display: none;
   background-repeat: repeat-x;
 }
-/* line 54, ../../sass/theme/home.scss */
+/* line 57, ../../sass/theme/home.scss */
 .fabrics #fabric-detail.fabric1 {
   background: url(../../imgs/fresh-fabrics/fabric1-det.jpg);
 }
-/* line 57, ../../sass/theme/home.scss */
+/* line 60, ../../sass/theme/home.scss */
 .fabrics #fabric-detail.fabric2 {
   background: url(../../imgs/fresh-fabrics/fabric2-det.jpg);
 }
-/* line 60, ../../sass/theme/home.scss */
+/* line 63, ../../sass/theme/home.scss */
 .fabrics #fabric-detail.fabric3 {
   background: url(../../imgs/fresh-fabrics/fabric3-det.jpg);
 }
-/* line 63, ../../sass/theme/home.scss */
+/* line 66, ../../sass/theme/home.scss */
 .fabrics #fabric-detail.fabric4 {
   background: url(../../imgs/fresh-fabrics/fabric4-det.jpg);
 }
-/* line 66, ../../sass/theme/home.scss */
+/* line 69, ../../sass/theme/home.scss */
 .fabrics #fabric-detail.fabric5 {
   background: url(../../imgs/fresh-fabrics/fabric5-det.jpg);
 }
-/* line 69, ../../sass/theme/home.scss */
+/* line 72, ../../sass/theme/home.scss */
 .fabrics #fabric-detail.fabric6 {
   background: url(../../imgs/fresh-fabrics/fabric6-det.jpg);
 }
-/* line 73, ../../sass/theme/home.scss */
+/* line 76, ../../sass/theme/home.scss */
 .fabrics #f-catalogue {
   width: 300px;
   height: 300px;
@@ -544,8 +613,44 @@ section {
   top: 0;
   display: none;
 }
-
 /* line 84, ../../sass/theme/home.scss */
+.fabrics #f-catalogue .mod-title {
+  border-top: 1px dashed #b2b2b2;
+  margin: 40px 20px 0;
+  padding: 0 10px;
+}
+/* line 88, ../../sass/theme/home.scss */
+.fabrics #f-catalogue .mod-title span {
+  display: block;
+  width: 100px;
+  margin: -9px auto 0;
+  background: white;
+  text-align: center;
+  color: #333333;
+  font-size: 18px;
+  font-family: 'itcavantgardestdmdregular';
+}
+/* line 99, ../../sass/theme/home.scss */
+.fabrics #f-catalogue .sections {
+  margin-top: 40px;
+  text-align: center;
+}
+/* line 102, ../../sass/theme/home.scss */
+.fabrics #f-catalogue .sections li {
+  margin-bottom: 10px;
+}
+/* line 104, ../../sass/theme/home.scss */
+.fabrics #f-catalogue .sections li a {
+  font-size: 24px;
+  color: #999999;
+  font-weight: bold;
+}
+/* line 110, ../../sass/theme/home.scss */
+.fabrics #f-catalogue .sections li.active a {
+  color: #ff0000;
+}
+
+/* line 118, ../../sass/theme/home.scss */
 .customizer {
   height: 715px;
   background: url(../../imgs/customizer/top-shadow.png), url(../../imgs/customizer/bottom-shadow.png), url(../../imgs/customizer/customizer-bg.jpg);
@@ -553,7 +658,7 @@ section {
   background-position: top, bottom, center;
   text-align: center;
 }
-/* line 92, ../../sass/theme/home.scss */
+/* line 126, ../../sass/theme/home.scss */
 .customizer #c-catalogue {
   margin-top: 20px;
   border-bottom: 1px dashed white;
@@ -562,17 +667,17 @@ section {
   padding-top: 6px;
   background: url(../../imgs/customizer/nav-shadow.png) no-repeat;
 }
-/* line 99, ../../sass/theme/home.scss */
+/* line 133, ../../sass/theme/home.scss */
 .customizer #c-catalogue .c-catalogue-inner {
   width: 100%;
   border-bottom: 1px dashed #b6b6b6;
 }
-/* line 102, ../../sass/theme/home.scss */
+/* line 136, ../../sass/theme/home.scss */
 .customizer #c-catalogue .c-catalogue-inner ul {
   width: 420px;
   margin: 0 auto;
 }
-/* line 105, ../../sass/theme/home.scss */
+/* line 139, ../../sass/theme/home.scss */
 .customizer #c-catalogue .c-catalogue-inner ul li {
   float: left;
   cursor: pointer;
@@ -582,7 +687,7 @@ section {
   color: #999999;
   width: 105px;
 }
-/* line 115, ../../sass/theme/home.scss */
+/* line 149, ../../sass/theme/home.scss */
 .customizer #c-catalogue .c-catalogue-inner #tab-active {
   background-position: 0 0;
   height: 67px;
@@ -591,17 +696,17 @@ section {
   padding-top: 21px;
   top: 191px;
 }
-/* line 120, ../../sass/theme/home.scss */
+/* line 154, ../../sass/theme/home.scss */
 .customizer #c-catalogue .c-catalogue-inner #tab-active #label {
   color: white;
   font-size: 18px;
 }
 
-/* line 130, ../../sass/theme/home.scss */
+/* line 164, ../../sass/theme/home.scss */
 .social {
   height: 440px;
 }
-/* line 132, ../../sass/theme/home.scss */
+/* line 166, ../../sass/theme/home.scss */
 .social .social-box {
   display: inline;
   float: left;
@@ -609,4 +714,8 @@ section {
   margin-right: 2.041%;
   height: 222px;
   background: red;
+}
+/* line 171, ../../sass/theme/home.scss */
+.social .sec-title {
+  margin-bottom: 50px;
 }

@@ -4,11 +4,6 @@
 @email	daniel.viedma@rokkan.com
 ==================================================*/
 
-$sprite-common-sprite-dimensions: true;
-@import "sprite-common/*.png";
-
-
-
 header {
     @include navbar-fixed();
     height: $header-height;
@@ -65,7 +60,6 @@ menu {
                 border-left: 1px dotted $grey;
                 a {
                     @include sprite-common-sprite('cart');
-                    width: 38px;
                     display: block;
                     span {
                         padding-left: 25px;

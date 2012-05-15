@@ -81,8 +81,50 @@ jQuery(document).ready(function() {
 
             };
 
+            /**
+             * Section: Social
+             */
+            var social = {
+                /**
+                 * Polls different apis
+                 *
+                 * @method build
+                 * @return undefined
+                 * @param undefined
+                 */
+                build: function(username) {
+
+                    //Twitter
+                    var tweetsLimit = 1;
+                    $.getJSON("http://api.twitter.com/1/statuses/user_timeline/"+username+".json?include_rts=true&count="+tweetsLimit+"&callback=?", function(data) {
+                         $("#tweet").html(data[0].text);
+                    });
+
+                    //Youtube
+                    var youtubeLimit = 1;
+                    $.getJSON("http://gdata.youtube.com/feeds/users/"+username+"/uploads?alt=json-in-script&max-results="+youtubeLimit+"&format=5&callback=?", function(data) {
+                        var url = data.feed.entry[0].link[0].href;
+                      	var	url_thumbnail = data.feed.entry[0].media$group.media$thumbnail[0].url;
+                        $("#youtube").html(url+' '+url_thumbnail);
+                    });
+
+                    //Instagram
+                    $('.instagram').instagram({
+                        hash: 'love',
+                        show: 1,
+                        clientId: 'b76cb39fa7ff4f83835861df4d6b4eeb'
+                    });
+
+                    //Facebook
+                    //https://graph.facebook.com/366777262024
+                    //https://graph.facebook.com/<USER ID>/feed?limit=1&access_token=<ACCESS TOKEN>
+                }
+
+            };
+
             fabrics.build();
             customizer.build();
+            social.build('apliiq');
 
         }
     });

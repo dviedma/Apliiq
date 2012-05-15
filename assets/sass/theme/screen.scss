@@ -11,6 +11,12 @@
 @import "../core/base";
 @import "../core/structure";
 
+
+$sprite-common-sprite-dimensions: true;
+$sprite-common-layout: smart;
+@import "sprite-common/*.png";
+
+
 @import "fonts";
 @import "footer";
 @import "header";
