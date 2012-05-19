@@ -51,8 +51,13 @@ window.log = function(){
             .append(
               $('<img>')
                 .addClass('instagram-image')
-                .attr('src', photo.images.thumbnail.url)
+                //.attr('src', photo.images.thumbnail.url)
+                  .attr('src', photo.images.low_resolution.url)
             )
+              .append(
+              $('<div>instagram</div>').
+                  addClass('logo')
+          )
         );
     }
 

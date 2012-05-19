@@ -510,9 +510,9 @@ menu ul li.cart a span {
 @author	Daniel Viedma
 @email	daniel.viedma@rokkan.com
 ==================================================*/
-/* line 42, sprite-home/*.png */
-.sprite-home-sprite, .customizer #c-catalogue .c-catalogue-inner #tab-active {
-  background: url('../../imgs/sprite-home-s81995f84c3.png') no-repeat;
+/* line 82, sprite-home/*.png */
+.sprite-home-sprite, .customizer #c-catalogue .c-catalogue-inner #tab-active, .social .social-box.youtube .play, .social .social-box.youtube .logo, .social .social-box.twitter .logo, .social .social-box.instagram .logo, .social .social-box.facebook .logo {
+  background: url('../../imgs/sprite-home-s94cad79cc3.png') no-repeat;
 }
 
 /* line 10, ../../sass/theme/home.scss */
@@ -689,33 +689,110 @@ section {
 }
 /* line 149, ../../sass/theme/home.scss */
 .customizer #c-catalogue .c-catalogue-inner #tab-active {
-  background-position: 0 0;
+  background-position: 0 -89px;
   height: 67px;
   width: 117px;
   position: absolute;
-  padding-top: 21px;
   top: 191px;
 }
-/* line 154, ../../sass/theme/home.scss */
+/* line 153, ../../sass/theme/home.scss */
 .customizer #c-catalogue .c-catalogue-inner #tab-active #label {
   color: white;
   font-size: 18px;
+  padding-top: 21px;
+  display: block;
 }
 
-/* line 164, ../../sass/theme/home.scss */
+/* line 165, ../../sass/theme/home.scss */
 .social {
   height: 440px;
 }
-/* line 166, ../../sass/theme/home.scss */
+/* line 167, ../../sass/theme/home.scss */
 .social .social-box {
   display: inline;
   float: left;
   width: 22.449%;
   margin-right: 2.041%;
   height: 222px;
-  background: red;
+  background: #eeeeee;
+  overflow: hidden;
+  position: relative;
+  color: #333333;
 }
-/* line 171, ../../sass/theme/home.scss */
+/* line 174, ../../sass/theme/home.scss */
+.social .social-box .logo {
+  display: block;
+  text-indent: -9999px;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+/* line 182, ../../sass/theme/home.scss */
+.social .social-box.youtube .play {
+  background-position: 0 0;
+  height: 89px;
+  width: 89px;
+  bottom: 70px;
+  left: 66px;
+  position: absolute;
+  text-indent: -9999px;
+}
+/* line 189, ../../sass/theme/home.scss */
+.social .social-box.youtube .logo {
+  background-position: 0 -197px;
+  height: 41px;
+  width: 40px;
+}
+/* line 194, ../../sass/theme/home.scss */
+.social .social-box.twitter .tweethandler {
+  display: block;
+  text-align: center;
+  font-family: 'itcavantgardestdmdbold';
+  font-size: 18px;
+  margin: 30px 0 28px;
+}
+/* line 201, ../../sass/theme/home.scss */
+.social .social-box.twitter #tweet {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 12px;
+  padding: 0 30px;
+  display: block;
+  line-height: 18px;
+}
+/* line 207, ../../sass/theme/home.scss */
+.social .social-box.twitter #tweet a {
+  font-weight: bold;
+}
+/* line 211, ../../sass/theme/home.scss */
+.social .social-box.twitter .tweetlink {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  bottom: 27px;
+  left: 80px;
+}
+/* line 221, ../../sass/theme/home.scss */
+.social .social-box.twitter .logo {
+  background-position: 0 -156px;
+  height: 41px;
+  width: 40px;
+}
+/* line 225, ../../sass/theme/home.scss */
+.social .social-box.instagram .logo {
+  background-position: 0 -238px;
+  height: 41px;
+  width: 40px;
+}
+/* line 228, ../../sass/theme/home.scss */
+.social .social-box.facebook .logo {
+  background-position: 0 -279px;
+  height: 41px;
+  width: 40px;
+}
+/* line 232, ../../sass/theme/home.scss */
 .social .sec-title {
   margin-bottom: 50px;
 }

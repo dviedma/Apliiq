@@ -94,18 +94,29 @@ jQuery(document).ready(function() {
                  */
                 build: function(username) {
 
-                    //Twitter
-                    var tweetsLimit = 1;
-                    $.getJSON("http://api.twitter.com/1/statuses/user_timeline/"+username+".json?include_rts=true&count="+tweetsLimit+"&callback=?", function(data) {
-                         $("#tweet").html(data[0].text);
-                    });
 
                     //Youtube
                     var youtubeLimit = 1;
+                    var videoString;
                     $.getJSON("http://gdata.youtube.com/feeds/users/"+username+"/uploads?alt=json-in-script&max-results="+youtubeLimit+"&format=5&callback=?", function(data) {
                         var url = data.feed.entry[0].link[0].href;
                       	var	url_thumbnail = data.feed.entry[0].media$group.media$thumbnail[0].url;
-                        $("#youtube").html(url+' '+url_thumbnail);
+                        videoString = '<a href="'+url+'" target="_blank"><img src="'+url_thumbnail+'" alt=""><div class="logo">youtube</div><div class="play">play</div></a>';
+                        $(".youtube").html(videoString);
+                    });
+
+                    //Twitter
+                    var tweetsLimit = 1;
+                    var linkRegexp=/(http:\/\/+[\S]*)/g;
+                    var handlerRegexp = /(@+[\S]*)/g;
+                    var hashtagRegexp = /(#+[\S]*)/g;
+                    var tweetString;
+                    $.getJSON("http://api.twitter.com/1/statuses/user_timeline/"+username+".json?include_rts=true&count="+tweetsLimit+"&callback=?", function(data) {
+                        tweetString = data[0].text.replace(linkRegexp, "<a href='$1' target='_blank'>$1</a>");
+                        tweetString = tweetString.replace(handlerRegexp, "<a href='http://twitter.com/$1' target='_blank'>$1</a>");
+                        //TODO link to hashtag
+                        tweetString = tweetString.replace(hashtagRegexp, "<a href='http://twitter.com/#!/search/%23$1' target='_blank'>$1</a>");
+                        $("#tweet").html(tweetString);
                     });
 
                     //Instagram
@@ -116,8 +127,29 @@ jQuery(document).ready(function() {
                     });
 
                     //Facebook
-                    //https://graph.facebook.com/366777262024
-                    //https://graph.facebook.com/<USER ID>/feed?limit=1&access_token=<ACCESS TOKEN>
+                    var results;
+                    var lastPhotoPost;
+                    var picture;
+                    var imgString;
+                    $.ajax({
+                        url: "https://graph.facebook.com/theapliiqpage/feed?access_token=384410611610742|Zggo90jouEkyEqDts_LS6AfcLFE",
+                        dataType: 'json',
+                        data: results,
+                        success: function (results){
+                            for(var i=0; i<results.data.length; i++) {
+                                if(results.data[i].type == 'photo') {
+                                    lastPhotoPost = results.data[i];
+                                    break;
+                                }
+                            }
+                            picture = lastPhotoPost.picture.replace('_s.jpg','_n.jpg');
+                            imgString = '<a href="'+lastPhotoPost.link+'" target="_blank"><img src="'+picture+'" alt=""><div class="logo">twitter</div></a>';
+                            $('.facebook').html(imgString);
+                        }
+                    });
+
+
+
                 }
 
             };
