@@ -16,6 +16,22 @@ jQuery(document).ready(function() {
             var options = $.extend({}, defaults, ops);
 
             /**
+             * Section: Slider Hero
+             */
+            var slider = {
+                /**
+                 * Calls funCarousel to activate slider
+                 *
+                 * @method build
+                 * @return undefined
+                 * @param undefined
+                 */
+                build: function() {
+                    $('#slider-customizer').funCarousel();
+                }
+            };
+
+            /**
              * Section: Fresh Fabrics
              */
             var fabrics = {
@@ -154,6 +170,7 @@ jQuery(document).ready(function() {
 
             };
 
+            slider.build();
             fabrics.build();
             customizer.build();
             social.build('apliiq');

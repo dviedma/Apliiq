@@ -130,6 +130,7 @@ section {
         margin: 20px auto 0;
         padding-top: 6px;
         background: url(../../imgs/customizer/nav-shadow.png) no-repeat;
+        position: relative;
         .c-catalogue-inner {
             width: 100%;
             border-bottom: 1px dashed #b6b6b6;
@@ -149,7 +150,7 @@ section {
             #tab-active {
                 @include sprite-home-sprite('customizer-navact');
                 position: absolute;
-                top: 191px;
+                top: 0px;
                 #label {
                     color: white;
                     font-size: 18px;

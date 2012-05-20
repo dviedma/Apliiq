@@ -510,9 +510,9 @@ menu ul li.cart a span {
 @author	Daniel Viedma
 @email	daniel.viedma@rokkan.com
 ==================================================*/
-/* line 82, sprite-home/*.png */
-.sprite-home-sprite, .customizer #c-catalogue .c-catalogue-inner #tab-active, .social .social-box.youtube .play, .social .social-box.youtube .logo, .social .social-box.twitter .logo, .social .social-box.instagram .logo, .social .social-box.facebook .logo {
-  background: url('../../imgs/sprite-home-s94cad79cc3.png') no-repeat;
+/* line 98, sprite-home/*.png */
+.sprite-home-sprite, .customizer #c-catalogue .c-catalogue-inner #tab-active, .social .social-box.youtube .play, .social .social-box.youtube .logo, .social .social-box.twitter .logo, .social .social-box.instagram .logo, .social .social-box.facebook .logo, .nav-arrow.left, .nav-arrow.right {
+  background: url('../../imgs/sprite-home-sa5a160380c.png') no-repeat;
 }
 
 /* line 10, ../../sass/theme/home.scss */
@@ -666,18 +666,19 @@ section {
   margin: 20px auto 0;
   padding-top: 6px;
   background: url(../../imgs/customizer/nav-shadow.png) no-repeat;
+  position: relative;
 }
-/* line 133, ../../sass/theme/home.scss */
+/* line 134, ../../sass/theme/home.scss */
 .customizer #c-catalogue .c-catalogue-inner {
   width: 100%;
   border-bottom: 1px dashed #b6b6b6;
 }
-/* line 136, ../../sass/theme/home.scss */
+/* line 137, ../../sass/theme/home.scss */
 .customizer #c-catalogue .c-catalogue-inner ul {
   width: 420px;
   margin: 0 auto;
 }
-/* line 139, ../../sass/theme/home.scss */
+/* line 140, ../../sass/theme/home.scss */
 .customizer #c-catalogue .c-catalogue-inner ul li {
   float: left;
   cursor: pointer;
@@ -687,15 +688,15 @@ section {
   color: #999999;
   width: 105px;
 }
-/* line 149, ../../sass/theme/home.scss */
+/* line 150, ../../sass/theme/home.scss */
 .customizer #c-catalogue .c-catalogue-inner #tab-active {
   background-position: 0 -89px;
   height: 67px;
   width: 117px;
   position: absolute;
-  top: 191px;
+  top: 0px;
 }
-/* line 153, ../../sass/theme/home.scss */
+/* line 154, ../../sass/theme/home.scss */
 .customizer #c-catalogue .c-catalogue-inner #tab-active #label {
   color: white;
   font-size: 18px;
@@ -703,11 +704,11 @@ section {
   display: block;
 }
 
-/* line 165, ../../sass/theme/home.scss */
+/* line 166, ../../sass/theme/home.scss */
 .social {
   height: 440px;
 }
-/* line 167, ../../sass/theme/home.scss */
+/* line 168, ../../sass/theme/home.scss */
 .social .social-box {
   display: inline;
   float: left;
@@ -719,7 +720,7 @@ section {
   position: relative;
   color: #333333;
 }
-/* line 174, ../../sass/theme/home.scss */
+/* line 175, ../../sass/theme/home.scss */
 .social .social-box .logo {
   display: block;
   text-indent: -9999px;
@@ -727,7 +728,7 @@ section {
   bottom: 5px;
   right: 5px;
 }
-/* line 182, ../../sass/theme/home.scss */
+/* line 183, ../../sass/theme/home.scss */
 .social .social-box.youtube .play {
   background-position: 0 0;
   height: 89px;
@@ -737,13 +738,13 @@ section {
   position: absolute;
   text-indent: -9999px;
 }
-/* line 189, ../../sass/theme/home.scss */
+/* line 190, ../../sass/theme/home.scss */
 .social .social-box.youtube .logo {
   background-position: 0 -197px;
   height: 41px;
   width: 40px;
 }
-/* line 194, ../../sass/theme/home.scss */
+/* line 195, ../../sass/theme/home.scss */
 .social .social-box.twitter .tweethandler {
   display: block;
   text-align: center;
@@ -751,7 +752,7 @@ section {
   font-size: 18px;
   margin: 30px 0 28px;
 }
-/* line 201, ../../sass/theme/home.scss */
+/* line 202, ../../sass/theme/home.scss */
 .social .social-box.twitter #tweet {
   font-family: Helvetica, arial, sans-serif;
   font-size: 12px;
@@ -759,11 +760,11 @@ section {
   display: block;
   line-height: 18px;
 }
-/* line 207, ../../sass/theme/home.scss */
+/* line 208, ../../sass/theme/home.scss */
 .social .social-box.twitter #tweet a {
   font-weight: bold;
 }
-/* line 211, ../../sass/theme/home.scss */
+/* line 212, ../../sass/theme/home.scss */
 .social .social-box.twitter .tweetlink {
   font-family: Helvetica, arial, sans-serif;
   font-size: 14px;
@@ -774,25 +775,139 @@ section {
   bottom: 27px;
   left: 80px;
 }
-/* line 221, ../../sass/theme/home.scss */
+/* line 222, ../../sass/theme/home.scss */
 .social .social-box.twitter .logo {
   background-position: 0 -156px;
   height: 41px;
   width: 40px;
 }
-/* line 225, ../../sass/theme/home.scss */
+/* line 226, ../../sass/theme/home.scss */
 .social .social-box.instagram .logo {
   background-position: 0 -238px;
   height: 41px;
   width: 40px;
 }
-/* line 228, ../../sass/theme/home.scss */
+/* line 229, ../../sass/theme/home.scss */
 .social .social-box.facebook .logo {
-  background-position: 0 -279px;
+  background-position: 0 -439px;
   height: 41px;
   width: 40px;
 }
-/* line 232, ../../sass/theme/home.scss */
+/* line 233, ../../sass/theme/home.scss */
 .social .sec-title {
   margin-bottom: 50px;
+}
+
+/*=== FunCarousel plugin styles
+@desc   Fun Carousel basic styles
+@author	Daniel Viedma
+@email	daniel.viedma@rokkan.com
+==================================================*/
+/* line 7, ../../sass/theme/_funcarousel.scss */
+#slider-customizer {
+  margin-top: 50px;
+  position: relative;
+}
+
+/* line 11, ../../sass/theme/_funcarousel.scss */
+.slides-wrapper {
+  overflow: hidden;
+  position: relative;
+  height: 475px;
+  margin: 0 auto;
+}
+/* line 16, ../../sass/theme/_funcarousel.scss */
+.slides-wrapper .slides {
+  position: absolute;
+}
+/* line 18, ../../sass/theme/_funcarousel.scss */
+.slides-wrapper .slides .slide {
+  float: left;
+  margin-right: 26px;
+  display: none;
+  background: white;
+  width: 295px;
+  height: 450px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 4px 4px 7px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 4px 4px 7px;
+  box-shadow: rgba(0, 0, 0, 0.2) 4px 4px 7px;
+}
+/* line 26, ../../sass/theme/_funcarousel.scss */
+.slides-wrapper .slides .slide img {
+  margin-top: 4px;
+}
+/* line 29, ../../sass/theme/_funcarousel.scss */
+.slides-wrapper .slides .slide.first {
+  margin-left: 0;
+}
+
+/* line 35, ../../sass/theme/_funcarousel.scss */
+.control-nav {
+  padding-top: 10px;
+  margin: 0 auto;
+  bottom: 0;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+}
+/* line 42, ../../sass/theme/_funcarousel.scss */
+.control-nav .wrapper {
+  margin: 0 auto;
+}
+/* line 44, ../../sass/theme/_funcarousel.scss */
+.control-nav .wrapper .control {
+  display: block;
+  background: #dddddd;
+  width: 11px;
+  height: 12px;
+  float: left;
+  text-indent: -9999px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+/* line 53, ../../sass/theme/_funcarousel.scss */
+.control-nav .wrapper .control.active {
+  background: #aaaaaa;
+}
+
+/* line 60, ../../sass/theme/_funcarousel.scss */
+.nav-arrow {
+  display: block;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 75px;
+  text-indent: -9999px;
+  cursor: pointer;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 4px 4px 7px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 4px 4px 7px;
+  box-shadow: rgba(0, 0, 0, 0.2) 4px 4px 7px;
+  top: 180px;
+}
+/* line 70, ../../sass/theme/_funcarousel.scss */
+.nav-arrow.left {
+  background-position: 0 -359px;
+  height: 80px;
+  width: 80px;
+  left: 0;
+}
+/* line 74, ../../sass/theme/_funcarousel.scss */
+.nav-arrow.right {
+  background-position: 0 -279px;
+  height: 80px;
+  width: 80px;
+  right: 0;
+}
+
+/* line 80, ../../sass/theme/_funcarousel.scss */
+.slides.blur {
+  opacity: 0.5;
+}
+/* line 82, ../../sass/theme/_funcarousel.scss */
+.slides.blur .text-block {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+/* line 85, ../../sass/theme/_funcarousel.scss */
+.slides.blur .media-block {
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.3);
 }

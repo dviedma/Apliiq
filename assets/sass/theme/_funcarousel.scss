@@ -1,0 +1,89 @@
+/*=== FunCarousel plugin styles
+@desc   Fun Carousel basic styles
+@author	Daniel Viedma
+@email	daniel.viedma@rokkan.com
+==================================================*/
+
+#slider-customizer {
+    margin-top: 50px;
+    position: relative;
+}
+.slides-wrapper {
+    overflow: hidden;
+    position: relative;
+    height: 475px;
+    margin: 0 auto;
+    .slides {
+        position: absolute;
+        .slide {
+            float: left;
+            margin-right: 26px;
+            display: none;
+            background: white;
+            width: 295px;
+            height: 450px;
+            @include box-shadow(rgba(0,0,0,0.2) 4px 4px 7px);
+            img {
+                margin-top: 4px;
+            }
+            &.first {
+                margin-left: 0;
+            }
+        }
+    }
+}
+.control-nav {
+    padding-top: 10px;
+    margin: 0 auto;
+    bottom: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    .wrapper {
+        margin: 0 auto;
+        .control {
+            display: block;
+            background: #dddddd;
+            width: 11px;
+            height: 12px;
+            float: left;
+            text-indent: -9999px;
+            margin: 0 5px;
+            cursor: pointer;
+            &.active {
+                background: #aaaaaa;
+            }
+        }
+    }
+}
+
+.nav-arrow {
+    display: block;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 75px;
+    text-indent: -9999px;
+    cursor: pointer;
+    @include box-shadow(rgba(0,0,0,0.2) 4px 4px 7px);
+    top: 180px;
+    &.left {
+        @include sprite-home-sprite('arrow-left');
+        left: 0;
+    }
+    &.right {
+        @include sprite-home-sprite('arrow-right');
+        right: 0;
+    }
+}
+
+.slides.blur {
+    opacity: 0.5;
+    .text-block {
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    }
+    .media-block {
+        box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.3);
+    }
+}
+
