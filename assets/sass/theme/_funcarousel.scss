@@ -87,3 +87,47 @@
     }
 }
 
+section.slider {
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    #slider-hero {
+        width: 1680px;
+        position: relative;
+        margin: 0 auto;
+        .slides-wrapper {
+            height: 700px;
+            .slide {
+                width: 1680px;
+                margin: 0;
+                margin-right: 20px;
+                //background: blue;
+                position: relative;
+                img {
+                    margin: 0;
+                }
+            }
+        }
+
+    }
+
+}
+.foreground {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: 338px;
+    left: 500px;
+}
+
+#foreground1 {
+    //background: red;
+}
+#box2 {
+    background: blue;
+}
+#box3 {
+    background: green;
+}
+
+

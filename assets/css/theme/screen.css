@@ -524,18 +524,34 @@ section {
 .slider {
   height: 700px;
   background: #f5deb3;
+  positioin: relative;
+}
+/* line 18, ../../sass/theme/home.scss */
+.slider .nav-arrow {
+  display: none;
+}
+/* line 21, ../../sass/theme/home.scss */
+.slider .over-box {
+  display: block;
+  top: 260px;
+  left: 15%;
 }
 
-/* line 19, ../../sass/theme/home.scss */
+/* line 28, ../../sass/theme/home.scss */
 .fabrics {
-  height: 880px;
+  height: 840px;
   position: relative;
+  padding: 0;
 }
-/* line 22, ../../sass/theme/home.scss */
+/* line 32, ../../sass/theme/home.scss */
+.fabrics h2 {
+  margin-top: 40px;
+}
+/* line 35, ../../sass/theme/home.scss */
 .fabrics .sec-subtitle {
   margin-bottom: 50px;
 }
-/* line 25, ../../sass/theme/home.scss */
+/* line 38, ../../sass/theme/home.scss */
 .fabrics .fabric-box {
   display: inline;
   float: left;
@@ -546,31 +562,31 @@ section {
   margin-bottom: 20px;
   cursor: pointer;
 }
-/* line 31, ../../sass/theme/home.scss */
+/* line 44, ../../sass/theme/home.scss */
 .fabrics .fabric-box.fabric1 {
   background: url(../../imgs/fresh-fabrics/fabric1.jpg) no-repeat;
 }
-/* line 34, ../../sass/theme/home.scss */
+/* line 47, ../../sass/theme/home.scss */
 .fabrics .fabric-box.fabric2 {
   background: url(../../imgs/fresh-fabrics/fabric2.jpg) no-repeat;
 }
-/* line 37, ../../sass/theme/home.scss */
+/* line 50, ../../sass/theme/home.scss */
 .fabrics .fabric-box.fabric3 {
   background: url(../../imgs/fresh-fabrics/fabric3.jpg) no-repeat;
 }
-/* line 40, ../../sass/theme/home.scss */
+/* line 53, ../../sass/theme/home.scss */
 .fabrics .fabric-box.fabric4 {
   background: url(../../imgs/fresh-fabrics/fabric4.jpg) no-repeat;
 }
-/* line 43, ../../sass/theme/home.scss */
+/* line 56, ../../sass/theme/home.scss */
 .fabrics .fabric-box.fabric5 {
   background: url(../../imgs/fresh-fabrics/fabric5.jpg) no-repeat;
 }
-/* line 46, ../../sass/theme/home.scss */
+/* line 59, ../../sass/theme/home.scss */
 .fabrics .fabric-box.fabric6 {
   background: url(../../imgs/fresh-fabrics/fabric6.jpg) no-repeat;
 }
-/* line 50, ../../sass/theme/home.scss */
+/* line 63, ../../sass/theme/home.scss */
 .fabrics #fabric-detail {
   height: 880px;
   width: 100%;
@@ -578,33 +594,35 @@ section {
   position: absolute;
   display: none;
   background-repeat: repeat-x;
+  top: -40px;
 }
-/* line 57, ../../sass/theme/home.scss */
+/* line 71, ../../sass/theme/home.scss */
 .fabrics #fabric-detail.fabric1 {
   background: url(../../imgs/fresh-fabrics/fabric1-det.jpg);
 }
-/* line 60, ../../sass/theme/home.scss */
+/* line 74, ../../sass/theme/home.scss */
 .fabrics #fabric-detail.fabric2 {
   background: url(../../imgs/fresh-fabrics/fabric2-det.jpg);
 }
-/* line 63, ../../sass/theme/home.scss */
+/* line 77, ../../sass/theme/home.scss */
 .fabrics #fabric-detail.fabric3 {
   background: url(../../imgs/fresh-fabrics/fabric3-det.jpg);
 }
-/* line 66, ../../sass/theme/home.scss */
+/* line 80, ../../sass/theme/home.scss */
 .fabrics #fabric-detail.fabric4 {
   background: url(../../imgs/fresh-fabrics/fabric4-det.jpg);
 }
-/* line 69, ../../sass/theme/home.scss */
+/* line 83, ../../sass/theme/home.scss */
 .fabrics #fabric-detail.fabric5 {
   background: url(../../imgs/fresh-fabrics/fabric5-det.jpg);
 }
-/* line 72, ../../sass/theme/home.scss */
+/* line 86, ../../sass/theme/home.scss */
 .fabrics #fabric-detail.fabric6 {
   background: url(../../imgs/fresh-fabrics/fabric6-det.jpg);
 }
-/* line 76, ../../sass/theme/home.scss */
-.fabrics #f-catalogue {
+
+/* line 91, ../../sass/theme/home.scss */
+.over-box {
   width: 300px;
   height: 300px;
   cursor: pointer;
@@ -613,14 +631,14 @@ section {
   top: 0;
   display: none;
 }
-/* line 84, ../../sass/theme/home.scss */
-.fabrics #f-catalogue .mod-title {
+/* line 99, ../../sass/theme/home.scss */
+.over-box .mod-title {
   border-top: 1px dashed #b2b2b2;
   margin: 40px 20px 0;
   padding: 0 10px;
 }
-/* line 88, ../../sass/theme/home.scss */
-.fabrics #f-catalogue .mod-title span {
+/* line 103, ../../sass/theme/home.scss */
+.over-box .mod-title span {
   display: block;
   width: 100px;
   margin: -9px auto 0;
@@ -630,27 +648,27 @@ section {
   font-size: 18px;
   font-family: 'itcavantgardestdmdregular';
 }
-/* line 99, ../../sass/theme/home.scss */
-.fabrics #f-catalogue .sections {
+/* line 114, ../../sass/theme/home.scss */
+.over-box .sections {
   margin-top: 40px;
   text-align: center;
 }
-/* line 102, ../../sass/theme/home.scss */
-.fabrics #f-catalogue .sections li {
+/* line 117, ../../sass/theme/home.scss */
+.over-box .sections li {
   margin-bottom: 10px;
 }
-/* line 104, ../../sass/theme/home.scss */
-.fabrics #f-catalogue .sections li a {
+/* line 119, ../../sass/theme/home.scss */
+.over-box .sections li a {
   font-size: 24px;
   color: #999999;
   font-weight: bold;
 }
-/* line 110, ../../sass/theme/home.scss */
-.fabrics #f-catalogue .sections li.active a {
+/* line 125, ../../sass/theme/home.scss */
+.over-box .sections li.active a {
   color: #ff0000;
 }
 
-/* line 118, ../../sass/theme/home.scss */
+/* line 132, ../../sass/theme/home.scss */
 .customizer {
   height: 715px;
   background: url(../../imgs/customizer/top-shadow.png), url(../../imgs/customizer/bottom-shadow.png), url(../../imgs/customizer/customizer-bg.jpg);
@@ -658,7 +676,7 @@ section {
   background-position: top, bottom, center;
   text-align: center;
 }
-/* line 126, ../../sass/theme/home.scss */
+/* line 140, ../../sass/theme/home.scss */
 .customizer #c-catalogue {
   margin-top: 20px;
   border-bottom: 1px dashed white;
@@ -668,17 +686,17 @@ section {
   background: url(../../imgs/customizer/nav-shadow.png) no-repeat;
   position: relative;
 }
-/* line 134, ../../sass/theme/home.scss */
+/* line 148, ../../sass/theme/home.scss */
 .customizer #c-catalogue .c-catalogue-inner {
   width: 100%;
   border-bottom: 1px dashed #b6b6b6;
 }
-/* line 137, ../../sass/theme/home.scss */
+/* line 151, ../../sass/theme/home.scss */
 .customizer #c-catalogue .c-catalogue-inner ul {
   width: 420px;
   margin: 0 auto;
 }
-/* line 140, ../../sass/theme/home.scss */
+/* line 154, ../../sass/theme/home.scss */
 .customizer #c-catalogue .c-catalogue-inner ul li {
   float: left;
   cursor: pointer;
@@ -688,7 +706,7 @@ section {
   color: #999999;
   width: 105px;
 }
-/* line 150, ../../sass/theme/home.scss */
+/* line 164, ../../sass/theme/home.scss */
 .customizer #c-catalogue .c-catalogue-inner #tab-active {
   background-position: 0 -89px;
   height: 67px;
@@ -696,7 +714,7 @@ section {
   position: absolute;
   top: 0px;
 }
-/* line 154, ../../sass/theme/home.scss */
+/* line 168, ../../sass/theme/home.scss */
 .customizer #c-catalogue .c-catalogue-inner #tab-active #label {
   color: white;
   font-size: 18px;
@@ -704,11 +722,11 @@ section {
   display: block;
 }
 
-/* line 166, ../../sass/theme/home.scss */
+/* line 180, ../../sass/theme/home.scss */
 .social {
   height: 440px;
 }
-/* line 168, ../../sass/theme/home.scss */
+/* line 182, ../../sass/theme/home.scss */
 .social .social-box {
   display: inline;
   float: left;
@@ -720,7 +738,7 @@ section {
   position: relative;
   color: #333333;
 }
-/* line 175, ../../sass/theme/home.scss */
+/* line 189, ../../sass/theme/home.scss */
 .social .social-box .logo {
   display: block;
   text-indent: -9999px;
@@ -728,7 +746,7 @@ section {
   bottom: 5px;
   right: 5px;
 }
-/* line 183, ../../sass/theme/home.scss */
+/* line 197, ../../sass/theme/home.scss */
 .social .social-box.youtube .play {
   background-position: 0 0;
   height: 89px;
@@ -738,13 +756,13 @@ section {
   position: absolute;
   text-indent: -9999px;
 }
-/* line 190, ../../sass/theme/home.scss */
+/* line 204, ../../sass/theme/home.scss */
 .social .social-box.youtube .logo {
   background-position: 0 -197px;
   height: 41px;
   width: 40px;
 }
-/* line 195, ../../sass/theme/home.scss */
+/* line 209, ../../sass/theme/home.scss */
 .social .social-box.twitter .tweethandler {
   display: block;
   text-align: center;
@@ -752,7 +770,7 @@ section {
   font-size: 18px;
   margin: 30px 0 28px;
 }
-/* line 202, ../../sass/theme/home.scss */
+/* line 216, ../../sass/theme/home.scss */
 .social .social-box.twitter #tweet {
   font-family: Helvetica, arial, sans-serif;
   font-size: 12px;
@@ -760,11 +778,11 @@ section {
   display: block;
   line-height: 18px;
 }
-/* line 208, ../../sass/theme/home.scss */
+/* line 222, ../../sass/theme/home.scss */
 .social .social-box.twitter #tweet a {
   font-weight: bold;
 }
-/* line 212, ../../sass/theme/home.scss */
+/* line 226, ../../sass/theme/home.scss */
 .social .social-box.twitter .tweetlink {
   font-family: Helvetica, arial, sans-serif;
   font-size: 14px;
@@ -775,25 +793,25 @@ section {
   bottom: 27px;
   left: 80px;
 }
-/* line 222, ../../sass/theme/home.scss */
+/* line 236, ../../sass/theme/home.scss */
 .social .social-box.twitter .logo {
   background-position: 0 -156px;
   height: 41px;
   width: 40px;
 }
-/* line 226, ../../sass/theme/home.scss */
+/* line 240, ../../sass/theme/home.scss */
 .social .social-box.instagram .logo {
   background-position: 0 -238px;
   height: 41px;
   width: 40px;
 }
-/* line 229, ../../sass/theme/home.scss */
+/* line 243, ../../sass/theme/home.scss */
 .social .social-box.facebook .logo {
   background-position: 0 -439px;
   height: 41px;
   width: 40px;
 }
-/* line 233, ../../sass/theme/home.scss */
+/* line 247, ../../sass/theme/home.scss */
 .social .sec-title {
   margin-bottom: 50px;
 }
@@ -910,4 +928,51 @@ section {
 /* line 85, ../../sass/theme/_funcarousel.scss */
 .slides.blur .media-block {
   box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* line 90, ../../sass/theme/_funcarousel.scss */
+section.slider {
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+}
+/* line 94, ../../sass/theme/_funcarousel.scss */
+section.slider #slider-hero {
+  width: 1680px;
+  position: relative;
+  margin: 0 auto;
+}
+/* line 98, ../../sass/theme/_funcarousel.scss */
+section.slider #slider-hero .slides-wrapper {
+  height: 700px;
+}
+/* line 100, ../../sass/theme/_funcarousel.scss */
+section.slider #slider-hero .slides-wrapper .slide {
+  width: 1680px;
+  margin: 0;
+  margin-right: 20px;
+  position: relative;
+}
+/* line 106, ../../sass/theme/_funcarousel.scss */
+section.slider #slider-hero .slides-wrapper .slide img {
+  margin: 0;
+}
+
+/* line 115, ../../sass/theme/_funcarousel.scss */
+.foreground {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: 338px;
+  left: 500px;
+}
+
+/* line 126, ../../sass/theme/_funcarousel.scss */
+#box2 {
+  background: blue;
+}
+
+/* line 129, ../../sass/theme/_funcarousel.scss */
+#box3 {
+  background: green;
 }

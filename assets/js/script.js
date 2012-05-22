@@ -15,19 +15,24 @@ jQuery(document).ready(function() {
 
             var options = $.extend({}, defaults, ops);
 
+
             /**
-             * Section: Slider Hero
+             * Section: Fresh Fabrics
              */
-            var slider = {
+            var sliderhero = {
                 /**
-                 * Calls funCarousel to activate slider
+                 * Binds the rollover event to the fabric boxes to show the fabric detail
                  *
                  * @method build
                  * @return undefined
                  * @param undefined
                  */
                 build: function() {
-                    $('#slider-customizer').funCarousel();
+
+                    $('#slider-hero').funCarousel({
+                        'numSlidesPerScreen' : 1,
+
+                    });
                 }
             };
 
@@ -64,7 +69,6 @@ jQuery(document).ready(function() {
                     });
 
                 }
-
             };
 
             /**
@@ -93,6 +97,8 @@ jQuery(document).ready(function() {
                             $label.text( $this.text() );
                         });
                     });
+
+                    $('#slider-customizer').funCarousel();
                 }
 
             };
@@ -170,7 +176,7 @@ jQuery(document).ready(function() {
 
             };
 
-            slider.build();
+            sliderhero.build();
             fabrics.build();
             customizer.build();
             social.build('apliiq');

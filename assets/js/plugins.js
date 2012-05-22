@@ -151,7 +151,6 @@ Date: 04-25-2012
 
     var $controlnav;
     var $firstSlide;
-    var $slidesContainer;
 
     $.fn.funCarousel = function(ops) {
 
@@ -205,9 +204,8 @@ Date: 04-25-2012
                 //self.find('.slides-wrapper .slide').css('width', innerWidth);
                 shift = $firstSlide.width() + parseInt(slidesGutter);
                 numSlides = self.find('.slide').size();
-                totalWidth = (numSlides + 2) * (slidesGutter + innerWidth);
-                $slidesContainer = self.find('.slides');
-                $slidesContainer.css('width',totalWidth);
+                totalWidth = (numSlides * 3) * (slidesGutter + innerWidth);
+                self.find('.slides').css('width',totalWidth);
 
                 if(numSlides > 1){
                     //Add number to slides
@@ -221,7 +219,7 @@ Date: 04-25-2012
                         self.find('.slide').each(function(){
                             $controlnav.children('.wrapper').append('<span class="control"></span>');
                         });
-                        $controlnav.insertAfter($slidesContainer);
+                        $controlnav.insertAfter(self.find('.slides'));
 
                         var bulletWidth = parseInt($controlnav.find('.control').first().css('width'));
                         var bulletMargin = parseInt($controlnav.find('.control').first().css('margin-right'))*2;
@@ -230,7 +228,7 @@ Date: 04-25-2012
                         $controlnav.find('.wrapper').width(controlWidth);
                         $controlnav.find('.control').first().addClass('active');
                         $controlnav.find('.control').each(function(){
-                            $(this).click({self: self}, fc.navigateTo);
+                            $(this).click({self: self, shift: shift}, fc.navigateTo);
                         });
                     }
 
@@ -238,13 +236,13 @@ Date: 04-25-2012
                     var $arrowLeft = $('<span class="nav-arrow left">left</span>');
                     var $arrowRight = $('<span class="nav-arrow right">right</span>');
 
-                    $arrowLeft.click({self: self}, fc.navLeft);
-                    $arrowRight.click({self: self}, fc.navRight);
+                    $arrowLeft.click({self: self, shift: shift}, fc.navLeft);
+                    $arrowRight.click({self: self, shift: shift}, fc.navRight);
 
                     self.append($arrowLeft).append($arrowRight);
 
                     //Build alpha and omega: we clone as many slidesPerScreen as we have and insert them before and after the original slides
-                    $slidesContainer.css('left',-shift*numSlides);
+                    self.find('.slides').css('left',-shift*numSlides);
 
                     var slideNodes = [];
                     for (var i=0; i<numSlides; i++) {
@@ -273,18 +271,19 @@ Date: 04-25-2012
              */
             navigateTo: function(e) {
                 var self = e.data.self;
+                var shift = e.data.shift;
                 var $clickedBullet = $(this);
 
                 if(Math.abs(self.find('.control-nav .active').index()-$clickedBullet.index()) > 1){
-                    $slidesContainer.addClass('blur');
+                    self.find('.slides').addClass('blur');
                 }
 
                 //place the bullet
                 self.find('.control-nav .active').removeClass('active');
                 $clickedBullet.addClass('active');
 
-                $slidesContainer.animate({left:-shift* ($clickedBullet.index()+numSlides) },'fast', function(){
-                    $slidesContainer.removeClass('blur');
+                self.find('.slides').animate({left:-shift* ($clickedBullet.index()+numSlides) },'fast', function(){
+                    self.find('.slides').removeClass('blur');
 
                     //move .first class
                     self.find('.slide').removeClass('first active');
@@ -302,6 +301,7 @@ Date: 04-25-2012
              */
             navLeft: function(e) {
                 var self = e.data.self;
+                var shift = e.data.shift;
 
                 if(animating){
                     return undefined;
@@ -309,7 +309,7 @@ Date: 04-25-2012
                 animating = true;
 
                 //animate slider
-                $slidesContainer.animate({left:'+='+shift*options.numSlidesPerShift},'fast', function(){
+                self.find('.slides').animate({left:'+='+shift*options.numSlidesPerShift},'fast', function(){
                     animating = false;
 
                     //move bullet
@@ -318,12 +318,13 @@ Date: 04-25-2012
                     var indexFirst = fc.getFirstSlide(self).index();
                     var indexActive = fc.getActiveSlide(self).index();
                     if(self.find('.slide').eq(indexFirst-options.numSlidesPerShift+1).attr('rel') == "alpha") {    //backCarouselToBeginning
+                        //alert(0);
                         fc.getFirstSlide(self).removeClass('first');
                         fc.getActiveSlide(self).removeClass('active');
                         self.find('.slide').eq(indexActive-options.numSlidesPerShift+numSlides).addClass('first active');
 
                         //move carousel to end
-                        $slidesContainer.css('left', -shift*(indexActive-options.numSlidesPerShift+numSlides));
+                        self.find('.slides').css('left', -shift*(indexActive-options.numSlidesPerShift+numSlides));
                     }else{                                                      //keep moving left
                         //shift .first class
                         fc.getFirstSlide(self).removeClass('first active').
@@ -366,13 +367,15 @@ Date: 04-25-2012
              */
             navRight: function (e){
                 var self = e.data.self;
+                var shift = e.data.shift;
 
                 //animate slider
                 if(animating){
                     return undefined;
                 }
                 animating = true;
-                $slidesContainer.animate({left:'-='+shift*options.numSlidesPerShift},{
+
+                self.find('.slides').animate({left:'-='+shift*options.numSlidesPerShift},{
                     duration:'fast',
                     complete: function(){
                         animating = false;
@@ -383,12 +386,13 @@ Date: 04-25-2012
                         var indexActive = fc.getActiveSlide(self).index();
                         //if we still have slides on our right, move. otherwise insert the first node (circular navigation)
                         if(self.find('.slide').eq(indexFirst+options.numSlidesPerShift).next().attr('rel') == "omega") {         //backCarouselToBeginning
+                            //alert(0);
                             fc.getFirstSlide(self).removeClass('first');
                             fc.getActiveSlide(self).removeClass('active');
                             self.find('.slide').eq(indexActive+options.numSlidesPerShift-numSlides).addClass('first active');
 
                             //move carousel to beginning
-                            $slidesContainer.css('left',-shift*(indexActive+options.numSlidesPerShift-numSlides));
+                            self.find('.slides').css('left',-shift*(indexActive+options.numSlidesPerShift-numSlides));
                         } else {                                                         //keep moving right
                             //shift .first class
                             fc.getFirstSlide(self).removeClass('first active').
