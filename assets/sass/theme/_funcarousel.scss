@@ -43,15 +43,13 @@
         margin: 0 auto;
         .control {
             display: block;
-            background: #dddddd;
-            width: 11px;
-            height: 12px;
+            @include sprite-home-sprite('bullet');
             float: left;
             text-indent: -9999px;
             margin: 0 5px;
             cursor: pointer;
             &.active {
-                background: #aaaaaa;
+                @include sprite-home-sprite('bullet-active');
             }
         }
     }
@@ -87,47 +85,73 @@
     }
 }
 
-section.slider {
-    width: 100%;
-    overflow: hidden;
-    padding: 0;
-    #slider-hero {
-        width: 1680px;
-        position: relative;
+//Slider parallax
+.parallax .slider {
+    margin: 0 auto;
+    width: 1680px;
+    position: relative;
+    .slides-wrapper {
+        height: 700px;
         margin: 0 auto;
-        .slides-wrapper {
+        position: relative;
+        width: 100%;
+        overflow: visible;
+        .slide {
+            width: 1680px;
+            background: #adff2f;
             height: 700px;
-            .slide {
-                width: 1680px;
-                margin: 0;
-                margin-right: 20px;
-                //background: blue;
-                position: relative;
-                img {
-                    margin: 0;
-                }
-            }
+            position: relative;
+            margin: 0;
+
         }
-
     }
-
+    .nav-arrow {
+        @include box-shadow(none);
+        &.left{
+            left: 348px;
+            top: 567px;
+        }
+        &.right {
+            left: 430px;
+            top: 567px;
+        }
+    }
+    .control-nav {
+        bottom: 53px;
+        padding-top: 10px;
+        left: 170px;
+        background: white;
+        width: 176px;
+        height: 70px;
+        .wrapper {
+            margin: 24px auto;
+        }
+    }
+}
+#slide1 {
+    background: url(../../../assets/imgs/slider-hero/background1.jpg) repeat;
+    .foreground {
+        background: url(../../../assets/imgs/slider-hero/foreground1.png) repeat;
+    }
+}
+#slide2 {
+    background: url(../../../assets/imgs/slider-hero/background2.jpg) repeat;
+    .foreground {
+        background: url(../../../assets/imgs/slider-hero/foreground1.png) repeat;
+    }
+}
+#slide3 {
+    background: url(../../../assets/imgs/slider-hero/background3.jpg) repeat;
+    .foreground {
+        background: url(../../../assets/imgs/slider-hero/foreground1.png) repeat;
+    }
 }
 .foreground {
     position: absolute;
-    width: 100px;
-    height: 100px;
-    bottom: 338px;
-    left: 500px;
-}
-
-#foreground1 {
-    //background: red;
-}
-#box2 {
-    background: blue;
-}
-#box3 {
-    background: green;
+    width: 690px;
+    height: 728px;
+    bottom: -30px;
+    left: 550px;
 }
 
 

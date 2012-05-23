@@ -30,8 +30,11 @@ jQuery(document).ready(function() {
                 build: function() {
 
                     $('#slider-hero').funCarousel({
-                        'numSlidesPerScreen' : 1,
-
+                        'securityMargin' : 1,
+                        'speed' : 1500,
+                        'parallax': true,
+                        'controlNav' : true,
+                        'blur' : false
                     });
                 }
             };
@@ -98,7 +101,9 @@ jQuery(document).ready(function() {
                         });
                     });
 
-                    $('#slider-customizer').funCarousel();
+                    $('#slider-customizer').funCarousel({
+                        'securityMargin' : 4
+                    });
                 }
 
             };

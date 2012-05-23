@@ -156,8 +156,15 @@ Date: 04-25-2012
 
         var defaults = {
             controlNav: false,
-            numSlidesPerScreen: 8,
-            numSlidesPerShift: 1
+            speed: 'fast',
+
+            securityMargin: 0,
+            //adjust this value to avoid empty spaces on sides depending on how many slides you have,
+            //size of the shift and how wide is the slide
+
+            numSlidesPerShift: 1,
+            parallax: false,
+            blur : true
         };
 
         var options = $.extend({}, defaults, ops);
@@ -228,7 +235,7 @@ Date: 04-25-2012
                         $controlnav.find('.wrapper').width(controlWidth);
                         $controlnav.find('.control').first().addClass('active');
                         $controlnav.find('.control').each(function(){
-                            $(this).click({self: self, shift: shift}, fc.navigateTo);
+                            $(this).click({self: self, shift: shift, numSlides: numSlides}, fc.navigateTo);
                         });
                     }
 
@@ -236,25 +243,26 @@ Date: 04-25-2012
                     var $arrowLeft = $('<span class="nav-arrow left">left</span>');
                     var $arrowRight = $('<span class="nav-arrow right">right</span>');
 
-                    $arrowLeft.click({self: self, shift: shift}, fc.navLeft);
-                    $arrowRight.click({self: self, shift: shift}, fc.navRight);
+                    $arrowLeft.click({self: self, shift: shift, numSlides: numSlides}, fc.navLeft);
+                    $arrowRight.click({self: self, shift: shift, numSlides: numSlides}, fc.navRight);
 
                     self.append($arrowLeft).append($arrowRight);
 
                     //Build alpha and omega: we clone as many slidesPerScreen as we have and insert them before and after the original slides
-                    self.find('.slides').css('left',-shift*numSlides);
+                    var numCopies = numSlides;
+                    self.find('.slides').css('left',-shift*numCopies);
 
                     var slideNodes = [];
-                    for (var i=0; i<numSlides; i++) {
+                    for (var i=0; i<numCopies; i++) {
                         slideNodes[i] = self.find('.slide').eq(i).clone().attr('rel','');
                         if (i==0) {
                             slideNodes[i].removeClass('first active');
                         }
                     }
-                    for (var z=0; z<numSlides; z++) {
+                    for (var z=0; z<numCopies; z++) {
                         self.find('.slides').append( slideNodes[z].clone().attr('rel','omega') );
                     }
-                    for (var j=numSlides-1; j>=0; j--) {
+                    for (var j=numCopies-1; j>=0; j--) {
                         self.find('.slides').prepend( slideNodes[j].clone().attr('rel','alpha') );
                     }
                 }
@@ -272,17 +280,22 @@ Date: 04-25-2012
             navigateTo: function(e) {
                 var self = e.data.self;
                 var shift = e.data.shift;
+                var numSlides = e.data.numSlides;
+
                 var $clickedBullet = $(this);
 
-                if(Math.abs(self.find('.control-nav .active').index()-$clickedBullet.index()) > 1){
-                    self.find('.slides').addClass('blur');
+                if(options.blur){
+                    if(Math.abs(self.find('.control-nav .active').index()-$clickedBullet.index()) > 1){
+                        self.find('.slides').addClass('blur');
+                    }
                 }
+
 
                 //place the bullet
                 self.find('.control-nav .active').removeClass('active');
                 $clickedBullet.addClass('active');
 
-                self.find('.slides').animate({left:-shift* ($clickedBullet.index()+numSlides) },'fast', function(){
+                self.find('.slides').animate({left:-shift* ($clickedBullet.index()+numSlides) },options.speed, function(){
                     self.find('.slides').removeClass('blur');
 
                     //move .first class
@@ -302,14 +315,19 @@ Date: 04-25-2012
             navLeft: function(e) {
                 var self = e.data.self;
                 var shift = e.data.shift;
+                var numSlides = e.data.numSlides;
 
                 if(animating){
                     return undefined;
                 }
                 animating = true;
 
+                if(options.parallax) {
+                    fc.getFirstSlide(self).find('.foreground').animate({left:'+='+shift},800);
+                }
+
                 //animate slider
-                self.find('.slides').animate({left:'+='+shift*options.numSlidesPerShift},'fast', function(){
+                self.find('.slides').animate({left:'+='+shift*options.numSlidesPerShift},options.speed, function(){
                     animating = false;
 
                     //move bullet
@@ -317,21 +335,25 @@ Date: 04-25-2012
 
                     var indexFirst = fc.getFirstSlide(self).index();
                     var indexActive = fc.getActiveSlide(self).index();
-                    if(self.find('.slide').eq(indexFirst-options.numSlidesPerShift+1).attr('rel') == "alpha") {    //backCarouselToBeginning
-                        //alert(0);
+                    if(indexFirst - 2*options.numSlidesPerShift - options.securityMargin < 0) {     //backCarouselToBeginning
                         fc.getFirstSlide(self).removeClass('first');
                         fc.getActiveSlide(self).removeClass('active');
                         self.find('.slide').eq(indexActive-options.numSlidesPerShift+numSlides).addClass('first active');
 
                         //move carousel to end
                         self.find('.slides').css('left', -shift*(indexActive-options.numSlidesPerShift+numSlides));
-                    }else{                                                      //keep moving left
+                    }else{                                                                          //keep moving left
                         //shift .first class
                         fc.getFirstSlide(self).removeClass('first active').
                             prev().
                             addClass('first');
 
                         self.find('.slide').eq(indexFirst-options.numSlidesPerShift).addClass('active');
+                    }
+
+                    if(options.parallax) {
+                        //TODO: read property
+                        $('.foreground').css('left', '550px');
                     }
 
                 });
@@ -368,6 +390,7 @@ Date: 04-25-2012
             navRight: function (e){
                 var self = e.data.self;
                 var shift = e.data.shift;
+                var numSlides = e.data.numSlides;
 
                 //animate slider
                 if(animating){
@@ -375,8 +398,12 @@ Date: 04-25-2012
                 }
                 animating = true;
 
+                if(options.parallax) {
+                    fc.getFirstSlide(self).find('.foreground').animate({left:'-='+shift},800);
+                }
+
                 self.find('.slides').animate({left:'-='+shift*options.numSlidesPerShift},{
-                    duration:'fast',
+                    duration:options.speed,
                     complete: function(){
                         animating = false;
                         //move bullet
@@ -385,8 +412,7 @@ Date: 04-25-2012
                         var indexFirst = fc.getFirstSlide(self).index();
                         var indexActive = fc.getActiveSlide(self).index();
                         //if we still have slides on our right, move. otherwise insert the first node (circular navigation)
-                        if(self.find('.slide').eq(indexFirst+options.numSlidesPerShift).next().attr('rel') == "omega") {         //backCarouselToBeginning
-                            //alert(0);
+                        if(indexFirst + (options.numSlidesPerShift-1) + 2*options.numSlidesPerShift + options.securityMargin > self.find('.slide').size()-1) {
                             fc.getFirstSlide(self).removeClass('first');
                             fc.getActiveSlide(self).removeClass('active');
                             self.find('.slide').eq(indexActive+options.numSlidesPerShift-numSlides).addClass('first active');
@@ -401,6 +427,12 @@ Date: 04-25-2012
 
                             self.find('.slide').eq(indexFirst+options.numSlidesPerShift).addClass('active');
                         }
+
+                        if(options.parallax) {
+                            //TODO: read property
+                            $('.foreground').css('left', '550px');
+                        }
+
                     }
                 });
             },

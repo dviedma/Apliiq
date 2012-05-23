@@ -11,20 +11,51 @@ section {
     padding-top: 42px;
 }
 
-.slider {
-    height: 700px;
-    background: #f5deb3;
-    positioin: relative;
-    .nav-arrow {
-        display: none;
-    }
+.parallax {
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
     .over-box {
         display: block;
-        top: 260px;
-        left: 15%;
+        top: 165px;
+        left: 170px;
+        width: 340px;
+        height: 400px;
+        cursor: default;
+        .mod-title {
+            span {
+                width: 120px;
+            }
+            .sec-title {
+                text-align: left;
+                margin-top: 30px;
+            }
+            .sec-subtitle {
+                font-family: Helvetica, arial, san-serif;
+                text-align: left;
+                font-size: 16px;
+                color: $black2;
+                @include opacity(0.5);
+                margin-top: 25px;
+                border-bottom: 1px dashed #cccccc;
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+            }
+            .btn {
+                @include border-radius(40px);
+                margin-left: 0;
+                padding: 22px 47px;
+                width: 207px;
+                display: block;
+                text-align: center;
+                @include text-shadow(rgba(0, 0, 0, 0.6) 1px 1px 1px);
+                font-size: 24px;
+                font-family: Helvetica, arial, san-serif;
+                font-weight: bold;
+            }
+        }
     }
 }
-
 .fabrics {
     height: 840px;
     position: relative;
@@ -99,7 +130,6 @@ section {
     .mod-title {
         border-top: 1px dashed #b2b2b2;
         margin: 40px 20px 0;
-        padding: 0 10px;
         span {
             display: block;
             width: 100px;

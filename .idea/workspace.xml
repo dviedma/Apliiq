@@ -6,14 +6,19 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/assets/imgs/sprite-common-s9f7b1192cd.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/assets/imgs/sprite-home-s81995f84c3.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/assets/imgs/sprite-home-s94cad79cc3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/imgs/sprite-home-sa5a160380c.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/5689c936057da2b8ee7a65b3b01b90409867ba59/%042.pngc" afterPath="$PROJECT_DIR$/.sass-cache/5689c936057da2b8ee7a65b3b01b90409867ba59/%042.pngc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/629e5fa61ccc8600be7fbbd7716bdabbfb71cba5/_funcarousel.scssc" afterPath="$PROJECT_DIR$/.sass-cache/629e5fa61ccc8600be7fbbd7716bdabbfb71cba5/_funcarousel.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/629e5fa61ccc8600be7fbbd7716bdabbfb71cba5/footer.scssc" afterPath="$PROJECT_DIR$/.sass-cache/629e5fa61ccc8600be7fbbd7716bdabbfb71cba5/footer.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/629e5fa61ccc8600be7fbbd7716bdabbfb71cba5/home.scssc" afterPath="$PROJECT_DIR$/.sass-cache/629e5fa61ccc8600be7fbbd7716bdabbfb71cba5/home.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/imgs/slider-hero/background1.jpg" afterPath="$PROJECT_DIR$/assets/imgs/slider-hero/background1.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/theme/home.css" afterPath="$PROJECT_DIR$/assets/css/theme/home.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/theme/screen.css" afterPath="$PROJECT_DIR$/assets/css/theme/screen.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/plugins.js" afterPath="$PROJECT_DIR$/assets/js/plugins.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/script.js" afterPath="$PROJECT_DIR$/assets/js/script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/sass/theme/_funcarousel.scss" afterPath="$PROJECT_DIR$/assets/sass/theme/_funcarousel.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/sass/theme/footer.scss" afterPath="$PROJECT_DIR$/assets/sass/theme/footer.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/sass/theme/home.scss" afterPath="$PROJECT_DIR$/assets/sass/theme/home.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
@@ -40,34 +45,43 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="21" selection-start="1741" selection-end="2235" vertical-scroll-proportion="65.434784">
+            <state line="42" column="65" selection-start="1960" selection-end="1960" vertical-scroll-proportion="-21.304348">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/script.js">
+      <file leaf-file-name="footer.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/sass/theme/footer.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="181" column="12" selection-start="6643" selection-end="6643" vertical-scroll-proportion="0.0">
+            <state line="143" column="57" selection-start="2990" selection-end="3035" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_funcarousel.scss" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/sass/theme/_funcarousel.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="126" column="30" selection-start="2719" selection-end="2719" vertical-scroll-proportion="0.501548">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/sass/theme/home.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="19" selection-start="1629" selection-end="1629" vertical-scroll-proportion="0.7451613">
+            <state line="53" column="34" selection-start="1496" selection-end="1496" vertical-scroll-proportion="-28.538462">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plugins.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/plugins.js">
+      <file leaf-file-name="_variables.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/sass/theme/_variables.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="326" column="88" selection-start="12771" selection-end="12771" vertical-scroll-proportion="0.0">
+            <state line="13" column="0" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -92,14 +106,14 @@
         <option value="$PROJECT_DIR$/assets/sass/theme/_fonts.scss" />
         <option value="$PROJECT_DIR$/assets/sass/theme/header.scss" />
         <option value="$PROJECT_DIR$/partials/_footer.html" />
-        <option value="$PROJECT_DIR$/assets/sass/theme/footer.scss" />
         <option value="$PROJECT_DIR$/assets/sass/theme/_variables.scss" />
         <option value="$PROJECT_DIR$/assets/sass/theme/screen.scss" />
-        <option value="$PROJECT_DIR$/assets/js/plugins.js" />
-        <option value="$PROJECT_DIR$/assets/sass/theme/_funcarousel.scss" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/js/script.js" />
+        <option value="$PROJECT_DIR$/assets/js/plugins.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/sass/theme/footer.scss" />
         <option value="$PROJECT_DIR$/assets/sass/theme/home.scss" />
+        <option value="$PROJECT_DIR$/assets/sass/theme/_funcarousel.scss" />
       </list>
     </option>
   </component>
@@ -439,24 +453,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/partials/_footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="34" selection-start="3660" selection-end="3660" vertical-scroll-proportion="-21.652174" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/sass/theme/footer.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="32" selection-start="1496" selection-end="1496" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/sass/theme/_fonts.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="72" column="21" selection-start="2068" selection-end="2068" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/sass/theme/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/imgs/sprite-home/customizer-navact.png">
@@ -494,37 +493,56 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.6687307" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/sass/theme/_funcarousel.scss">
+    <entry file="file://$PROJECT_DIR$/assets/imgs/slider-hero/foreground1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="13" selection-start="2504" selection-end="2504" vertical-scroll-proportion="0.65325075">
+        <state line="36" column="38" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/plugins.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="326" column="88" selection-start="12771" selection-end="12771" vertical-scroll-proportion="0.0">
+        <state line="354" column="45" selection-start="13973" selection-end="13973" vertical-scroll-proportion="-7.769231">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="21" selection-start="1741" selection-end="2235" vertical-scroll-proportion="65.434784">
+        <state line="42" column="65" selection-start="1960" selection-end="1960" vertical-scroll-proportion="-21.304348">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/script.js">
+    <entry file="file://$PROJECT_DIR$/assets/sass/theme/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="181" column="12" selection-start="6643" selection-end="6643" vertical-scroll-proportion="0.0">
+        <state line="13" column="0" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/sass/theme/home.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="19" selection-start="1629" selection-end="1629" vertical-scroll-proportion="0.7451613">
+        <state line="53" column="34" selection-start="1496" selection-end="1496" vertical-scroll-proportion="-28.538462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/sass/theme/footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="143" column="57" selection-start="2990" selection-end="3035" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/sass/theme/_funcarousel.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="126" column="30" selection-start="2719" selection-end="2719" vertical-scroll-proportion="0.501548">
           <folding />
         </state>
       </provider>
