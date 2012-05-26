@@ -4,9 +4,18 @@
 @email	daniel.viedma@rokkan.com
 ==================================================*/
 
-#slider-customizer {
+.slider-customizer {
     margin-top: 50px;
     position: relative;
+    &#slider-customizer-womens {
+        //visibility: hidden;
+    }
+    &#slider-customizer-kids {
+        //display: none;
+    }
+    &#slider-customizer-items {
+        //display: none;
+    }
 }
 .slides-wrapper {
     overflow: hidden;

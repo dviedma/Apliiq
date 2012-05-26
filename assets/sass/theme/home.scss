@@ -270,8 +270,21 @@ section {
         &.instagram .logo {
             @include sprite-home-sprite('instagram-logo');
         }
-        &.facebook .logo {
-            @include sprite-home-sprite('facebook-logo');
+        &.facebook {
+            background: #174e9b;
+            span {
+                color: white;
+                font-family: Helvetica,Arial,Sans-serif;
+                font-size: 12px;
+                display: block;
+                line-height: 17px;
+                text-align: center;
+                margin-top: 30px;
+                padding: 0 10px;
+            }
+            .logo {
+                @include sprite-home-sprite('facebook-logo');
+            }
         }
     }
     .sec-title {

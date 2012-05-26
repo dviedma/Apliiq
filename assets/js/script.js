@@ -94,16 +94,29 @@ jQuery(document).ready(function() {
                     $label.text( $catalogue.find('li').first().text() );
 
                     $catalogue.find('li').click(function(){
-                        $this = $(this)
+                        var current = $tab.find('span').text();
+                        var $this = $(this);
                         $label.text('');
                         $tab.animate({left: $this[0].offsetLeft}, function(){
                             $label.text( $this.text() );
+
+                            $('#slider-customizer-'+current).hide();
+                            $('#slider-customizer-'+$this.attr('id')).show();
                         });
                     });
 
-                    $('#slider-customizer').funCarousel({
+                    $('#slider-customizer-mens').funCarousel({
                         'securityMargin' : 4
                     });
+                    $('#slider-customizer-womens').funCarousel({
+                        'securityMargin' : 4
+                    }).hide();
+                    $('#slider-customizer-kids').funCarousel({
+                        'securityMargin' : 4
+                    }).hide();
+                    $('#slider-customizer-items').funCarousel({
+                        'securityMargin' : 4
+                    }).hide();
                 }
 
             };
@@ -113,7 +126,7 @@ jQuery(document).ready(function() {
              */
             var social = {
                 /**
-                 * Polls different apis
+                 * Polls different APIs
                  *
                  * @method build
                  * @return undefined
@@ -156,35 +169,62 @@ jQuery(document).ready(function() {
                     //Facebook
                     var results;
                     var lastPhotoPost;
+                    var lastVideoPost;
+                    var lastStatusPost;
                     var picture;
-                    var imgString;
+                    var postString;
                     $.ajax({
                         url: "https://graph.facebook.com/theapliiqpage/feed?access_token=384410611610742|Zggo90jouEkyEqDts_LS6AfcLFE",
                         dataType: 'json',
                         data: results,
                         success: function (results){
                             for(var i=0; i<results.data.length; i++) {
-                                if(results.data[i].type == 'photo') {
-                                    lastPhotoPost = results.data[i];
-                                    break;
+                                if(results.data[i].from.name == "apliiq") {
+                                    if(results.data[i].type == 'photo') {
+                                        lastPhotoPost = results.data[i];
+                                        picture = lastPhotoPost.picture.replace('_s.jpg','_n.jpg');
+                                        postString = '<a href="'+lastPhotoPost.link+'" target="_blank"><img src="'+picture+'" alt=""><div class="logo">facebook</div></a>';
+                                        break;
+                                    }else if (results.data[i].type == 'video') {
+                                        lastVideoPost = results.data[i];
+                                        break;
+                                    } else if (results.data[i].type == 'status') {
+                                        lastStatusPost = results.data[i];
+                                        postString = '<span class="status-msg">'+lastStatusPost.message+'</<span><a target="_blank" href="https://www.facebook.com/theapliiqpage"><div class="logo">facebook</div></a>';
+                                        break;
+                                    }
                                 }
                             }
-                            picture = lastPhotoPost.picture.replace('_s.jpg','_n.jpg');
-                            imgString = '<a href="'+lastPhotoPost.link+'" target="_blank"><img src="'+picture+'" alt=""><div class="logo">twitter</div></a>';
-                            $('.facebook').html(imgString);
+                            $('.facebook').html(postString);
                         }
                     });
-
-
-
                 }
+            };
 
+            /**
+             * General functionality for forms
+             */
+            var forms = {
+                /**
+                 * Clear text input on click
+                 *
+                 * @method build
+                 * @return undefined
+                 * @param undefined
+                 */
+                build: function() {
+
+                    $('input').click(function(){
+                        $(this).attr('value', '');
+                    })
+                }
             };
 
             sliderhero.build();
             fabrics.build();
             customizer.build();
             social.build('apliiq');
+            forms.build();
 
         }
     });
