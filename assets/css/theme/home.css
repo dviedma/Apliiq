@@ -1,9 +1,9 @@
 /*
 Syntax error: Undefined variable: "$black2".
-        on line 37 of /Users/daniel/WebstormProjects/Apliiq/assets/sass/theme/home.scss
+        on line 39 of /Users/daniel/WebstormProjects/Apliiq/assets/sass/theme/home.scss
 
 Backtrace:
-/Users/daniel/WebstormProjects/Apliiq/assets/sass/theme/home.scss:37
+/Users/daniel/WebstormProjects/Apliiq/assets/sass/theme/home.scss:39
 /Library/Ruby/Gems/1.8/gems/sass-3.1.16/lib/sass/../sass/script/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/1.8/gems/sass-3.1.16/lib/sass/../sass/script/node.rb:40:in `perform'
 /Library/Ruby/Gems/1.8/gems/sass-3.1.16/lib/sass/../sass/tree/visitors/perform.rb:216:in `visit_prop'
@@ -112,4 +112,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$black2\".\A         on line 37 of /Users/daniel/WebstormProjects/Apliiq/assets/sass/theme/home.scss"; }
+  content: "Syntax error: Undefined variable: \"$black2\".\A         on line 39 of /Users/daniel/WebstormProjects/Apliiq/assets/sass/theme/home.scss"; }

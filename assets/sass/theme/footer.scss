@@ -122,7 +122,6 @@ footer {
     font-family: 'itcavantgardestdmdbold';
     color: white;
     font-size: 18px;
-    //background: red;
     @include background-image(linear-gradient(#fe1f11, #cc0800));
     border: none;
     cursor: pointer;
@@ -130,7 +129,11 @@ footer {
     padding: 4px;
     width: 90px;
     margin-left: 20px;
-    //@include box-shadow(rgba(0, 0, 0, 0.3) 0px -10px 4px 0 inset);
+    &:hover {
+        color: #ffffff!important;
+        background-image: none;
+        background: #fe1f11;
+    }
 }
 .branding {
     border-top: 1px dashed $grey;

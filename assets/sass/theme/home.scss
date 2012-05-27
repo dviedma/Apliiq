@@ -10,7 +10,9 @@ $sprite-home-sprite-dimensions: true;
 section {
     padding-top: 42px;
 }
-
+.preload {
+    display: none;
+}
 .parallax {
     width: 100%;
     overflow: hidden;
@@ -185,10 +187,13 @@ section {
                     float: left;
                     cursor: pointer;
                     width: 120px;
-                    font-size: 18px;
+                    font-size: 16px;
                     padding-top: 15px;
                     color: $grey2;
                     width: 105px;
+                    &:hover {
+                        color: $main-red;
+                    }
                 }
             }
             #tab-active {
@@ -197,7 +202,7 @@ section {
                 top: 0px;
                 #label {
                     color: white;
-                    font-size: 18px;
+                    font-size: 16px;
                     padding-top: 21px;
                     display: block;
                 }
@@ -234,6 +239,14 @@ section {
             .logo {
                 @include sprite-home-sprite('youtube-logo');
             }
+            a:hover {
+                .play {
+                    @include sprite-home-sprite('play-logo-hover');
+                }
+                .logo {
+                    @include sprite-home-sprite('youtube-logo-hover');
+                }
+            }
         }
         &.twitter {
             .tweethandler {
@@ -266,9 +279,21 @@ section {
             .logo {
                 @include sprite-home-sprite('twitter-logo');
             }
+            &:hover {
+                .logo {
+                    @include sprite-home-sprite('twitter-logo-hover');
+                }
+            }
         }
-        &.instagram .logo {
-            @include sprite-home-sprite('instagram-logo');
+        &.instagram {
+            .logo {
+                @include sprite-home-sprite('instagram-logo');
+            }
+            &:hover {
+                .logo {
+                    @include sprite-home-sprite('instagram-logo-hover');
+                }
+            }
         }
         &.facebook {
             background: #174e9b;
@@ -284,6 +309,11 @@ section {
             }
             .logo {
                 @include sprite-home-sprite('facebook-logo');
+            }
+            &:hover {
+                .logo {
+                    @include sprite-home-sprite('facebook-logo-hover');
+                }
             }
         }
     }

@@ -77,10 +77,16 @@
     &.left {
         @include sprite-home-sprite('arrow-left');
         left: 0;
+        &:hover {
+            @include sprite-home-sprite('arrow-left-hover');
+        }
     }
     &.right {
         @include sprite-home-sprite('arrow-right');
         right: 0;
+        &:hover {
+            @include sprite-home-sprite('arrow-right-hover');
+        }
     }
 }
 

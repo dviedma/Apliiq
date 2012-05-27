@@ -55,18 +55,20 @@ jQuery(document).ready(function() {
                     var $fabricdetail = $('#fabric-detail');
 
                     //preload images
+                    var $img;
                     var preload = [
-                        '/assets/imgs/fresh-fabrics/fabric1-det.jpg',
-                        '/assets/imgs/fresh-fabrics/fabric2-det.jpg',
-                        '/assets/imgs/fresh-fabrics/fabric3-det.jpg',
-                        '/assets/imgs/fresh-fabrics/fabric4-det.jpg',
-                        '/assets/imgs/fresh-fabrics/fabric5-det.jpg',
-                        '/assets/imgs/fresh-fabrics/fabric6-det.jpg'
+                        'assets/imgs/fresh-fabrics/fabric1-det.jpg',
+                        'assets/imgs/fresh-fabrics/fabric2-det.jpg',
+                        'assets/imgs/fresh-fabrics/fabric3-det.jpg',
+                        'assets/imgs/fresh-fabrics/fabric4-det.jpg',
+                        'assets/imgs/fresh-fabrics/fabric5-det.jpg',
+                        'assets/imgs/fresh-fabrics/fabric6-det.jpg'
                     ];
-                    $(preload).each(function(){
-                        console.log(this);
-                        $('<img/>')[0].src = this;
-                    });
+                    for(var i=0; i< preload.length; i++){
+                        $img = $('<img/>').addClass('preload');
+                        $img[0].src = preload[i];
+                        $('body').prepend($img);
+                    }
 
 
                     //rollover effect
@@ -130,7 +132,7 @@ jQuery(document).ready(function() {
                     $('#slider-customizer-kids').funCarousel({
                         'securityMargin' : 4
                     }).hide();
-                    $('#slider-customizer-items').funCarousel({
+                    $('#slider-customizer-accessories').funCarousel({
                         'securityMargin' : 4
                     }).hide();
                 }

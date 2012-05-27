@@ -4,7 +4,11 @@
 @email	daniel.viedma@rokkan.com
 ==================================================*/
 
-
-a, a:hover, a:visited {
-    text-decoration: none;
+body {
+    a, a:hover, a:visited {
+        text-decoration: none;
+    }
+    a:hover {
+        color: $main-red!important;
+    }
 }
