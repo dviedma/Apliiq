@@ -54,6 +54,22 @@ jQuery(document).ready(function() {
                     var $catalogue = $('#f-catalogue');
                     var $fabricdetail = $('#fabric-detail');
 
+                    //preload images
+                    var preload = [
+                        '/assets/imgs/fresh-fabrics/fabric1-det.jpg',
+                        '/assets/imgs/fresh-fabrics/fabric2-det.jpg',
+                        '/assets/imgs/fresh-fabrics/fabric3-det.jpg',
+                        '/assets/imgs/fresh-fabrics/fabric4-det.jpg',
+                        '/assets/imgs/fresh-fabrics/fabric5-det.jpg',
+                        '/assets/imgs/fresh-fabrics/fabric6-det.jpg'
+                    ];
+                    $(preload).each(function(){
+                        console.log(this);
+                        $('<img/>')[0].src = this;
+                    });
+
+
+                    //rollover effect
                     $('.fabric-box').mouseenter(function () {
                         $catalogue.unbind('mouseleave');
 
@@ -150,12 +166,14 @@ jQuery(document).ready(function() {
                     var linkRegexp=/(http:\/\/+[\S]*)/g;
                     var handlerRegexp = /(@+[\S]*)/g;
                     var hashtagRegexp = /(#+[\S]*)/g;
+                    var doubleHash = /(%23#)/g;
                     var tweetString;
                     $.getJSON("http://api.twitter.com/1/statuses/user_timeline/"+username+".json?include_rts=true&count="+tweetsLimit+"&callback=?", function(data) {
                         tweetString = data[0].text.replace(linkRegexp, "<a href='$1' target='_blank'>$1</a>");
                         tweetString = tweetString.replace(handlerRegexp, "<a href='http://twitter.com/$1' target='_blank'>$1</a>");
                         //TODO link to hashtag
                         tweetString = tweetString.replace(hashtagRegexp, "<a href='http://twitter.com/#!/search/%23$1' target='_blank'>$1</a>");
+                        tweetString = tweetString.replace(doubleHash, "%23");
                         $("#tweet").html(tweetString);
                     });
 
@@ -185,17 +203,28 @@ jQuery(document).ready(function() {
                                         picture = lastPhotoPost.picture.replace('_s.jpg','_n.jpg');
                                         postString = '<a href="'+lastPhotoPost.link+'" target="_blank"><img src="'+picture+'" alt=""><div class="logo">facebook</div></a>';
                                         break;
-                                    }else if (results.data[i].type == 'video') {
+                                    }/*else if (results.data[i].type == 'video') {
                                         lastVideoPost = results.data[i];
                                         break;
-                                    } else if (results.data[i].type == 'status') {
+                                    }*/ else if (results.data[i].type == 'status') {
                                         lastStatusPost = results.data[i];
-                                        postString = '<span class="status-msg">'+lastStatusPost.message+'</<span><a target="_blank" href="https://www.facebook.com/theapliiqpage"><div class="logo">facebook</div></a>';
+                                        $('abbr.timeago').attr('title', lastStatusPost.created_time);
+                                        jQuery("abbr.timeago").timeago();
+
+                                        var msg = lastStatusPost.message;
+                                        if(msg.length > 190) {
+                                            msg = msg.substr(0, 190) + "...";
+                                        }
+                                        msg = msg.replace(linkRegexp, "<a href='$1' target='_blank'>$1</a>");
+
+                                        postString = '<span class="status-msg">'+msg+'</<span><a target="_blank" href="https://www.facebook.com/theapliiqpage">'+
+                                            '<div class="logo">facebook</div></a>';
+
                                         break;
                                     }
                                 }
                             }
-                            $('.facebook').html(postString);
+                            $('.facebook').prepend(postString);
                         }
                     });
                 }
@@ -225,6 +254,7 @@ jQuery(document).ready(function() {
             customizer.build();
             social.build('apliiq');
             forms.build();
+
 
         }
     });

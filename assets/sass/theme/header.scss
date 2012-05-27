@@ -11,7 +11,7 @@ header {
     .logo {
         position: absolute;
         a{
-            @include sprite-common-sprite('logo-bluezebra');
+            @include sprite-common-sprite('logo-classic');
             display: block;
             span {
                 position: absolute;

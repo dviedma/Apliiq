@@ -100,22 +100,22 @@ section {
         background-repeat: repeat-x;
         top: -40px;
         &.fabric1 {
-            background: url(../../imgs/fresh-fabrics/fabric1-det.jpg);
+            background: url(/assets/imgs/fresh-fabrics/fabric1-det.jpg);
         }
         &.fabric2 {
-            background: url(../../imgs/fresh-fabrics/fabric2-det.jpg);
+            background: url(/assets/imgs/fresh-fabrics/fabric2-det.jpg);
         }
         &.fabric3 {
-            background: url(../../imgs/fresh-fabrics/fabric3-det.jpg);
+            background: url(/assets/imgs/fresh-fabrics/fabric3-det.jpg);
         }
         &.fabric4 {
-            background: url(../../imgs/fresh-fabrics/fabric4-det.jpg);
+            background: url(/assets/imgs/fresh-fabrics/fabric4-det.jpg);
         }
         &.fabric5 {
-            background: url(../../imgs/fresh-fabrics/fabric5-det.jpg);
+            background: url(/assets/imgs/fresh-fabrics/fabric5-det.jpg);
         }
         &.fabric6 {
-            background: url(../../imgs/fresh-fabrics/fabric6-det.jpg);
+            background: url(/assets/imgs/fresh-fabrics/fabric6-det.jpg);
         }
     }
 }
@@ -272,7 +272,7 @@ section {
         }
         &.facebook {
             background: #174e9b;
-            span {
+            span, abbr {
                 color: white;
                 font-family: Helvetica,Arial,Sans-serif;
                 font-size: 12px;

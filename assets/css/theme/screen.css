@@ -110,9 +110,9 @@ body .container:after {
   #margin-left: -20px;
 }
 
-/* line 58, sprite-common/*.png */
+/* line 66, sprite-common/*.png */
 .sprite-common-sprite, .branding .logo-container .logo, header .logo a, menu ul li.cart a {
-  background: url('../../imgs/sprite-common-s399cf7c895.png') no-repeat;
+  background: url('../../imgs/sprite-common-s901e1b5c46.png') no-repeat;
 }
 
 /*=== Typography Styles
@@ -433,8 +433,8 @@ header .logo {
 /* line 13, ../../sass/theme/header.scss */
 header .logo a {
   background-position: 0 -72px;
-  height: 142px;
-  width: 189px;
+  height: 138px;
+  width: 186px;
   display: block;
 }
 /* line 16, ../../sass/theme/header.scss */
@@ -639,27 +639,27 @@ section {
 }
 /* line 102, ../../sass/theme/home.scss */
 .fabrics #fabric-detail.fabric1 {
-  background: url(../../imgs/fresh-fabrics/fabric1-det.jpg);
+  background: url(/assets/imgs/fresh-fabrics/fabric1-det.jpg);
 }
 /* line 105, ../../sass/theme/home.scss */
 .fabrics #fabric-detail.fabric2 {
-  background: url(../../imgs/fresh-fabrics/fabric2-det.jpg);
+  background: url(/assets/imgs/fresh-fabrics/fabric2-det.jpg);
 }
 /* line 108, ../../sass/theme/home.scss */
 .fabrics #fabric-detail.fabric3 {
-  background: url(../../imgs/fresh-fabrics/fabric3-det.jpg);
+  background: url(/assets/imgs/fresh-fabrics/fabric3-det.jpg);
 }
 /* line 111, ../../sass/theme/home.scss */
 .fabrics #fabric-detail.fabric4 {
-  background: url(../../imgs/fresh-fabrics/fabric4-det.jpg);
+  background: url(/assets/imgs/fresh-fabrics/fabric4-det.jpg);
 }
 /* line 114, ../../sass/theme/home.scss */
 .fabrics #fabric-detail.fabric5 {
-  background: url(../../imgs/fresh-fabrics/fabric5-det.jpg);
+  background: url(/assets/imgs/fresh-fabrics/fabric5-det.jpg);
 }
 /* line 117, ../../sass/theme/home.scss */
 .fabrics #fabric-detail.fabric6 {
-  background: url(../../imgs/fresh-fabrics/fabric6-det.jpg);
+  background: url(/assets/imgs/fresh-fabrics/fabric6-det.jpg);
 }
 
 /* line 122, ../../sass/theme/home.scss */
@@ -850,7 +850,7 @@ section {
   background: #174e9b;
 }
 /* line 275, ../../sass/theme/home.scss */
-.social .social-box.facebook span {
+.social .social-box.facebook span, .social .social-box.facebook abbr {
   color: white;
   font-family: Helvetica,Arial,Sans-serif;
   font-size: 12px;
