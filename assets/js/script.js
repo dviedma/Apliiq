@@ -204,11 +204,16 @@ jQuery(document).ready(function() {
                                         lastPhotoPost = results.data[i];
                                         picture = lastPhotoPost.picture.replace('_s.jpg','_n.jpg');
                                         postString = '<a href="'+lastPhotoPost.link+'" target="_blank"><img src="'+picture+'" alt=""><div class="logo">facebook</div></a>';
+                                        $('.facebook').addClass('photo');
                                         break;
-                                    }/*else if (results.data[i].type == 'video') {
+                                    }else if (results.data[i].type == 'video') {
                                         lastVideoPost = results.data[i];
+                                        picture = lastVideoPost.picture.replace('_t.jpg','_n.jpg');
+                                        postString = '<a href="'+lastVideoPost.link+'" target="_blank"><img height="220px" src="'+picture+'" alt=""><div class="logo">facebook</div><div class="play">play</div></a>';
+                                        $('.facebook').addClass('photo');
+
                                         break;
-                                    }*/ else if (results.data[i].type == 'status') {
+                                    } else if (results.data[i].type == 'status' && results.data[i].message != undefined) {
                                         lastStatusPost = results.data[i];
                                         $('abbr.timeago').attr('title', lastStatusPost.created_time);
                                         jQuery("abbr.timeago").timeago();
@@ -221,11 +226,12 @@ jQuery(document).ready(function() {
 
                                         postString = '<span class="status-msg">'+msg+'</<span><a target="_blank" href="https://www.facebook.com/theapliiqpage">'+
                                             '<div class="logo">facebook</div></a>';
-
+                                        $('.facebook').addClass('status');
                                         break;
                                     }
                                 }
                             }
+                            console.log(postString);
                             $('.facebook').prepend(postString);
                         }
                     });
@@ -245,9 +251,13 @@ jQuery(document).ready(function() {
                  */
                 build: function() {
 
-                    $('input').click(function(){
+                    $('input[type="text"]').click(function(){
                         $(this).attr('value', '');
                     })
+                    $('#submit-newsletter').click(function(e){
+                        e.preventDefault();
+                        $('#newsletter-popup').toggleClass('hide');
+                    });
                 }
             };
 

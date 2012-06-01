@@ -205,16 +205,20 @@ p {
 /* line 7, ../../sass/theme/footer.scss */
 footer {
   background: black;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 /* line 10, ../../sass/theme/footer.scss */
+footer .container {
+  position: relative;
+}
+/* line 13, ../../sass/theme/footer.scss */
 footer .first {
   display: inline;
   float: left;
   width: 46.939%;
   margin-right: 2.041%;
 }
-/* line 13, ../../sass/theme/footer.scss */
+/* line 16, ../../sass/theme/footer.scss */
 footer .last {
   display: inline;
   float: left;
@@ -222,68 +226,68 @@ footer .last {
   margin-right: 2.041%;
   margin-top: -20px;
 }
-/* line 17, ../../sass/theme/footer.scss */
+/* line 20, ../../sass/theme/footer.scss */
 footer .moto {
   padding: 50px 0 70px;
 }
-/* line 20, ../../sass/theme/footer.scss */
+/* line 23, ../../sass/theme/footer.scss */
 footer .title {
   position: relative;
   background: #111111;
   margin: 0 auto;
 }
-/* line 25, ../../sass/theme/footer.scss */
+/* line 28, ../../sass/theme/footer.scss */
 footer .list, footer .copy, footer .buttons {
   border-top: 1px dashed #777777;
   margin-top: -8px;
   padding-top: 20px;
 }
-/* line 29, ../../sass/theme/footer.scss */
+/* line 32, ../../sass/theme/footer.scss */
 footer .list li, footer .copy li, footer .buttons li {
   text-align: center;
 }
-/* line 32, ../../sass/theme/footer.scss */
+/* line 35, ../../sass/theme/footer.scss */
 footer .list a, footer .copy a, footer .buttons a {
   color: #777777;
   font-size: 14px;
   line-height: 18px;
 }
 
-/* line 40, ../../sass/theme/footer.scss */
+/* line 43, ../../sass/theme/footer.scss */
 .experience {
   width: 100%;
   margin-bottom: 40px;
 }
-/* line 43, ../../sass/theme/footer.scss */
+/* line 46, ../../sass/theme/footer.scss */
 .experience .title {
   width: 290px;
 }
 
-/* line 47, ../../sass/theme/footer.scss */
+/* line 50, ../../sass/theme/footer.scss */
 .contact {
   display: inline;
   float: left;
   width: 30.435%;
   margin-right: 4.348%;
 }
-/* line 49, ../../sass/theme/footer.scss */
+/* line 52, ../../sass/theme/footer.scss */
 .contact .title {
   width: 97px;
 }
 
-/* line 53, ../../sass/theme/footer.scss */
+/* line 56, ../../sass/theme/footer.scss */
 .besocial {
   display: inline;
   float: left;
   width: 30.435%;
   margin-right: 4.348%;
 }
-/* line 55, ../../sass/theme/footer.scss */
+/* line 58, ../../sass/theme/footer.scss */
 .besocial .title {
   width: 97px;
 }
 
-/* line 59, ../../sass/theme/footer.scss */
+/* line 62, ../../sass/theme/footer.scss */
 .belegal {
   display: inline;
   float: left;
@@ -291,59 +295,59 @@ footer .list a, footer .copy a, footer .buttons a {
   margin-right: 4.348%;
   margin-right: 0!important;
 }
-/* line 62, ../../sass/theme/footer.scss */
+/* line 65, ../../sass/theme/footer.scss */
 .belegal .title {
   width: 97px;
 }
 
-/* line 66, ../../sass/theme/footer.scss */
+/* line 69, ../../sass/theme/footer.scss */
 .showlove {
   width: 100%;
   margin-bottom: 20px;
 }
-/* line 69, ../../sass/theme/footer.scss */
+/* line 72, ../../sass/theme/footer.scss */
 .showlove .inner {
   background: #111111;
   padding: 20px 20px 40px;
 }
-/* line 72, ../../sass/theme/footer.scss */
+/* line 75, ../../sass/theme/footer.scss */
 .showlove .inner .title {
   width: 190px;
 }
-/* line 75, ../../sass/theme/footer.scss */
+/* line 78, ../../sass/theme/footer.scss */
 .showlove .inner .buttons {
   padding-top: 40px;
 }
-/* line 77, ../../sass/theme/footer.scss */
+/* line 80, ../../sass/theme/footer.scss */
 .showlove .inner .buttons .fb-like {
   float: left;
   width: 100px;
   margin-left: 112px;
 }
-/* line 82, ../../sass/theme/footer.scss */
+/* line 85, ../../sass/theme/footer.scss */
 .showlove .inner .buttons .twitter-follow-button {
   display: block;
   float: left;
 }
 
-/* line 89, ../../sass/theme/footer.scss */
+/* line 92, ../../sass/theme/footer.scss */
 .newsletter {
   width: 100%;
 }
-/* line 91, ../../sass/theme/footer.scss */
+/* line 94, ../../sass/theme/footer.scss */
 .newsletter .inner {
   background: #111111;
   padding: 20px;
 }
-/* line 94, ../../sass/theme/footer.scss */
+/* line 97, ../../sass/theme/footer.scss */
 .newsletter .inner .title {
   width: 170px;
 }
-/* line 97, ../../sass/theme/footer.scss */
+/* line 100, ../../sass/theme/footer.scss */
 .newsletter .inner .copy {
   margin-bottom: 25px;
 }
-/* line 100, ../../sass/theme/footer.scss */
+/* line 103, ../../sass/theme/footer.scss */
 .newsletter .inner input[type="text"] {
   background: white;
   color: grey;
@@ -361,7 +365,7 @@ footer .list a, footer .copy a, footer .buttons a {
   box-shadow: rgba(0, 0, 0, 0.3) 2px 4px 4px 0 inset;
   margin-left: 16px;
 }
-/* line 112, ../../sass/theme/footer.scss */
+/* line 115, ../../sass/theme/footer.scss */
 .newsletter .arrow-down {
   width: 0;
   height: 0;
@@ -370,7 +374,7 @@ footer .list a, footer .copy a, footer .buttons a {
   border-top: 40px solid #111111;
 }
 
-/* line 121, ../../sass/theme/footer.scss */
+/* line 124, ../../sass/theme/footer.scss */
 .newsletter input[type="submit"], .over-box .btn {
   font-family: 'itcavantgardestdmdbold';
   color: white;
@@ -392,32 +396,82 @@ footer .list a, footer .copy a, footer .buttons a {
   width: 90px;
   margin-left: 20px;
 }
-/* line 132, ../../sass/theme/footer.scss */
+/* line 135, ../../sass/theme/footer.scss */
 .newsletter input[type="submit"]:hover, .over-box .btn:hover {
   color: #ffffff!important;
   background-image: none;
   background: #fe1f11;
 }
 
-/* line 138, ../../sass/theme/footer.scss */
+/* line 141, ../../sass/theme/footer.scss */
 .branding {
   border-top: 1px dashed #777777;
   margin-top: 100px;
 }
-/* line 141, ../../sass/theme/footer.scss */
+/* line 144, ../../sass/theme/footer.scss */
 .branding .logo-container {
   margin: -52px auto 0;
   width: 120px;
   padding: 20px;
   background: black;
 }
-/* line 146, ../../sass/theme/footer.scss */
+/* line 149, ../../sass/theme/footer.scss */
 .branding .logo-container .logo {
   display: block;
   background-position: -36px 0;
   height: 72px;
   width: 116px;
   text-indent: -9999px;
+}
+
+/* line 157, ../../sass/theme/footer.scss */
+#newsletter-popup {
+  width: 680px;
+  height: 232px;
+  background: black;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  padding: 10px;
+}
+/* line 165, ../../sass/theme/footer.scss */
+#newsletter-popup .newsletter-popup-inner {
+  border: 1px dashed #777777;
+  height: 100%;
+}
+/* line 168, ../../sass/theme/footer.scss */
+#newsletter-popup .newsletter-popup-inner span {
+  display: block;
+  text-align: center;
+  color: white;
+}
+/* line 172, ../../sass/theme/footer.scss */
+#newsletter-popup .newsletter-popup-inner span.big-thankyou {
+  font-size: 48px;
+  font-family: 'itcavantgardestdmdbold';
+  padding: 45px 0 35px;
+}
+/* line 177, ../../sass/theme/footer.scss */
+#newsletter-popup .newsletter-popup-inner span.code {
+  opacity: 0.6;
+  font-family: helvetica;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+/* line 183, ../../sass/theme/footer.scss */
+#newsletter-popup .newsletter-popup-inner span.hitya {
+  opacity: 0.6;
+  font-family: helvetica;
+  font-size: 14px;
+}
+/* line 190, ../../sass/theme/footer.scss */
+#newsletter-popup.hide {
+  display: none;
+}
+
+/* line 194, ../../sass/theme/footer.scss */
+.disclaimer {
+  font-size: 10px;
 }
 
 /*=== Header Styles
@@ -529,9 +583,9 @@ menu ul li.cart a span {
 @author	Daniel Viedma
 @email	daniel.viedma@rokkan.com
 ==================================================*/
-/* line 170, sprite-home/*.png */
-.sprite-home-sprite, .customizer #c-catalogue .c-catalogue-inner #tab-active, .social .social-box.youtube .play, .social .social-box.youtube .logo, .social .social-box.youtube a:hover .play, .social .social-box.youtube a:hover .logo, .social .social-box.twitter .logo, .social .social-box.twitter:hover .logo, .social .social-box.instagram .logo, .social .social-box.instagram:hover .logo, .social .social-box.facebook .logo, .social .social-box.facebook:hover .logo, .control-nav .wrapper .control, .control-nav .wrapper .control.active, .nav-arrow.left, .nav-arrow.left:hover, .nav-arrow.right, .nav-arrow.right:hover {
-  background: url('../../imgs/sprite-home-s699f8ed9ff.png') no-repeat;
+/* line 178, sprite-home/*.png */
+.sprite-home-sprite, .customizer #c-catalogue .c-catalogue-inner #tab-active, .social .social-box .play, .social .social-box a:hover .play, .social .social-box.youtube .logo, .social .social-box.youtube a:hover .logo, .social .social-box.twitter .logo, .social .social-box.twitter .logo:hover, .social .social-box.instagram .logo, .social .social-box.instagram:hover .logo, .social .social-box.facebook .logo, .social .social-box.facebook.photo:hover .logo, .social .social-box.facebook.status .logo:hover, .control-nav .wrapper .control, .control-nav .wrapper .control.active, .nav-arrow.left, .nav-arrow.left:hover, .nav-arrow.right, .nav-arrow.right:hover {
+  background: url('../../imgs/sprite-home-s0c64a06c41.png') no-repeat;
 }
 
 /* line 10, ../../sass/theme/home.scss */
@@ -660,27 +714,27 @@ section {
 }
 /* line 104, ../../sass/theme/home.scss */
 .fabrics #fabric-detail.fabric1 {
-  background: url(/assets/imgs/fresh-fabrics/fabric1-det.jpg);
+  background: url(../../imgs/fresh-fabrics/fabric1-det.jpg);
 }
 /* line 107, ../../sass/theme/home.scss */
 .fabrics #fabric-detail.fabric2 {
-  background: url(/assets/imgs/fresh-fabrics/fabric2-det.jpg);
+  background: url(../../imgs/fresh-fabrics/fabric2-det.jpg);
 }
 /* line 110, ../../sass/theme/home.scss */
 .fabrics #fabric-detail.fabric3 {
-  background: url(/assets/imgs/fresh-fabrics/fabric3-det.jpg);
+  background: url(../../imgs/fresh-fabrics/fabric3-det.jpg);
 }
 /* line 113, ../../sass/theme/home.scss */
 .fabrics #fabric-detail.fabric4 {
-  background: url(/assets/imgs/fresh-fabrics/fabric4-det.jpg);
+  background: url(../../imgs/fresh-fabrics/fabric4-det.jpg);
 }
 /* line 116, ../../sass/theme/home.scss */
 .fabrics #fabric-detail.fabric5 {
-  background: url(/assets/imgs/fresh-fabrics/fabric5-det.jpg);
+  background: url(../../imgs/fresh-fabrics/fabric5-det.jpg);
 }
 /* line 119, ../../sass/theme/home.scss */
 .fabrics #fabric-detail.fabric6 {
-  background: url(/assets/imgs/fresh-fabrics/fabric6-det.jpg);
+  background: url(../../imgs/fresh-fabrics/fabric6-det.jpg);
 }
 
 /* line 124, ../../sass/theme/home.scss */
@@ -811,8 +865,8 @@ section {
   bottom: 5px;
   right: 5px;
 }
-/* line 232, ../../sass/theme/home.scss */
-.social .social-box.youtube .play {
+/* line 231, ../../sass/theme/home.scss */
+.social .social-box .play {
   background-position: 0 0;
   height: 89px;
   width: 89px;
@@ -822,24 +876,24 @@ section {
   text-indent: -9999px;
 }
 /* line 239, ../../sass/theme/home.scss */
+.social .social-box a:hover .play {
+  background-position: 0 -89px;
+  height: 89px;
+  width: 89px;
+}
+/* line 244, ../../sass/theme/home.scss */
 .social .social-box.youtube .logo {
   background-position: 0 -409px;
   height: 41px;
   width: 40px;
 }
-/* line 243, ../../sass/theme/home.scss */
-.social .social-box.youtube a:hover .play {
-  background-position: 0 -89px;
-  height: 89px;
-  width: 89px;
-}
-/* line 246, ../../sass/theme/home.scss */
+/* line 248, ../../sass/theme/home.scss */
 .social .social-box.youtube a:hover .logo {
   background-position: 0 -327px;
   height: 41px;
   width: 40px;
 }
-/* line 252, ../../sass/theme/home.scss */
+/* line 254, ../../sass/theme/home.scss */
 .social .social-box.twitter .tweethandler {
   display: block;
   text-align: center;
@@ -847,7 +901,7 @@ section {
   font-size: 18px;
   margin: 30px 0 28px;
 }
-/* line 259, ../../sass/theme/home.scss */
+/* line 261, ../../sass/theme/home.scss */
 .social .social-box.twitter #tweet {
   font-family: Helvetica, arial, sans-serif;
   font-size: 12px;
@@ -855,11 +909,11 @@ section {
   display: block;
   line-height: 18px;
 }
-/* line 265, ../../sass/theme/home.scss */
+/* line 267, ../../sass/theme/home.scss */
 .social .social-box.twitter #tweet a {
   font-weight: bold;
 }
-/* line 269, ../../sass/theme/home.scss */
+/* line 271, ../../sass/theme/home.scss */
 .social .social-box.twitter .tweetlink {
   font-family: Helvetica, arial, sans-serif;
   font-size: 14px;
@@ -870,14 +924,14 @@ section {
   bottom: 27px;
   left: 80px;
 }
-/* line 279, ../../sass/theme/home.scss */
+/* line 281, ../../sass/theme/home.scss */
 .social .social-box.twitter .logo {
   background-position: 0 -286px;
   height: 41px;
   width: 40px;
 }
 /* line 283, ../../sass/theme/home.scss */
-.social .social-box.twitter:hover .logo {
+.social .social-box.twitter .logo:hover {
   background-position: 0 -245px;
   height: 41px;
   width: 40px;
@@ -911,17 +965,23 @@ section {
 }
 /* line 310, ../../sass/theme/home.scss */
 .social .social-box.facebook .logo {
-  background-position: 0 -878px;
+  background-position: 0 -1098px;
   height: 41px;
   width: 40px;
 }
 /* line 314, ../../sass/theme/home.scss */
-.social .social-box.facebook:hover .logo {
-  background-position: 0 -824px;
+.social .social-box.facebook.photo:hover .logo {
+  background-position: 0 -1044px;
   height: 41px;
   width: 40px;
 }
-/* line 320, ../../sass/theme/home.scss */
+/* line 319, ../../sass/theme/home.scss */
+.social .social-box.facebook.status .logo:hover {
+  background-position: 0 -1044px;
+  height: 41px;
+  width: 40px;
+}
+/* line 325, ../../sass/theme/home.scss */
 .social .sec-title {
   margin-bottom: 50px;
 }
@@ -985,7 +1045,7 @@ section {
 /* line 53, ../../sass/theme/_funcarousel.scss */
 .control-nav .wrapper .control {
   display: block;
-  background-position: 0 -811px;
+  background-position: 0 -1031px;
   height: 13px;
   width: 13px;
   float: left;
@@ -995,7 +1055,7 @@ section {
 }
 /* line 60, ../../sass/theme/_funcarousel.scss */
 .control-nav .wrapper .control.active {
-  background-position: 0 -865px;
+  background-position: 0 -1085px;
   height: 13px;
   width: 13px;
 }
@@ -1016,27 +1076,27 @@ section {
 }
 /* line 77, ../../sass/theme/_funcarousel.scss */
 .nav-arrow.left {
-  background-position: 0 -731px;
+  background-position: 0 -951px;
   height: 80px;
   width: 80px;
   left: 0;
 }
 /* line 80, ../../sass/theme/_funcarousel.scss */
 .nav-arrow.left:hover {
-  background-position: 0 -651px;
+  background-position: 0 -871px;
   height: 80px;
   width: 80px;
 }
 /* line 84, ../../sass/theme/_funcarousel.scss */
 .nav-arrow.right {
-  background-position: 0 -571px;
+  background-position: 0 -791px;
   height: 80px;
   width: 80px;
   right: 0;
 }
 /* line 87, ../../sass/theme/_funcarousel.scss */
 .nav-arrow.right:hover {
-  background-position: 0 -491px;
+  background-position: 0 -711px;
   height: 80px;
   width: 80px;
 }

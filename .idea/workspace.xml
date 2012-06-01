@@ -6,33 +6,26 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/assets/imgs/sprite-common-s399cf7c895.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/assets/imgs/sprite-common-s901e1b5c46.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/assets/imgs/sprite-common-s9f7b1192cd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/imgs/sprite-home-s699f8ed9ff.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/assets/imgs/sprite-home-s81995f84c3.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/assets/imgs/sprite-home-s94cad79cc3.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/assets/imgs/sprite-home-sa5a160380c.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/assets/imgs/sprite-home-sf045782164.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/5689c936057da2b8ee7a65b3b01b90409867ba59/%042.pngc" afterPath="$PROJECT_DIR$/.sass-cache/5689c936057da2b8ee7a65b3b01b90409867ba59/%042.pngc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/629e5fa61ccc8600be7fbbd7716bdabbfb71cba5/_fonts.scssc" afterPath="$PROJECT_DIR$/.sass-cache/629e5fa61ccc8600be7fbbd7716bdabbfb71cba5/_fonts.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/629e5fa61ccc8600be7fbbd7716bdabbfb71cba5/_funcarousel.scssc" afterPath="$PROJECT_DIR$/.sass-cache/629e5fa61ccc8600be7fbbd7716bdabbfb71cba5/_funcarousel.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/629e5fa61ccc8600be7fbbd7716bdabbfb71cba5/_variables.scssc" afterPath="$PROJECT_DIR$/.sass-cache/629e5fa61ccc8600be7fbbd7716bdabbfb71cba5/_variables.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/629e5fa61ccc8600be7fbbd7716bdabbfb71cba5/footer.scssc" afterPath="$PROJECT_DIR$/.sass-cache/629e5fa61ccc8600be7fbbd7716bdabbfb71cba5/footer.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/629e5fa61ccc8600be7fbbd7716bdabbfb71cba5/header.scssc" afterPath="$PROJECT_DIR$/.sass-cache/629e5fa61ccc8600be7fbbd7716bdabbfb71cba5/header.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/629e5fa61ccc8600be7fbbd7716bdabbfb71cba5/home.scssc" afterPath="$PROJECT_DIR$/.sass-cache/629e5fa61ccc8600be7fbbd7716bdabbfb71cba5/home.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/dfe1cbaaa9ae78c8622c40cb093c5c92ee1e5081/reset.scssc" afterPath="$PROJECT_DIR$/.sass-cache/dfe1cbaaa9ae78c8622c40cb093c5c92ee1e5081/reset.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/e1ed139168fbeb17154ee6fcd50c1b165c78306c/%042.pngc" afterPath="$PROJECT_DIR$/.sass-cache/e1ed139168fbeb17154ee6fcd50c1b165c78306c/%042.pngc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/imgs/sprite-home/facebook-logo-hover.png" afterPath="$PROJECT_DIR$/assets/imgs/sprite-home/facebook-logo-hover.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/imgs/sprite-home/instagram-logo-hover.png" afterPath="$PROJECT_DIR$/assets/imgs/sprite-home/instagram-logo-hover.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/imgs/sprite-home/twitter-logo-hover.png" afterPath="$PROJECT_DIR$/assets/imgs/sprite-home/twitter-logo-hover.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/imgs/sprite-home/youtube-logo-hover.png" afterPath="$PROJECT_DIR$/assets/imgs/sprite-home/youtube-logo-hover.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/core/reset.css" afterPath="$PROJECT_DIR$/assets/css/core/reset.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/theme/header.css" afterPath="$PROJECT_DIR$/assets/css/theme/header.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/theme/home.css" afterPath="$PROJECT_DIR$/assets/css/theme/home.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/theme/footer.css" afterPath="$PROJECT_DIR$/assets/css/theme/footer.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/theme/screen.css" afterPath="$PROJECT_DIR$/assets/css/theme/screen.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/script.js" afterPath="$PROJECT_DIR$/assets/js/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/sass/core/reset.scss" afterPath="$PROJECT_DIR$/assets/sass/core/reset.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/sass/theme/_fonts.scss" afterPath="$PROJECT_DIR$/assets/sass/theme/_fonts.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/sass/theme/_funcarousel.scss" afterPath="$PROJECT_DIR$/assets/sass/theme/_funcarousel.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/sass/theme/_variables.scss" afterPath="$PROJECT_DIR$/assets/sass/theme/_variables.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/sass/theme/footer.scss" afterPath="$PROJECT_DIR$/assets/sass/theme/footer.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/sass/theme/header.scss" afterPath="$PROJECT_DIR$/assets/sass/theme/header.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/sass/theme/home.scss" afterPath="$PROJECT_DIR$/assets/sass/theme/home.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/_footer.html" afterPath="$PROJECT_DIR$/partials/_footer.html" />
     </list>
     <ignored path="Apliiq3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,60 +47,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="_footer.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/partials/_footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="80" selection-start="2798" selection-end="2798" vertical-scroll-proportion="-3.9591837">
+            <state line="73" column="46" selection-start="3783" selection-end="3783" vertical-scroll-proportion="-21.043478">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="footer.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/sass/theme/footer.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="156" column="0" selection-start="3233" selection-end="3250" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="146" column="39" selection-start="4959" selection-end="4959" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="arrow-left.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/imgs/sprite-home/arrow-left.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.scss" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/sass/theme/home.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="189" column="33" selection-start="5144" selection-end="5144" vertical-scroll-proportion="0.15161291">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/sass/theme/header.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="65" selection-start="1522" selection-end="1522" vertical-scroll-proportion="-16.846153">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cart.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/imgs/sprite-common/cart.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_funcarousel.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/sass/theme/_funcarousel.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="52" selection-start="2033" selection-end="2033" vertical-scroll-proportion="-19.23077">
+            <state line="253" column="41" selection-start="10816" selection-end="10816" vertical-scroll-proportion="0.49131122">
               <folding />
             </state>
           </provider>
@@ -128,18 +89,18 @@
       <list>
         <option value="$PROJECT_DIR$/partials/_header.html" />
         <option value="$PROJECT_DIR$/assets/sass/core/_base.scss" />
-        <option value="$PROJECT_DIR$/partials/_footer.html" />
         <option value="$PROJECT_DIR$/assets/sass/theme/screen.scss" />
         <option value="$PROJECT_DIR$/assets/js/plugins.js" />
         <option value="$PROJECT_DIR$/assets/sass/theme/_fonts.scss" />
         <option value="$PROJECT_DIR$/assets/sass/theme/_variables.scss" />
         <option value="$PROJECT_DIR$/assets/sass/core/reset.scss" />
-        <option value="$PROJECT_DIR$/assets/sass/theme/footer.scss" />
         <option value="$PROJECT_DIR$/assets/sass/theme/_funcarousel.scss" />
-        <option value="$PROJECT_DIR$/assets/js/script.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/sass/theme/header.scss" />
         <option value="$PROJECT_DIR$/assets/sass/theme/home.scss" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/sass/theme/footer.scss" />
+        <option value="$PROJECT_DIR$/partials/_footer.html" />
+        <option value="$PROJECT_DIR$/assets/js/script.js" />
       </list>
     </option>
   </component>
@@ -300,12 +261,26 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="imgs" />
+              <option name="myItemId" value="Apliiq" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Apliiq" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sprite-home" />
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="theme" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -323,25 +298,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="imgs" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sprite-common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Apliiq" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Apliiq" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -486,11 +447,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/imgs/customizer/top-shadow.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/imgs/slider-hero/foreground1.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -531,13 +487,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/sass/theme/footer.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="5" selection-start="2831" selection-end="2831" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/imgs/sprite-home/bullet-active.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -551,20 +500,6 @@
     <entry file="file://$PROJECT_DIR$/assets/sass/theme/_funcarousel.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="87" column="52" selection-start="2033" selection-end="2033" vertical-scroll-proportion="-19.23077">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="39" selection-start="4959" selection-end="4959" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="80" selection-start="2798" selection-end="2798" vertical-scroll-proportion="-3.9591837">
           <folding />
         </state>
       </provider>
@@ -583,7 +518,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/sass/theme/home.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="189" column="33" selection-start="5144" selection-end="5144" vertical-scroll-proportion="0.15161291">
+        <state line="240" column="13" selection-start="6433" selection-end="6433" vertical-scroll-proportion="28.384615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="262" column="0" selection-start="11322" selection-end="11322" vertical-scroll-proportion="-14.347826">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/sass/theme/footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="156" column="0" selection-start="3233" selection-end="3250" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/_footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="46" selection-start="3783" selection-end="3783" vertical-scroll-proportion="-21.043478">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="253" column="41" selection-start="10816" selection-end="10816" vertical-scroll-proportion="0.49131122">
           <folding />
         </state>
       </provider>

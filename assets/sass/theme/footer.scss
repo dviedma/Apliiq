@@ -6,7 +6,10 @@
 
 footer {
     background: black;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
+    .container {
+        position: relative;
+    }
     .first {
         @include columns(6);
     }
@@ -150,5 +153,44 @@ footer {
 
         }
     }
-
+}
+#newsletter-popup {
+    width: 680px;
+    height: 232px;
+    background: black;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    padding: 10px;
+    .newsletter-popup-inner {
+        border: 1px dashed #777777;
+        height: 100%;
+        span {
+            display: block;
+            text-align: center;
+            color: white;
+            &.big-thankyou {
+                font-size: 48px;
+                font-family: 'itcavantgardestdmdbold';
+                padding: 45px 0 35px;
+            }
+            &.code {
+                opacity: 0.6;
+                font-family: helvetica;
+                font-size: 18px;
+                padding-bottom: 20px;
+            }
+            &.hitya {
+                opacity: 0.6;
+                font-family: helvetica;
+                font-size: 14px;
+            }
+        }
+    }
+    &.hide {
+        display: none;
+    }
+}
+.disclaimer {
+    font-size: 10px;
 }

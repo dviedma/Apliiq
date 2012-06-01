@@ -102,22 +102,22 @@ section {
         background-repeat: repeat-x;
         top: -40px;
         &.fabric1 {
-            background: url(/assets/imgs/fresh-fabrics/fabric1-det.jpg);
+            background: url(../../imgs/fresh-fabrics/fabric1-det.jpg);
         }
         &.fabric2 {
-            background: url(/assets/imgs/fresh-fabrics/fabric2-det.jpg);
+            background: url(../../imgs/fresh-fabrics/fabric2-det.jpg);
         }
         &.fabric3 {
-            background: url(/assets/imgs/fresh-fabrics/fabric3-det.jpg);
+            background: url(../../imgs/fresh-fabrics/fabric3-det.jpg);
         }
         &.fabric4 {
-            background: url(/assets/imgs/fresh-fabrics/fabric4-det.jpg);
+            background: url(../../imgs/fresh-fabrics/fabric4-det.jpg);
         }
         &.fabric5 {
-            background: url(/assets/imgs/fresh-fabrics/fabric5-det.jpg);
+            background: url(../../imgs/fresh-fabrics/fabric5-det.jpg);
         }
         &.fabric6 {
-            background: url(/assets/imgs/fresh-fabrics/fabric6-det.jpg);
+            background: url(../../imgs/fresh-fabrics/fabric6-det.jpg);
         }
     }
 }
@@ -228,21 +228,23 @@ section {
             bottom: 5px;
             right: 5px;
         }
-        &.youtube {
+        .play {
+            @include sprite-home-sprite('play-logo');
+            bottom: 70px;
+            left: 66px;
+            position: absolute;
+            text-indent: -9999px;
+        }
+        a:hover {
             .play {
-                @include sprite-home-sprite('play-logo');
-                bottom: 70px;
-                left: 66px;
-                position: absolute;
-                text-indent: -9999px;
+                @include sprite-home-sprite('play-logo-hover');
             }
+        }
+        &.youtube {
             .logo {
                 @include sprite-home-sprite('youtube-logo');
             }
             a:hover {
-                .play {
-                    @include sprite-home-sprite('play-logo-hover');
-                }
                 .logo {
                     @include sprite-home-sprite('youtube-logo-hover');
                 }
@@ -278,9 +280,7 @@ section {
             }
             .logo {
                 @include sprite-home-sprite('twitter-logo');
-            }
-            &:hover {
-                .logo {
+                &:hover {
                     @include sprite-home-sprite('twitter-logo-hover');
                 }
             }
@@ -310,8 +310,13 @@ section {
             .logo {
                 @include sprite-home-sprite('facebook-logo');
             }
-            &:hover {
+            &.photo:hover {
                 .logo {
+                    @include sprite-home-sprite('facebook-logo-hover');
+                }
+            }
+            &.status {
+                .logo:hover {
                     @include sprite-home-sprite('facebook-logo-hover');
                 }
             }
