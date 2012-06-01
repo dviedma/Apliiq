@@ -7,21 +7,15 @@
 .slider-customizer {
     margin-top: 50px;
     position: relative;
-    &#slider-customizer-womens {
-        //visibility: hidden;
-    }
-    &#slider-customizer-kids {
-        //display: none;
-    }
-    &#slider-customizer-items {
-        //display: none;
-    }
 }
 .slides-wrapper {
     overflow: hidden;
     position: relative;
     height: 475px;
     margin: 0 auto;
+    .info {
+        display: none;
+    }
     .slides {
         position: absolute;
         .slide {
@@ -152,13 +146,25 @@
 #slide2 {
     background: url(../../../assets/imgs/slider-hero/background2.jpg) repeat;
     .foreground {
-        background: url(../../../assets/imgs/slider-hero/foreground1.png) repeat;
+        background: url(../../../assets/imgs/slider-hero/foreground2.png) repeat;
     }
 }
 #slide3 {
     background: url(../../../assets/imgs/slider-hero/background3.jpg) repeat;
     .foreground {
-        background: url(../../../assets/imgs/slider-hero/foreground1.png) repeat;
+        background: url(../../../assets/imgs/slider-hero/foreground3.png) repeat;
+    }
+}
+#slide4 {
+    background: url(../../../assets/imgs/slider-hero/background4.jpg) repeat;
+    .foreground {
+        background: url(../../../assets/imgs/slider-hero/foreground4.png) repeat;
+    }
+}
+#slide5 {
+    background: url(../../../assets/imgs/slider-hero/background5.jpg) repeat;
+    .foreground {
+        background: url(../../../assets/imgs/slider-hero/foreground5.png) repeat;
     }
 }
 .foreground {

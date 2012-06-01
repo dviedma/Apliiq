@@ -30,7 +30,8 @@ section {
             }
             .sec-title {
                 text-align: left;
-                margin-top: 30px;
+                margin-top: 10px;
+                line-height: 40px;
             }
             .sec-subtitle {
                 font-family: Helvetica, arial, san-serif;
@@ -38,7 +39,7 @@ section {
                 font-size: 16px;
                 color: $black2;
                 @include opacity(0.5);
-                margin-top: 25px;
+                margin-top: 15px;
                 border-bottom: 1px dashed #cccccc;
                 padding-bottom: 20px;
                 margin-bottom: 20px;

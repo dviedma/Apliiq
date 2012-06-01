@@ -164,7 +164,8 @@ Date: 04-25-2012
 
             numSlidesPerShift: 1,
             parallax: false,
-            blur : true
+            blur : true,
+            slidesinfo : true
         };
 
         var options = $.extend({}, defaults, ops);
@@ -213,6 +214,10 @@ Date: 04-25-2012
                 numSlides = self.find('.slide').size();
                 totalWidth = (numSlides * 3) * (slidesGutter + innerWidth);
                 self.find('.slides').css('width',totalWidth);
+
+                if(options.slidesinfo) {
+                    fc.updateInfo(self);
+                }
 
                 if(numSlides > 1){
                     //Add number to slides
@@ -301,6 +306,10 @@ Date: 04-25-2012
                     //move .first class
                     self.find('.slide').removeClass('first active');
                     self.find('.slide[rel="'+$clickedBullet.index()+'"]').addClass('first active');
+
+                    if(options.slidesinfo) {
+                        fc.updateInfo(self);
+                    }
                 });
             },
 
@@ -349,6 +358,10 @@ Date: 04-25-2012
                             addClass('first');
 
                         self.find('.slide').eq(indexFirst-options.numSlidesPerShift).addClass('active');
+                    }
+
+                    if(options.slidesinfo) {
+                        fc.updateInfo(self);
                     }
 
                     if(options.parallax) {
@@ -428,6 +441,10 @@ Date: 04-25-2012
                             self.find('.slide').eq(indexFirst+options.numSlidesPerShift).addClass('active');
                         }
 
+                        if(options.slidesinfo) {
+                            fc.updateInfo(self);
+                        }
+
                         if(options.parallax) {
                             //TODO: read property
                             $('.foreground').css('left', '550px');
@@ -454,6 +471,28 @@ Date: 04-25-2012
                     self.find('.control-nav .active').removeClass('active');
                     self.find('.control-nav .control').eq(0).addClass('active');
                 }
+            },
+
+            /**
+             * Update title and description of the current slide
+             *
+             * @method updateInfo
+             * @return undefined
+             * @param self {HTMLElement} The element to create the carousel for.
+             */
+            updateInfo: function(self) {
+                var currentAntitle = fc.getFirstSlide(self).find('.s-antitle').text();
+                var currentTitle = fc.getFirstSlide(self).find('.s-title').text();
+                var currentSubtitle = fc.getFirstSlide(self).find('.s-subtitle').text();
+                var currentLink = fc.getFirstSlide(self).find('.s-link').text();
+                var currentLabel = fc.getFirstSlide(self).find('.s-link-label').text();
+
+                var $interface = $('#interface');
+                $interface.find('span').text(currentAntitle);
+                $interface.find('.sec-title').text(currentTitle);
+                $interface.find('.sec-subtitle').text(currentSubtitle);
+                $interface.find('.sec-link').text(currentLabel);
+                $interface.find('.sec-link').attr('href', currentLink);
             },
 
             /**

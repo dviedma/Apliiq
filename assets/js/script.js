@@ -57,6 +57,11 @@ jQuery(document).ready(function() {
                     //preload images
                     var $img;
                     var preload = [
+                        'assets/imgs/slider-hero/background1.jpg',
+                        'assets/imgs/slider-hero/background2.jpg',
+                        'assets/imgs/slider-hero/background3.jpg',
+                        'assets/imgs/slider-hero/background4.jpg',
+
                         'assets/imgs/fresh-fabrics/fabric1-det.jpg',
                         'assets/imgs/fresh-fabrics/fabric2-det.jpg',
                         'assets/imgs/fresh-fabrics/fabric3-det.jpg',
@@ -124,16 +129,20 @@ jQuery(document).ready(function() {
                     });
 
                     $('#slider-customizer-mens').funCarousel({
-                        'securityMargin' : 4
+                        'securityMargin' : 4,
+                        'slidesinfo' : false
                     });
                     $('#slider-customizer-womens').funCarousel({
-                        'securityMargin' : 4
+                        'securityMargin' : 4,
+                        'slidesinfo' : false
                     }).hide();
                     $('#slider-customizer-kids').funCarousel({
-                        'securityMargin' : 4
+                        'securityMargin' : 4,
+                        'slidesinfo' : false
                     }).hide();
                     $('#slider-customizer-accessories').funCarousel({
-                        'securityMargin' : 4
+                        'securityMargin' : 4,
+                        'slidesinfo' : false
                     }).hide();
                 }
 
@@ -231,7 +240,6 @@ jQuery(document).ready(function() {
                                     }
                                 }
                             }
-                            console.log(postString);
                             $('.facebook').prepend(postString);
                         }
                     });
