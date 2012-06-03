@@ -115,7 +115,7 @@ body .container:after {
 }
 
 /* line 82, sprite-common/*.png */
-.sprite-common-sprite, footer #close-overlay, .branding .logo-container .logo, header .logo a, menu ul li.cart a, menu ul li.cart a:hover {
+.sprite-common-sprite, footer #close-overlay, .branding .logo-container .logo, .logo-container .logo a, menu ul li.cart a, menu ul li.cart a:hover {
   background: url('../../imgs/sprite-common-sd3210ad33a.png') no-repeat;
 }
 
@@ -489,6 +489,33 @@ footer #close-overlay {
 @email	daniel.viedma@rokkan.com
 ==================================================*/
 /* line 7, ../../sass/theme/header.scss */
+.logo-container {
+  position: relative;
+  width: 980px;
+  margin: 0 auto;
+}
+/* line 11, ../../sass/theme/header.scss */
+.logo-container .logo {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  z-index: 10;
+}
+/* line 16, ../../sass/theme/header.scss */
+.logo-container .logo a {
+  background-position: 0 -72px;
+  height: 138px;
+  width: 186px;
+  display: block;
+}
+/* line 19, ../../sass/theme/header.scss */
+.logo-container .logo a span {
+  position: absolute;
+  top: -100px;
+  visibility: hidden;
+}
+
+/* line 28, ../../sass/theme/header.scss */
 header {
   position: fixed;
   right: 0;
@@ -499,30 +526,38 @@ header {
   height: 60px;
   background: white;
 }
-/* line 11, ../../sass/theme/header.scss */
+/* line 32, ../../sass/theme/header.scss */
 header .logo {
   position: absolute;
+  z-index: 10;
+  margin-left: 63px;
+  height: 40px;
+  width: 58px;
+  overflow: hidden;
+  cursor: pointer;
 }
-/* line 13, ../../sass/theme/header.scss */
-header .logo a {
-  background-position: 0 -72px;
-  height: 138px;
-  width: 186px;
+/* line 40, ../../sass/theme/header.scss */
+header .logo .roll {
+  background: url(../../imgs/logo-classic-small2.png) no-repeat;
+  height: 67px;
+  width: 58px;
   display: block;
+  position: absolute;
+  top: 0;
 }
-/* line 16, ../../sass/theme/header.scss */
-header .logo a span {
+/* line 47, ../../sass/theme/header.scss */
+header .logo .roll span {
   position: absolute;
   top: -100px;
   visibility: hidden;
 }
 
-/* line 25, ../../sass/theme/header.scss */
+/* line 56, ../../sass/theme/header.scss */
 nav {
   float: left;
   margin: 20px 0 0 230px;
 }
-/* line 28, ../../sass/theme/header.scss */
+/* line 59, ../../sass/theme/header.scss */
 nav ul {
   list-style-type: none;
 }
@@ -532,18 +567,18 @@ nav ul, nav ul li {
   padding: 0px;
   display: inline;
 }
-/* line 30, ../../sass/theme/header.scss */
+/* line 61, ../../sass/theme/header.scss */
 nav ul li {
   margin-right: 40px;
 }
-/* line 32, ../../sass/theme/header.scss */
+/* line 63, ../../sass/theme/header.scss */
 nav ul li a {
   font-family: 'ITCAvantGardeStdMdRegular';
   color: #333333;
   font-size: 16px;
 }
 
-/* line 42, ../../sass/theme/header.scss */
+/* line 73, ../../sass/theme/header.scss */
 menu {
   float: right;
   display: inline;
@@ -552,36 +587,36 @@ menu {
   #margin-left: -20px;
   margin-top: 20px;
 }
-/* line 48, ../../sass/theme/header.scss */
+/* line 79, ../../sass/theme/header.scss */
 menu ul li {
   float: left;
   margin-left: 27px;
 }
-/* line 52, ../../sass/theme/header.scss */
+/* line 83, ../../sass/theme/header.scss */
 menu ul li.login a {
   color: #777777;
   font-size: 12px;
 }
-/* line 57, ../../sass/theme/header.scss */
+/* line 88, ../../sass/theme/header.scss */
 menu ul li.cart {
   margin-left: 20px;
   padding-left: 20px;
   border-left: 1px dotted #777777;
 }
-/* line 61, ../../sass/theme/header.scss */
+/* line 92, ../../sass/theme/header.scss */
 menu ul li.cart a {
   background-position: -18px 0;
   height: 17px;
   width: 18px;
   display: block;
 }
-/* line 64, ../../sass/theme/header.scss */
+/* line 95, ../../sass/theme/header.scss */
 menu ul li.cart a:hover {
   background-position: 0 0;
   height: 17px;
   width: 18px;
 }
-/* line 67, ../../sass/theme/header.scss */
+/* line 98, ../../sass/theme/header.scss */
 menu ul li.cart a span {
   padding-left: 25px;
   color: #f70a00;

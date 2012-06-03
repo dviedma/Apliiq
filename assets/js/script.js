@@ -17,6 +17,32 @@ jQuery(document).ready(function() {
 
 
             /**
+             * Header
+             */
+            var header = {
+                /**
+                 * Binds the rollover event to the fabric boxes to show the fabric detail
+                 *
+                 * @method build
+                 * @return undefined
+                 * @param undefined
+                 */
+                build: function() {
+
+                    $('.roll').hover(
+                        function(){
+                            $(this).stop().animate({top: -40});
+                        },
+                        function(){
+                            $(this).stop().animate({top: 0});
+                        }
+                    ).click(function(){
+                            jQuery.scrollTo({top:'0', left:'+=0px'}, { duration:1000});
+                    });
+                }
+            };
+
+            /**
              * Section: Fresh Fabrics
              */
             var sliderhero = {
@@ -277,6 +303,7 @@ jQuery(document).ready(function() {
                 }
             };
 
+            header.build();
             sliderhero.build();
             fabrics.build();
             customizer.build();

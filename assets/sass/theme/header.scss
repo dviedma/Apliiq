@@ -4,15 +4,46 @@
 @email	daniel.viedma@rokkan.com
 ==================================================*/
 
+.logo-container {
+    position: relative;
+    width: 980px;
+    margin: 0 auto;
+    .logo {
+        position: absolute;
+        top:-$header-height;
+        left:0;
+        z-index:10;
+        a{
+            @include sprite-common-sprite('logo-classic');
+            display: block;
+            span {
+                position: absolute;
+                top: -100px;
+                visibility: hidden;
+            }
+        }
+    }
+}
+
 header {
     @include navbar-fixed();
     height: $header-height;
     background: white;
     .logo {
         position: absolute;
-        a{
-            @include sprite-common-sprite('logo-classic');
+        z-index:10;
+        margin-left: 63px;
+        height: 40px;
+        width: 58px;
+        overflow: hidden;
+        cursor:pointer;
+        .roll{
+            background: url(../../imgs/logo-classic-small2.png) no-repeat;
+            height: 67px;
+            width: 58px;
             display: block;
+            position: absolute;
+            top: 0;
             span {
                 position: absolute;
                 top: -100px;
