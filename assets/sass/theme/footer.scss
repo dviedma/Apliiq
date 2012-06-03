@@ -7,6 +7,7 @@
 footer {
     background: black;
     padding-bottom: 10px;
+    position: relative;
     .container {
         position: relative;
     }
@@ -37,6 +38,14 @@ footer {
             font-size: 14px;
             line-height: 18px;
         }
+    }
+    #close-overlay {
+        position: absolute;
+        right: 50px;
+        z-index: 30;
+        top: 50px;
+        @include sprite-common-sprite('close-overlay');
+        cursor: pointer;
     }
 }
 
@@ -162,6 +171,7 @@ footer {
     top: 200px;
     left: 100px;
     padding: 10px;
+    z-index: 20;
     .newsletter-popup-inner {
         border: 1px dashed #777777;
         height: 100%;
@@ -186,9 +196,6 @@ footer {
                 font-size: 14px;
             }
         }
-    }
-    &.hide {
-        display: none;
     }
 }
 .disclaimer {

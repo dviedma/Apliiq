@@ -265,7 +265,15 @@ jQuery(document).ready(function() {
                     $('#submit-newsletter').click(function(e){
                         e.preventDefault();
                         $('#newsletter-popup').toggleClass('hide');
+                        $('#overlay').toggleClass('hide');
+                        $('#close-overlay').toggleClass('hide');
+                    })
+                    $('#close-overlay').click(function(){
+                        $('#newsletter-popup').toggleClass('hide');
+                        $('#overlay').toggleClass('hide');
+                        $('#close-overlay').toggleClass('hide');
                     });
+
                 }
             };
 
