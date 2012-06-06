@@ -152,6 +152,8 @@ Date: 04-25-2012
     var $controlnav;
     var $firstSlide;
 
+    var t;  //timer
+
     $.fn.funCarousel = function(ops) {
 
         var defaults = {
@@ -165,7 +167,9 @@ Date: 04-25-2012
             numSlidesPerShift: 1,
             parallax: false,
             blur : true,
-            slidesinfo : true
+            slidesinfo : true,
+            auto: true,
+            autoInterval: 5000
         };
 
         var options = $.extend({}, defaults, ops);
@@ -270,6 +274,11 @@ Date: 04-25-2012
                     for (var j=numCopies-1; j>=0; j--) {
                         self.find('.slides').prepend( slideNodes[j].clone().attr('rel','alpha') );
                     }
+
+                    //auto rotation
+                    if(options.auto) {
+                        fc.slideAuto(self, shift, numSlides);
+                    }
                 }
 
                 return self;
@@ -286,6 +295,10 @@ Date: 04-25-2012
                 var self = e.data.self;
                 var shift = e.data.shift;
                 var numSlides = e.data.numSlides;
+
+                if(e.type == "click"){
+                    clearTimeout(t);
+                }
 
                 var $clickedBullet = $(this);
 
@@ -310,6 +323,11 @@ Date: 04-25-2012
                     if(options.slidesinfo) {
                         fc.updateInfo(self);
                     }
+
+                    //auto rotation
+                    if(options.auto) {
+                        fc.slideAuto(self, shift, numSlides);
+                    }
                 });
             },
 
@@ -325,6 +343,10 @@ Date: 04-25-2012
                 var self = e.data.self;
                 var shift = e.data.shift;
                 var numSlides = e.data.numSlides;
+
+                if(e.type == "click"){
+                    clearTimeout(t);
+                }
 
                 if(animating){
                     return undefined;
@@ -369,6 +391,11 @@ Date: 04-25-2012
                         $('.foreground').css('left', '550px');
                     }
 
+                    //auto rotation
+                    if(options.auto) {
+                        fc.slideAuto(self, shift, numSlides);
+                    }
+
                 });
             },
 
@@ -404,6 +431,10 @@ Date: 04-25-2012
                 var self = e.data.self;
                 var shift = e.data.shift;
                 var numSlides = e.data.numSlides;
+
+                if(e.type == "click"){
+                    clearTimeout(t);
+                }
 
                 //animate slider
                 if(animating){
@@ -448,6 +479,11 @@ Date: 04-25-2012
                         if(options.parallax) {
                             //TODO: read property
                             $('.foreground').css('left', '550px');
+                        }
+
+                        //auto rotation
+                        if(options.auto) {
+                            fc.slideAuto(self, shift, numSlides);
                         }
 
                     }
@@ -515,6 +551,26 @@ Date: 04-25-2012
              */
             getActiveSlide: function(self) {
                 return self.find('.slide.active');
+            },
+
+            /**
+             * Auxiliar function to get fire the auto navigation
+             *
+             * @method slideAuto
+             * @return undefined
+             * @param self {HTMLElement} The element to create the carousel for.
+             */
+            slideAuto: function(self, shift, numSlides) {
+                var e = {
+                    data: {
+                        self: self,
+                        shift: shift,
+                        numSlides: numSlides
+                    }
+                };
+                t = setTimeout(function(){
+                    fc.navRight(e);
+                }, options.autoInterval);
             }
 
         };

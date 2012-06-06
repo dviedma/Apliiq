@@ -208,6 +208,7 @@ section {
                     font-size: 16px;
                     padding-top: 21px;
                     display: block;
+                    margin-left: -3px;
                 }
             }
         }
@@ -345,3 +346,7 @@ section {
     display: none;
 }
 
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+}

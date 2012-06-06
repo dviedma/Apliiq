@@ -85,8 +85,10 @@ body a:hover {
 /* line 7, ../../sass/core/structure.scss */
 body {
   padding-top: 60px;
+  width: 100%;
+  min-width: 980px;
 }
-/* line 9, ../../sass/core/structure.scss */
+/* line 11, ../../sass/core/structure.scss */
 body .container {
   *zoom: 1;
   margin: auto;
@@ -101,12 +103,12 @@ body .container:after {
   clear: both;
 }
 
-/* line 15, ../../sass/core/structure.scss */
+/* line 17, ../../sass/core/structure.scss */
 .first {
   margin-left: 2.041%;
 }
 
-/* line 18, ../../sass/core/structure.scss */
+/* line 20, ../../sass/core/structure.scss */
 .last {
   display: inline;
   float: right;
@@ -234,7 +236,7 @@ footer .moto {
 /* line 24, ../../sass/theme/footer.scss */
 footer .title {
   position: relative;
-  background: #111111;
+  background: black;
   margin: 0 auto;
 }
 /* line 29, ../../sass/theme/footer.scss */
@@ -256,9 +258,9 @@ footer .list a, footer .copy a, footer .buttons a {
 /* line 42, ../../sass/theme/footer.scss */
 footer #close-overlay {
   position: absolute;
-  right: 50px;
+  right: -7px;
   z-index: 30;
-  top: 50px;
+  top: -7px;
   background-position: -36px 0;
   height: 34px;
   width: 34px;
@@ -422,21 +424,24 @@ footer #close-overlay {
 }
 /* line 153, ../../sass/theme/footer.scss */
 .branding .logo-container {
-  margin: -52px auto 0;
-  width: 120px;
-  padding: 20px;
-  background: black;
+  background: none repeat scroll 0 0 black;
+  height: 47px;
+  margin: -5px auto 20px;
+  padding: 0;
+  width: 151px;
 }
-/* line 158, ../../sass/theme/footer.scss */
+/* line 159, ../../sass/theme/footer.scss */
 .branding .logo-container .logo {
   display: block;
   background-position: -70px 0;
   height: 72px;
   width: 116px;
   text-indent: -9999px;
+  left: 20px;
+  top: -30px;
 }
 
-/* line 166, ../../sass/theme/footer.scss */
+/* line 168, ../../sass/theme/footer.scss */
 #newsletter-popup {
   width: 680px;
   height: 232px;
@@ -447,38 +452,38 @@ footer #close-overlay {
   padding: 10px;
   z-index: 20;
 }
-/* line 175, ../../sass/theme/footer.scss */
+/* line 177, ../../sass/theme/footer.scss */
 #newsletter-popup .newsletter-popup-inner {
   border: 1px dashed #777777;
   height: 100%;
 }
-/* line 178, ../../sass/theme/footer.scss */
+/* line 180, ../../sass/theme/footer.scss */
 #newsletter-popup .newsletter-popup-inner span {
   display: block;
   text-align: center;
   color: white;
 }
-/* line 182, ../../sass/theme/footer.scss */
+/* line 184, ../../sass/theme/footer.scss */
 #newsletter-popup .newsletter-popup-inner span.big-thankyou {
   font-size: 48px;
   font-family: 'itcavantgardestdmdbold';
   padding: 45px 0 35px;
 }
-/* line 187, ../../sass/theme/footer.scss */
+/* line 189, ../../sass/theme/footer.scss */
 #newsletter-popup .newsletter-popup-inner span.code {
   opacity: 0.6;
   font-family: helvetica;
   font-size: 18px;
   padding-bottom: 20px;
 }
-/* line 193, ../../sass/theme/footer.scss */
+/* line 195, ../../sass/theme/footer.scss */
 #newsletter-popup .newsletter-popup-inner span.hitya {
   opacity: 0.6;
   font-family: helvetica;
   font-size: 14px;
 }
 
-/* line 201, ../../sass/theme/footer.scss */
+/* line 203, ../../sass/theme/footer.scss */
 .disclaimer {
   font-size: 10px;
 }
@@ -530,17 +535,17 @@ header {
 header .logo {
   position: absolute;
   z-index: 10;
-  margin-left: 63px;
-  height: 40px;
-  width: 58px;
+  margin: 9px 0 0 24px;
+  height: 41px;
+  width: 64px;
   overflow: hidden;
   cursor: pointer;
 }
 /* line 40, ../../sass/theme/header.scss */
 header .logo .roll {
-  background: url(../../imgs/logo-classic-small2.png) no-repeat;
-  height: 67px;
-  width: 58px;
+  background: url(../../imgs/logo-classic-small3.png) no-repeat;
+  width: 64px;
+  height: 72px;
   display: block;
   position: absolute;
   top: 0;
@@ -587,36 +592,41 @@ menu {
   #margin-left: -20px;
   margin-top: 20px;
 }
-/* line 79, ../../sass/theme/header.scss */
+/* line 78, ../../sass/theme/header.scss */
 menu ul li {
   float: left;
   margin-left: 27px;
 }
-/* line 83, ../../sass/theme/header.scss */
+/* line 81, ../../sass/theme/header.scss */
+menu ul li a {
+  font-family: 'ITCAvantGardeStdMdRegular';
+}
+/* line 85, ../../sass/theme/header.scss */
 menu ul li.login a {
+  font-family: 'ITCAvantGardeStdMdRegular';
   color: #777777;
   font-size: 12px;
 }
-/* line 88, ../../sass/theme/header.scss */
+/* line 91, ../../sass/theme/header.scss */
 menu ul li.cart {
   margin-left: 20px;
   padding-left: 20px;
   border-left: 1px dotted #777777;
 }
-/* line 92, ../../sass/theme/header.scss */
+/* line 95, ../../sass/theme/header.scss */
 menu ul li.cart a {
   background-position: -18px 0;
   height: 17px;
   width: 18px;
   display: block;
 }
-/* line 95, ../../sass/theme/header.scss */
+/* line 98, ../../sass/theme/header.scss */
 menu ul li.cart a:hover {
   background-position: 0 0;
   height: 17px;
   width: 18px;
 }
-/* line 98, ../../sass/theme/header.scss */
+/* line 101, ../../sass/theme/header.scss */
 menu ul li.cart a span {
   padding-left: 25px;
   color: #f70a00;
@@ -886,13 +896,14 @@ section {
   font-size: 16px;
   padding-top: 21px;
   display: block;
+  margin-left: -3px;
 }
 
-/* line 218, ../../sass/theme/home.scss */
+/* line 219, ../../sass/theme/home.scss */
 .social {
   height: 440px;
 }
-/* line 220, ../../sass/theme/home.scss */
+/* line 221, ../../sass/theme/home.scss */
 .social .social-box {
   display: inline;
   float: left;
@@ -904,7 +915,7 @@ section {
   position: relative;
   color: #333333;
 }
-/* line 227, ../../sass/theme/home.scss */
+/* line 228, ../../sass/theme/home.scss */
 .social .social-box .logo {
   display: block;
   text-indent: -9999px;
@@ -912,7 +923,7 @@ section {
   bottom: 5px;
   right: 5px;
 }
-/* line 234, ../../sass/theme/home.scss */
+/* line 235, ../../sass/theme/home.scss */
 .social .social-box .play {
   background-position: 0 0;
   height: 89px;
@@ -922,25 +933,25 @@ section {
   position: absolute;
   text-indent: -9999px;
 }
-/* line 242, ../../sass/theme/home.scss */
+/* line 243, ../../sass/theme/home.scss */
 .social .social-box a:hover .play {
   background-position: 0 -89px;
   height: 89px;
   width: 89px;
 }
-/* line 247, ../../sass/theme/home.scss */
+/* line 248, ../../sass/theme/home.scss */
 .social .social-box.youtube .logo {
   background-position: 0 -409px;
   height: 41px;
   width: 40px;
 }
-/* line 251, ../../sass/theme/home.scss */
+/* line 252, ../../sass/theme/home.scss */
 .social .social-box.youtube a:hover .logo {
   background-position: 0 -327px;
   height: 41px;
   width: 40px;
 }
-/* line 257, ../../sass/theme/home.scss */
+/* line 258, ../../sass/theme/home.scss */
 .social .social-box.twitter .tweethandler {
   display: block;
   text-align: center;
@@ -948,7 +959,7 @@ section {
   font-size: 18px;
   margin: 30px 0 28px;
 }
-/* line 264, ../../sass/theme/home.scss */
+/* line 265, ../../sass/theme/home.scss */
 .social .social-box.twitter #tweet {
   font-family: Helvetica, arial, sans-serif;
   font-size: 12px;
@@ -956,11 +967,11 @@ section {
   display: block;
   line-height: 18px;
 }
-/* line 270, ../../sass/theme/home.scss */
+/* line 271, ../../sass/theme/home.scss */
 .social .social-box.twitter #tweet a {
   font-weight: bold;
 }
-/* line 274, ../../sass/theme/home.scss */
+/* line 275, ../../sass/theme/home.scss */
 .social .social-box.twitter .tweetlink {
   font-family: Helvetica, arial, sans-serif;
   font-size: 14px;
@@ -971,35 +982,35 @@ section {
   bottom: 27px;
   left: 80px;
 }
-/* line 284, ../../sass/theme/home.scss */
+/* line 285, ../../sass/theme/home.scss */
 .social .social-box.twitter .logo {
   background-position: 0 -286px;
   height: 41px;
   width: 40px;
 }
-/* line 286, ../../sass/theme/home.scss */
+/* line 287, ../../sass/theme/home.scss */
 .social .social-box.twitter .logo:hover {
   background-position: 0 -245px;
   height: 41px;
   width: 40px;
 }
-/* line 292, ../../sass/theme/home.scss */
+/* line 293, ../../sass/theme/home.scss */
 .social .social-box.instagram .logo {
   background-position: 0 -450px;
   height: 41px;
   width: 40px;
 }
-/* line 296, ../../sass/theme/home.scss */
+/* line 297, ../../sass/theme/home.scss */
 .social .social-box.instagram:hover .logo {
   background-position: 0 -368px;
   height: 41px;
   width: 40px;
 }
-/* line 301, ../../sass/theme/home.scss */
+/* line 302, ../../sass/theme/home.scss */
 .social .social-box.facebook {
   background: #174e9b;
 }
-/* line 303, ../../sass/theme/home.scss */
+/* line 304, ../../sass/theme/home.scss */
 .social .social-box.facebook span, .social .social-box.facebook abbr {
   color: white;
   font-family: Helvetica,Arial,Sans-serif;
@@ -1010,30 +1021,30 @@ section {
   margin-top: 30px;
   padding: 0 10px;
 }
-/* line 313, ../../sass/theme/home.scss */
+/* line 314, ../../sass/theme/home.scss */
 .social .social-box.facebook .logo {
   background-position: 0 -1098px;
   height: 41px;
   width: 40px;
 }
-/* line 317, ../../sass/theme/home.scss */
+/* line 318, ../../sass/theme/home.scss */
 .social .social-box.facebook.photo:hover .logo {
   background-position: 0 -1044px;
   height: 41px;
   width: 40px;
 }
-/* line 322, ../../sass/theme/home.scss */
+/* line 323, ../../sass/theme/home.scss */
 .social .social-box.facebook.status .logo:hover {
   background-position: 0 -1044px;
   height: 41px;
   width: 40px;
 }
-/* line 328, ../../sass/theme/home.scss */
+/* line 329, ../../sass/theme/home.scss */
 .social .sec-title {
   margin-bottom: 50px;
 }
 
-/* line 333, ../../sass/theme/home.scss */
+/* line 334, ../../sass/theme/home.scss */
 #overlay {
   background: none repeat scroll 0 0 black;
   height: 3610px;
@@ -1045,9 +1056,15 @@ section {
   left: 0px;
 }
 
-/* line 344, ../../sass/theme/home.scss */
+/* line 345, ../../sass/theme/home.scss */
 .hide {
   display: none;
+}
+
+/* line 349, ../../sass/theme/home.scss */
+.wrapper {
+  width: 100%;
+  overflow: hidden;
 }
 
 /*=== FunCarousel plugin styles

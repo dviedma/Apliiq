@@ -32,15 +32,15 @@ header {
     .logo {
         position: absolute;
         z-index:10;
-        margin-left: 63px;
-        height: 40px;
-        width: 58px;
+        margin: 9px 0 0 24px;
+        height: 41px;
+        width: 64px;
         overflow: hidden;
         cursor:pointer;
         .roll{
-            background: url(../../imgs/logo-classic-small2.png) no-repeat;
-            height: 67px;
-            width: 58px;
+            background: url(../../imgs/logo-classic-small3.png) no-repeat;
+            width: 64px;
+            height: 72px;
             display: block;
             position: absolute;
             top: 0;
@@ -75,12 +75,15 @@ menu {
     @include omega();
     margin-top: 20px;
     ul {
-        //@include inline-list();
         li {
             float: left;
             margin-left: 27px;
+            a {
+                font-family: 'ITCAvantGardeStdMdRegular';
+            }
             &.login {
                 a {
+                    font-family: 'ITCAvantGardeStdMdRegular';
                     color: $grey;
                     font-size: 12px;
                 }

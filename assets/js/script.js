@@ -31,7 +31,7 @@ jQuery(document).ready(function() {
 
                     $('.roll').hover(
                         function(){
-                            $(this).stop().animate({top: -40});
+                            $(this).stop().animate({top: -45});
                         },
                         function(){
                             $(this).stop().animate({top: 0});
@@ -216,7 +216,7 @@ jQuery(document).ready(function() {
 
                     //Instagram
                     $('.instagram').instagram({
-                        hash: 'love',
+                        hash: 'apliiqhomepage',
                         show: 1,
                         clientId: 'b76cb39fa7ff4f83835861df4d6b4eeb'
                     });

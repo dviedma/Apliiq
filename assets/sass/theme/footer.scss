@@ -23,7 +23,7 @@ footer {
     }
     .title {
         position: relative;
-        background: #111111;
+        background: black;
         margin: 0 auto;
     }
     .list, .copy, .buttons {
@@ -41,9 +41,9 @@ footer {
     }
     #close-overlay {
         position: absolute;
-        right: 50px;
+        right: -7px;
         z-index: 30;
-        top: 50px;
+        top: -7px;
         @include sprite-common-sprite('close-overlay');
         cursor: pointer;
     }
@@ -151,15 +151,17 @@ footer {
     border-top: 1px dashed $grey;
     margin-top: 100px;
     .logo-container {
-        margin: -52px auto 0;
-        width: 120px;
-        padding: 20px;
-        background: black;
+        background: none repeat scroll 0 0 black;
+        height: 47px;
+        margin: -5px auto 20px;
+        padding: 0;
+        width: 151px;
         .logo {
             display: block;
             @include sprite-common-sprite('logo-footer');
             text-indent: -9999px;
-
+            left: 20px;
+            top: -30px;
         }
     }
 }

@@ -6,6 +6,8 @@
 
 body {
     padding-top: $header-height;
+    width: 100%;
+    min-width: columns-width();
     .container {
         @include container;
         max-width: columns-width();
